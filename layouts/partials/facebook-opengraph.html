@@ -1,0 +1,15 @@
+<meta property="og:title" content="{{ .Params.title }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ .Permalink }}/" />
+<meta property="og:image" content="{{if .Params.banner }}{{ .Site.BaseURL }}{{ .Params.Banner }}{{ else }}{{ .Site.Params.logo }}{{ end }}" />
+<meta property="fb:app_id"          content="{{ .Site.Social.facebookAppId }}" />
+<meta property="og:description"     content="{{ if .IsHome }}{{ .Site.Params.SiteDescription }}{{ else if .IsPage }}{{ .Params.description }}{{ end }}" />
+<meta property="og:site_name"       content="{{ .Site.Title }}">
+{{ if .IsPage }}
+    <meta property="og:updated_time" content="{{ .Date }}"/>
+{{ end }}
+{{ if eq .Type "tutorial" }}
+    <meta property="og:type"            content="video" />
+{{ else }}
+    <meta property="og:type"            content="article" />
+{{ end }}

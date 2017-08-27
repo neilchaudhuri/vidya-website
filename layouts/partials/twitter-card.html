@@ -1,0 +1,13 @@
+{{ if eq .Type "tutorial" }}
+    <meta property="twitter:card" content="player">
+    <meta name="twitter:player:width" content="1280">
+    <meta name="twitter:player:height" content="720">
+    <meta name="twitter:player:stream" content="https://www.youtube.com/embed/{{if .Params.youtube }}{{ .Params.youtube }}{{ end }}">
+    <meta name="twitter:player:stream:content_type" content="video/mp4">
+{{ else }}
+    <meta property="twitter:card" content="summary_large_image">
+{{ end }}
+<meta property="twitter:site" content="@{{ .Site.Social.twitter }}">
+<meta property="twitter:title" content="{{if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}">
+<meta property="twitter:image" content="{{if .Params.banner }}{{ .Site.BaseURL }}{{ .Params.Banner }}{{ else }}{{ .Site.Params.logo }}{{ end }}">
+<meta property="twitter:description" content="{{ if .IsHome }}{{ .Site.Params.SiteDescription }}{{ else if .IsPage }}{{ .Params.description }}{{ end }}">
