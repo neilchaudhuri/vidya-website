@@ -1,4 +1,4 @@
-baseurl = "https://www.vidyasource.com"
+baseurl = "http://actuary-winters-77047.netlify.com/"
 title = "Vidya"
 theme = "hugo-universal-theme"
 languageCode = "en-us"
