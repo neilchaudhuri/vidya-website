@@ -6,7 +6,7 @@ const BASE_CACHE_FILES = [
     '/js/owl.carousel.min.js',
     '/js/respond.min.js',
     '/manifest.json',
-    '/favicon.ico'
+    '/img/favicon.ico'
 ];
 
 const OFFLINE_CACHE_FILES = [
