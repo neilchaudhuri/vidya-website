@@ -20,7 +20,7 @@ We specialize in these disciplines and technologies:
 - Programming languages: [Scala](/tags/scala), [Java](/tags/java), [Go](/tags/go), [Kotlin](/tags/kotlin), [Swift](/tags/swift), [Ruby](/tags/ruby), and [Python](/tags/python)
 - [Mobile](/categories/mobile) development: [Android](/tags/android) and [iOS]((/tags/iOS)), [React Native](/tags/react-native), and [Progressive Web Applications](/tags/pwa)
 - [Big data](/categories/big-data) and [analytics](/categories/analytics): [Hadoop](/tags/hadoop), [Apache Spark](/tags/apache-spark), 
-[Apache Kafka](/tags/apache-kafka), [Akka](/tags/akka), [MongoDB](/tags/mongodb), [Elasticsearch](/tags/elasticsearch), RDBMS like
+[Apache Kafka](/tags/apache-kafka), [Akka](/tags/akka), [MongoDB](/tags/mongodb), [Cassandra](/tags/cassandra), [Elasticsearch](/tags/elasticsearch), RDBMS like
 [PostgreSQL](/tags/postgresql), and D3.js for visualization
 - Web frameworks: [Play Framework](/tags/play-framework), [Spring Boot](/tags/spring-boot), [VueJS](/tags/vuejs), [AngularS](/tags/vuejs), and [ReactJS](/tags/reactjs)  
 - [Cloud](/categories/cloud) technologies: [Amazon Web Services](/tags/aws), Heroku, and Netlify
