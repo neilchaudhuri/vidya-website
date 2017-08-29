@@ -16,16 +16,14 @@ Take a look at what we can do. If you would like to discuss consulting opportuni
 
 We specialize in these disciplines and technologies:
 
-- Services: [REST](/categories/rest), [Microservices](/categories/microservices), [Serverless](/categories/serverless)
-- JVM languages: [Java](/tags/java), [Scala](/tags/scala), [Kotlin](/tags/kotlin)
+- Services: [REST](/categories/rest), [Microservices](/categories/microservices), and [Serverless](/categories/serverless)
+- Programming languages: [Scala](/tags/scala), [Java](/tags/java), [Go](/tags/go), [Kotlin](/tags/kotlin), [Swift](/tags/swift), [Ruby](/tags/ruby), and [Python](/tags/python)
 - [Mobile](/categories/mobile) development: [Android](/tags/android) and [iOS]((/tags/iOS)), [React Native](/tags/react-native), and [Progressive Web Applications](/tags/pwa)
-- [Big data](/categories/big-data) and [analytics](/categories/analytics): [Hadoop](/tags/hadoop) ecosystem and related technologies
-like [Apache Spark](/tags/apache-spark), [Apache Kafka](/tags/apache-kafka), and D3.js for visualization
-- Concurrency: [Akka](/tags/akka) and [Go](/tags/go)
-- Scripting languages: [Ruby](/tags/ruby) and [Python](/tags/python)
+- [Big data](/categories/big-data) and [analytics](/categories/analytics): [Hadoop](/tags/hadoop), [Apache Spark](/tags/apache-spark), 
+[Apache Kafka](/tags/apache-kafka), [Akka](/tags/akka), [MongoDB](/tags/mongodb), [Elasticsearch](/tags/elasticsearch), RDBMS like
+[PostgreSQL](/tags/postgresql), and D3.js for visualization
 - Web frameworks: [Play Framework](/tags/play-framework), [Spring Boot](/tags/spring-boot), [VueJS](/tags/vuejs), [AngularS](/tags/vuejs), and [ReactJS](/tags/reactjs)  
 - [Cloud](/categories/cloud) technologies: [Amazon Web Services](/tags/aws), Heroku, and Netlify
-- Data storage: PostgreSQL, [MongoDB](/tags/mongodb), [HBase](/tags/hbase), [Elasticsearch](/tags/elasticsearch), and [Apache Kafka](/tags/apache-kafka)
 
 You will notice that there are pervasive technologies like .NET and PHP we don't mention here. We want to
 be honest. We can get up to speed on other technologies fairly quickly, but they aren't our thing.
