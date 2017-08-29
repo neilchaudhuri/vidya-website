@@ -11,15 +11,12 @@ const BASE_CACHE_FILES = [
 
 const OFFLINE_CACHE_FILES = [
     '/css/style.vidya.css',
-    '/js/front.js',
-    '/js/owl.carousel.min.js',
-    '/js/respond.min.js'
+    '/js/respond.min.js',
+    '/offline.html'
 ];
 
 const NOT_FOUND_CACHE_FILES = [
     '/css/style.vidya.css',
-    '/js/front.js',
-    '/js/owl.carousel.min.js',
     '/js/respond.min.js',
     '/404.html'
 ];
