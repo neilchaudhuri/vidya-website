@@ -393,16 +393,26 @@ ul.list-style-none {
     border-top: solid 5px #5a82b4;
 }
 
-.navbar-brand img {
+.navbar-brand img.large {
     height: 96px;
     width: 199px;
-    background-color: white;
     padding: 10px;
     margin: 2px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -o-border-radius: 20px;
     border-radius: 20px
+}
+
+.navbar-brand img.small {
+    height: 47px;
+    width: 110px;
+    padding: 5px;
+    margin: 1px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px
 }
 
 @media (max-width: 768px) {
