@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
 
-  {{ partial "head.html" . }}
+{{ partial "head.html" . }}
 
-  <body>
+<body>
 
-    <div id="all">
+<div id="all">
 
-        <header>
+    <header>
 
-          {{ partial "nav.html" . }}
+        {{ partial "nav.html" . }}
 
-        </header>
+    </header>
 
-        <div id="content">
-            <div class="container">
+    <div id="content">
+        <div class="container">
 
-                <div class="col-sm-6 col-sm-offset-3" id="error-page">
+            <div class="col-sm-6 col-sm-offset-3" id="error-page">
 
-                    <div class="box">
+                <div class="box">
 
-                        <p class="text-center">
-                            <a href="index.html">
-                                <img src="img/logo.png" style="max-width: 30%" alt="Obaju template">
-                            </a>
-                        </p>
+                    <p class="text-center">
+                        <a href="index.html">
+                            <img src="img/logo.png" style="max-width: 30%" alt="Vidya">
+                        </a>
+                    </p>
 
-                        <h3>This page is not available.</h3>
+                    <h3>This page is not available.</h3>
 
-                        <p class="buttons"><a href="index.html" class="btn btn-template-main"><i class="fa fa-home"></i> Go to Homepage</a>
-                        </p>
-                    </div>
-
-
+                    <p class="buttons"><a href="index.html" class="btn btn-template-main"><i class="fa fa-home"></i> Go
+                        to Homepage</a>
+                    </p>
                 </div>
-                <!-- /.col-sm-6 -->
+
+
             </div>
-            <!-- /.container -->
+            <!-- /.col-sm-6 -->
         </div>
-        <!-- /#content -->
-
-        {{ partial "footer.html" . }}
-
+        <!-- /.container -->
     </div>
-  </body>
+    <!-- /#content -->
+
+    {{ partial "footer.html" . }}
+
+</div>
+</body>
 </html>
