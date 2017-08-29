@@ -14,12 +14,6 @@
     clear: both;
 }
 
-@media (max-width: 480px) {
-    .navbar {
-        height: 120px;
-    }
-}
-
 .center-block {
     display: block;
     margin-left: auto;
@@ -394,6 +388,7 @@ ul.list-style-none {
 }
 
 .navbar-brand img.large {
+    background-color: white;
     height: 96px;
     width: 199px;
     padding: 10px;
@@ -405,6 +400,7 @@ ul.list-style-none {
 }
 
 .navbar-brand img.small {
+    background-color: white;
     height: 47px;
     width: 110px;
     padding: 5px;
