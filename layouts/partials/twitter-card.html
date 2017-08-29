@@ -10,4 +10,4 @@
 <meta property="twitter:site" content="@{{ .Site.Social.twitter }}">
 <meta property="twitter:title" content="{{if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}">
 <meta property="twitter:image" content="{{if .Params.banner }}{{ .Site.BaseURL }}{{ .Params.Banner }}{{ else }}{{ .Site.Params.logo }}{{ end }}">
-<meta property="twitter:description" content="{{ if .IsHome }}{{ .Site.Params.DefaultDescription }}{{ else if .IsPage }}{{ .Params.description }}{{ end }}">
+<meta property="twitter:description" content="{{ if .IsHome }}{{ .Site.Params.DefaultDescription }}{{ else if .IsPage }}{{ .Description }}{{ end }}">
