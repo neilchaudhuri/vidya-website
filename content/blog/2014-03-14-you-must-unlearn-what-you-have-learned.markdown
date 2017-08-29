@@ -18,6 +18,7 @@ tags:
 - Neo4J
 - CAP Theorem
 - Clojure
+- PostgreSQL
 categories: 
 - Programming
 - Project Management
@@ -47,12 +48,12 @@ be true several times in my career.
 
 ## Learning NoSQL databases
 
-I have spent most of my career working with relational databases like Oracle, SQL Server, PostgreSQL, and MySQL. This
+I have spent most of my career working with relational databases like Oracle, SQL Server, [PostgreSQL](/tags/postgresql), and MySQL. This
 meant formal and informal training in normal forms in table design, SQL, stored procedures, and other critical topics
 for storing and modeling your data as efficiently as possible.
 
-All of that stuff goes out the window with [NoSQL databases](http://nosql-database.org/) like [MongoDB](https://www.mongodb.org/)
-and [Cassandra](http://cassandra.apache.org/). In order to understand how to model data well, I’ve had to cast aside all
+All of that stuff goes out the window with [NoSQL databases](/tags/nosql) like [MongoDB](/tags/mongodb)
+and [Cassandra](/tags/cassandra). In order to understand how to model data well, I’ve had to cast aside all
 the relational concepts I’ve grown accustomed to and instead learn new ones like column-oriented storage, the value of
 denormalized data, the [CAP Theorem](http://en.wikipedia.org/wiki/CAP_theorem), and whole new query languages. In the
 case of [Neo4J](http://www.neo4j.org/) and [Titan](http://thinkaurelius.github.io/titan/), I’ve had to disregard
