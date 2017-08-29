@@ -9,7 +9,7 @@ const CACHE_FILES = [
   '/js/respond.min.js',
   '/manifest.json',
   '/img/favicon.ico',
-  '/offline.html',
+  '/404.html',
   '/?utm_source=homescreen',
   '/consulting',
   '/course'
@@ -41,6 +41,7 @@ const SUPPORTED_METHODS = [
 self.addEventListener('install', function (e) {
   e.waitUntil(
     caches.open('vidya').then(function (cache) {
+      console.log("INSTALL")
       return cache.addAll(CACHE_FILES)
     })
   )
@@ -51,10 +52,11 @@ self.addEventListener('fetch', function (event) {
     // Try the cache
     caches.match(event.request).then(function (response) {
       // Fall back to network
+      console.log("FETCH");
       return response || fetch(event.request)
     }).catch(function () {
       // If both fail, show a generic fallback:
-      return caches.match('/offline.html')
+      return caches.match('/404.html')
       // However, in reality you'd have many different
       // fallbacks, depending on URL & headers.
       // Eg, a fallback silhouette image for avatars.
