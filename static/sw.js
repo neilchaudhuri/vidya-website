@@ -9,7 +9,8 @@ const CACHE_FILES = [
   '/js/respond.min.js',
   '/manifest.json',
   '/img/favicon.ico',
-  '/offline.html'
+  '/offline.html',
+  '//?utm_source=homescreen'
 ]
 
 const OFFLINE_PAGE = '/offline.html'
