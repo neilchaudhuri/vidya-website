@@ -47,12 +47,12 @@ const CACHE_BLACKLIST = [
 ];
 
 const SUPPORTED_METHODS = [
-    'GET',
+    'GET'
 ];
 
 self.addEventListener('install', function(e) {
   e.waitUntil(
-    caches.open('airhorner').then(function(cache) {
+    caches.open('vidya').then(function(cache) {
       return cache.addAll(BASE_CACHE_FILES);
     })
   );
