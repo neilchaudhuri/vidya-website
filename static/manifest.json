@@ -34,7 +34,7 @@
     }
   ],
   "start_url": "/?utm_source=homescreen",
-  "display": "browser",
+  "display": "standalone",
   "orientation": "portrait",
   "background_color": "#c21f25",
   "theme_color": "#5a82b4"
