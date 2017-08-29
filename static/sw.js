@@ -10,7 +10,9 @@ const CACHE_FILES = [
   '/manifest.json',
   '/img/favicon.ico',
   '/offline.html',
-  '//?utm_source=homescreen'
+  '/?utm_source=homescreen',
+  '/consulting',
+  '/course'
 ]
 
 const OFFLINE_PAGE = '/offline.html'
