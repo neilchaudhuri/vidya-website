@@ -1,9 +1,21 @@
 const CACHE_VERSION = 1
+const CACHE_NAME = 'vidya-cache-' + CACHE_VERSION;
 
 const CACHE_FILES = [
   '/css/style.vidya.css',
   '/css/animate.css',
   '/css/custom.css',
+  '//fonts.googleapis.com/css?family=PT+Sans',
+  '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
+  "//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css",
+  "//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js",
+  "//oss.maxcdn.com/respond/1.4.2/respond.min.js",
+  "//code.jquery.com/jquery-3.1.1.min.js",
+  "//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js",
+  "//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js",
+  "//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js",
+  "//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js",
+  "//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js",
   '/js/front.js',
   '/js/owl.carousel.min.js',
   '/js/respond.min.js',
@@ -40,7 +52,7 @@ const SUPPORTED_METHODS = [
 
 self.addEventListener('install', function (e) {
   e.waitUntil(
-    caches.open('vidya').then(function (cache) {
+    caches.open(CACHE_NAME).then(function (cache) {
       console.log("INSTALL")
       return cache.addAll(CACHE_FILES)
     })
@@ -56,7 +68,7 @@ self.addEventListener('fetch', function (event) {
       return response || fetch(event.request)
     }).catch(function () {
       // If both fail, show a generic fallback:
-      return caches.match('/404.html')
+      return caches.match('/offline/')
       // However, in reality you'd have many different
       // fallbacks, depending on URL & headers.
       // Eg, a fallback silhouette image for avatars.
