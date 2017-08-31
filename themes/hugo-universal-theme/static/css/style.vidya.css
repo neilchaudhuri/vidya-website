@@ -1376,7 +1376,7 @@ fieldset[disabled] .btn-template-primary.active {
 
 .home-carousel {
     position: relative;
-    background: url('/img/carousel/technology.jpeg') center center repeat;
+    background: url('/img/carousel/technology.jpg') center center repeat;
     background-size: cover;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
