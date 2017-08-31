@@ -1,7 +1,6 @@
 <meta property="og:title" content="{{ .Params.title }}" />
 <meta property="og:url" content="{{ .Permalink }}/" />
 <meta property="og:image" content="{{if .Params.banner }}{{ .Site.BaseURL }}{{ .Params.Banner }}{{ else }}{{ .Site.BaseURL }}{{ .Site.Params.logo }}{{ end }}" />
-<meta property="fb:app_id"          content="312450288897871" />
 <meta property="og:description"     content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.DefaultDescription }}{{ end }}" />
 <meta property="og:site_name"       content="{{ .Site.Title }}">
 {{ if .IsPage }}
