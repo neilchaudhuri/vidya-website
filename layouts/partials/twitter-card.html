@@ -2,10 +2,10 @@
     <meta property="twitter:card" content="player">
     <meta name="twitter:player:width" content="1280">
     <meta name="twitter:player:height" content="720">
-    <meta name="twitter:player:stream:content_type" content="video/mp4">
     {{if .Params.youtube }}
         <meta name="twitter:player" content="https://www.youtube.com/embed/{{ .Params.youtube }}">
         <meta name="twitter:player:stream" content="https://www.youtube.com/embed/{{ .Params.youtube }}">
+        <meta name="twitter:player:stream:content_type" content="video/mp4">
     {{ end }}
 {{ else }}
     <meta property="twitter:card" content="summary_large_image">
