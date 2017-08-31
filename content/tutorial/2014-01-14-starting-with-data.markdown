@@ -2,7 +2,7 @@
 author: "Neil Chaudhuri"
 title: "Starting with Data"
 description: "Video tutorial and code for using Python and D3 to Visualize JSON from the Donors Choose REST API"
-banner: "img/banners/big-data.jpeg"
+banner: "img/banners/big-data.jpg"
 youtube: "bzl4hCH2CdY"
 date: 2014-01-14
 aliases:
