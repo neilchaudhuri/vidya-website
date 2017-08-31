@@ -10,8 +10,10 @@
 {{ end }}
 {{ if eq .Type "tutorial" }}
     <meta property="og:type"                content="video" />
-    <meta property="og:video:url"           content="https://www.youtube.com/embed/{{if .Params.youtube }}{{ .Params.youtube }}{{ end }}" />
-    <meta property="og:video:secure-url"    content="https://www.youtube.com/embed/{{if .Params.youtube }}{{ .Params.youtube }}{{ end }}" />
+    {{if .Params.youtube }}
+        <meta property="og:video:url"           content="https://www.youtube.com/watch?v=rbZ6GzR8B7I{{ .Params.youtube }}" />
+        <meta property="og:video:secure-url"    content="https://www.youtube.com/watch?v=rbZ6GzR8B7I{{ .Params.youtube }}" />
+    {{ end }}
     <meta property="og:video:type"          content="video/mp4" />
     <meta property="og:video:width"         content="1280" />
     <meta property="og:video:height"        content="720" />
