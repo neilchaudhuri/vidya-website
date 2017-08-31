@@ -25,6 +25,7 @@ const CACHE_FILES = [
   '/consulting/',
   '/course/',
   '/about/',
+  '/contact/',
   '/img/logo.png',
   '/img/favicon.ico',
   '/img/carousel/blog.jpg',
