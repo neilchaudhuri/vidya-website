@@ -10,5 +10,9 @@ touch.
 
 There are a lot of ways to do it. We look forward to hearing from you.
 
+Thank you for visiting Vidya!
+
+
 {{< social >}}
+<br>
 

@@ -20,22 +20,28 @@ const CACHE_FILES = [
   '/js/owl.carousel.min.js',
   '/js/respond.min.js',
   '/manifest.json',
-  '/img/favicon.ico',
   '/404.html',
   '/?utm_source=homescreen',
-  '/consulting',
-  '/course'
+  '/consulting/',
+  '/course/',
+  '/about/',
+  '/img/logo.png',
+  '/img/favicon.ico',
+  '/img/carousel/blog.jpg',
+  '/img/carousel/consulting.jpg',
+  '/img/carousel/courses.jpg',
+  '/img/carousel/technology.jpg',
+  '/img/carousel/tutorials.jpg',
+  '/img/partners/eop.png',
+  '/img/partners/gao.png',
+  '/img/partners/gcn.png',
+  '/img/partners/madena.png',
+  '/img/partners/neustar.png',
+  '/img/partners/ninaday.png',
+  '/img/partners/psf.png',
+  '/img/partners/trss.png',
+  '/img/partners/webfred.png'
 ]
-
-const OFFLINE_PAGE = '/offline.html'
-const NOT_FOUND_PAGE = '/404.html'
-
-const CACHE_VERSIONS = {
-  assets: 'assets-v' + CACHE_VERSION,
-  content: 'content-v' + CACHE_VERSION,
-  offline: 'offline-v' + CACHE_VERSION,
-  notFound: '404-v' + CACHE_VERSION
-}
 
 // Define MAX_TTL's in SECONDS for specific file extensions
 const MAX_TTL = {
