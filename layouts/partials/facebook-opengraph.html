@@ -1,5 +1,4 @@
 <meta property="og:title" content="{{ .Params.title }}" />
-<meta property="og:type" content="website" />
 <meta property="og:url" content="{{ .Permalink }}/" />
 <meta property="og:image" content="{{if .Params.banner }}{{ .Site.BaseURL }}{{ .Params.Banner }}{{ else }}{{ .Site.BaseURL }}{{ .Site.Params.logo }}{{ end }}" />
 <meta property="fb:app_id"          content="312450288897871" />
@@ -11,12 +10,13 @@
 {{ if eq .Type "tutorial" }}
     <meta property="og:type"                content="video" />
     {{if .Params.youtube }}
-        <meta property="og:video:url"           content="https://www.youtube.com/watch?v={{ .Params.youtube }}" />
-        <meta property="og:video:secure-url"    content="https://www.youtube.com/watch?v={{ .Params.youtube }}" />
+        <meta property="og:video:url"           content="https://www.youtube.com/embed/{{ .Params.youtube }}" />
+        <meta property="og:video:secure-url"    content="https://www.youtube.com/embed/{{ .Params.youtube }}" />
     {{ end }}
     <meta property="og:video:type"          content="video/mp4" />
     <meta property="og:video:width"         content="1280" />
     <meta property="og:video:height"        content="720" />
 {{ else }}
-    <meta property="og:type"            content="article" />
+    <meta property="og:type"            content="{{ if .IsHome }}website{{ else }}article{{ end }}" />
 {{ end }}
+
