@@ -11,6 +11,15 @@
     {{if .Params.youtube }}
         <meta property="og:video:url"           content="https://www.youtube.com/embed/{{ .Params.youtube }}" />
         <meta property="og:video:secure_url"    content="https://www.youtube.com/embed/{{ .Params.youtube }}" />
+
+        <meta property="al:ios:app_store_id" content="544007664">
+        <meta property="al:ios:app_name" content="YouTube">
+        <meta property="al:ios:url" content="vnd.youtube://{{ .Params.youtube }}&amp;feature=applinks">
+
+        <meta property="al:android:url" content="vnd.youtube://{{ .Params.youtube }}&amp;feature=applinks">
+        <meta property="al:android:app_name" content="YouTube">
+        <meta property="al:android:package" content="com.google.android.youtube">
+        <meta property="al:web:url" content="{{ .Params.youtube }}&amp;feature=applinks">
     {{ end }}
     <meta property="og:video:type"          content="application/x-shockwave-flash" />
     <meta property="og:video:width"         content="1280" />
@@ -18,4 +27,5 @@
 {{ else }}
     <meta property="og:type"            content="{{ if .IsHome }}website{{ else }}article{{ end }}" />
 {{ end }}
+<meta property="fb:app_id"          content="312450288897871" />
 
