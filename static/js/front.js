@@ -20,6 +20,7 @@ $(function () {
   counters()
   demo()
   contactForm()
+  lazyload()
 })
 
 // Ajax contact

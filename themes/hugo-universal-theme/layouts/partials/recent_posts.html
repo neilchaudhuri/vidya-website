@@ -23,9 +23,9 @@
                         <div class="top">
                             <div class="image" style="overflow:hidden">
                                 {{ if isset .Params "banner" }}
-                                <img src="{{ .Site.BaseURL}}{{ .Params.banner }}" class="img-responsive" alt="" >
+                                <img src="{{ .Site.BaseURL}}img/placeholder.png" data-src="{{ .Site.BaseURL}}{{ .Params.banner }}" class="img-responsive lazyload" alt="" >
                                 {{ else }}
-                                <img src="{{ .Site.BaseURL}}img/placeholder.png" class="img-responsive" alt="">
+                                <img src="{{ .Site.BaseURL}}img/placeholder.png" class="img-responsive lazyload" alt="">
                                 {{ end }}
                             </div>
                             <div class="bg"></div>
