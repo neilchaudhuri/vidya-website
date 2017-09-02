@@ -229,7 +229,7 @@ ul.list-style-none {
 }
 
 .pages-listing .item .text p {
-    color: #999999;
+    color: #9c4d61;
     font-size: 12px;
     margin-bottom: 20px;
 }
@@ -1958,7 +1958,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 
 .box-image-text .content p {
-    color: #999999;
+    color: #9c4d61;
 }
 
 .box-image-text:hover .bg {
@@ -2383,7 +2383,7 @@ fieldset[disabled] .btn-template-primary.active {
 
 #blog-listing-big .post .author-category,
 #blog-homepage .post .author-category {
-    color: #999999;
+    color: #9c4d61;
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 0.08em;
@@ -2396,7 +2396,7 @@ fieldset[disabled] .btn-template-primary.active {
 
 #blog-listing-big .post .date-comments a,
 #blog-homepage .post .date-comments a {
-    color: #999999;
+    color: #9c4d61;
     margin-right: 20px;
 }
 
@@ -2459,7 +2459,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 
 #blog-listing-medium .post h2 a {
-    color: #555555;
+    color: #9c4d61;
 }
 
 #blog-listing-medium .post h2 a:hover {
@@ -2468,7 +2468,7 @@ fieldset[disabled] .btn-template-primary.active {
 
 #blog-listing-medium .post .author-category {
     float: left;
-    color: #999999;
+    color: #9c4d61;
     text-transform: uppercase;
     font-weight: 300;
     font-size: 12px;
@@ -2485,7 +2485,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 
 #blog-listing-medium .post .date-comments a {
-    color: #999999;
+    color: #9c4d61;
     margin-right: 20px;
 }
 
@@ -2561,7 +2561,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 
 .box-image-text.blog .author-category {
-    color: #999999;
+    color: #9c4d61;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     font-weight: 300;
@@ -3821,7 +3821,7 @@ body {
     font-family: "MyriadPro", "PT Sans", sans-serif;
     font-size: 20px;
     line-height: 1.42857143;
-    color: #555555;
+    color: #67696b;
 }
 
 a {
