@@ -4,7 +4,6 @@ const CACHE_NAME = 'vidya-cache-' + CACHE_VERSION;
 const CACHE_FILES = [
   '/css/style.vidya.css',
   '/css/animate.css',
-  '/css/custom.css',
   '//fonts.googleapis.com/css?family=PT+Sans',
   '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
   "//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css",
@@ -16,6 +15,7 @@ const CACHE_FILES = [
   "//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js",
   "//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js",
   "//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js",
+  "//cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.1/lazyload.js",
   '/js/front.js',
   '/js/owl.carousel.min.js',
   '/js/respond.min.js',
