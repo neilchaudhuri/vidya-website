@@ -38,12 +38,12 @@ and automation enable us to build fast and build quality. You can have both.
 
 We specialize in these development practices and tools:
 
-- [Testing](/tags/testing): JUnit, ScalaTest, Cucumber, Selenium, RSpec, unittest
-- Version control: Git, GitHub
-- Continuous integration: Jenkins, TravisCI, and TeamCity
-- [Continuous Delivery](/tags/continuous-delivery): Ansible, Puppet, Chef, Docker, Kubernetes 
-- Build tools: SBT, Gradle, Maven, and Ant
-- Design patterns and as Bob Martin calls it, "[clean code](http://www.cleancoders.com/)"
+- [Testing](/categories/testing): [JUnit](/tags/junit), [ScalaTest](/tags/scalatest), [Cucumber](/tags/cucumber), [Selenium](/tags/selenium), RSpec, unittest
+- Version control: [Git](/tags/git), GitHub
+- [Continuous integration](/categories/continuous-integration): Jenkins, TravisCI, and TeamCity
+- [Continuous Delivery](/categories/continuous-delivery): Ansible, Puppet, Chef, Docker, Kubernetes 
+- Build tools: [SBT](/tags/sbt), [Gradle](/tags/gradle), [Maven](/tags/maven), and Ant
+- Design patterns and what Bob Martin calls "[clean code](http://www.cleancoders.com/)"
 
 If you would like to discuss consulting opportunities, please [contact](/contact) us.
 
