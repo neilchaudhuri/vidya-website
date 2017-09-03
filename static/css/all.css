@@ -5130,6 +5130,7 @@ fieldset[disabled] .btn-template-primary.active {
 
 .box-image-text .btn-template-transparent-primary {
     color: #FFFFFF;
+    border-radius: 20px;
 }
 
 .box-image-text .btn-template-transparent-primary:hover {
