@@ -14,7 +14,7 @@ const CACHE_FILES = [
   "//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js",
   "//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js",
   "//cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.1/lazyload.js",
-  '/js/all.js',
+  '/js/all.min.js',
   '/manifest.json',
   '/404.html',
   '/?utm_source=homescreen',
