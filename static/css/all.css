@@ -6961,23 +6961,6 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     color: #cccccc;
 }
 
-@font-face {
-    font-family: "MyriadPro";
-    src: url("/font/MyriadProRegular.otf") format("opentype")
-}
-
-@font-face {
-    font-family: "MyriadPro";
-    font-weight: bold;
-    src: url("/font/MyriadProBold.otf") format("opentype")
-}
-
-@font-face {
-    font-family: "MyriadPro";
-    font-style: italic;
-    src: url("/font/MyriadProIt.otf") format("opentype")
-}
-
 /* scaffolding */
 body {
 
