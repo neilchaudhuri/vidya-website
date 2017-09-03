@@ -4339,8 +4339,8 @@ fieldset[disabled] .btn-template-primary.active {
 .panel.sidebar-menu ul.tag-cloud li a {
     display: inline-block;
     padding: 5px;
-    border: solid 1px #eeeeee;
-    border-radius: 0;
+    border: solid 1px #000000;
+    border-radius: 10px;
     color: #5a82b4;
     margin: 5px 5px 5px 0;
     text-transform: uppercase;
@@ -5122,6 +5122,18 @@ fieldset[disabled] .btn-template-primary.active {
 
 .box-image-text .content p {
     color: #67696b;
+}
+
+.box-image-text a {
+    color: #a94442;
+}
+
+.box-image-text .btn-template-transparent-primary {
+    color: #FFFFFF;
+}
+
+.box-image-text .btn-template-transparent-primary:hover {
+    color: #5a82b4;
 }
 
 .box-image-text:hover .bg {
@@ -6169,7 +6181,7 @@ fieldset[disabled] .btn-template-primary.active {
 #footer {
     background: #808285;
     padding: 50px 0;
-    color: #FFFFFF;
+    color: black;
 }
 
 #footer .sidebar-menu {
@@ -6177,7 +6189,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 
 #footer .panel.sidebar-menu .panel-heading h1, .panel.sidebar-menu .panel-heading h2, .panel.sidebar-menu .panel-heading h3, .panel.sidebar-menu .panel-heading h4, .panel.sidebar-menu .panel-heading h5 {
-    border-color: #FFFFFF;
+    border-color: #000000;
 }
 
 #footer h1,
@@ -6186,7 +6198,7 @@ fieldset[disabled] .btn-template-primary.active {
 #footer h4,
 #footer h5,
 #footer h6 {
-    color: #FFFFFF;
+    color: #000000;
 }
 
 #footer h4 {
@@ -6202,20 +6214,20 @@ fieldset[disabled] .btn-template-primary.active {
 }
 
 #footer ul a {
-    color: #FFFFFF;
+    color: #000000;
 }
 
 #footer ul a:hover {
-    color: #9c4d61;
+    color: #FFFFFF;
     text-decoration: none;
 }
 
 #footer .panel.sidebar-menu ul.tag-cloud li a:hover {
-    border-color: #9c4d61;
+    border-color: #FFFFFF;
 }
 
 #footer .license a {
-    color: #9bae87;
+    color: #000000;
 }
 
 #footer .photostream div {
