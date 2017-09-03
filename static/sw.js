@@ -1,4 +1,4 @@
-const CACHE_VERSION = 2
+const CACHE_VERSION = 3
 const CACHE_NAME = 'vidya-cache-' + CACHE_VERSION;
 
 const CACHE_FILES = [
@@ -37,7 +37,10 @@ const CACHE_FILES = [
   '/img/partners/ninaday.png',
   '/img/partners/psf.png',
   '/img/partners/trss.png',
-  '/img/partners/webfred.png'
+  '/img/partners/webfred.png',
+  '/img/badges/csm.jpg',
+  '/img/banners/spark.png',
+  '/img/banners/java.png'
 ]
 
 // Define MAX_TTL's in SECONDS for specific file extensions
