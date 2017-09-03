@@ -1,10 +1,8 @@
-const CACHE_VERSION = 1
+const CACHE_VERSION = 2
 const CACHE_NAME = 'vidya-cache-' + CACHE_VERSION;
 
 const CACHE_FILES = [
-  '/css/style.vidya.css',
-  '/css/animate.css',
-  '//fonts.googleapis.com/css?family=PT+Sans',
+  '/css/all.css',
   '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
   "//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css",
   "//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js",
@@ -16,9 +14,7 @@ const CACHE_FILES = [
   "//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js",
   "//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js",
   "//cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.1/lazyload.js",
-  '/js/front.js',
-  '/js/owl.carousel.min.js',
-  '/js/respond.min.js',
+  '/js/all.js',
   '/manifest.json',
   '/404.html',
   '/?utm_source=homescreen',
