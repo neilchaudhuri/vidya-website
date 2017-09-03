@@ -2,7 +2,7 @@
 author: "Neil Chaudhuri"
 title: "Nine Reasons to Try Scala"
 description: "Video tutorial and code for developers who might want to give the Scala programming language a try."
-banner: "img/banners/scala.jpg"
+banner: "img/banners/scala.png"
 date: 2015-04-03
 youtube: rbZ6GzR8B7I
 aliases:
