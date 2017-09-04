@@ -3809,7 +3809,7 @@ body.boxed .navbar-affixed-top.affix {
 /* buttons  */
 .btn {
     font-weight: 700;
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "MyriadPro", "PT Sans", sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     padding: 6px 12px;
@@ -4063,7 +4063,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 
 #intro .item {
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "MyriadPro", "PT Sans", sans-serif;
     height: 100%;
 }
 
@@ -4299,7 +4299,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 
 .panel.sidebar-menu ul.nav.category-menu li a {
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "MyriadPro", "PT Sans", sans-serif;
 }
 
 .panel.sidebar-menu ul.nav ul {
@@ -4459,7 +4459,7 @@ fieldset[disabled] .btn-template-primary.active {
     margin: 30px 10px 10px -71px;
     color: #fff;
     background-color: #5a82b4;
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "MyriadPro", "PT Sans", sans-serif;
 }
 
 .ribbon .theribbon:before,
@@ -5250,11 +5250,12 @@ fieldset[disabled] .btn-template-primary.active {
 }
 
 #heading-breadcrumbs h1 {
-    color: #333333;
+    color: #5a82b4;
     text-transform: uppercase;
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 40px;
+    font-weight: 800;
     letter-spacing: 0.08em;
+    text-align: center;
 }
 
 @media (max-width: 991px) {
@@ -5276,8 +5277,8 @@ fieldset[disabled] .btn-template-primary.active {
 
 .bar.background-pentagon {
     background: url('../img/texture-bw.png') center center repeat;
-    border-top: solid 1px #999999;
-    border-bottom: solid 1px #999999;
+    border-top: solid 1px #5a82b4;
+    border-bottom: solid 1px #5a82b4;
 }
 
 .bar.background-gray {
@@ -5804,7 +5805,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 
 #blog-post .comment .reply {
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "MyriadPro", "PT Sans", sans-serif;
 }
 
 #blog-post .comment.last {
@@ -5985,7 +5986,7 @@ fieldset[disabled] .btn-template-primary.active {
     color: #555555;
     text-align: center;
     text-decoration: none;
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "MyriadPro", "PT Sans", sans-serif;
 }
 
 #productMain .sizes a.active,
@@ -6191,7 +6192,20 @@ fieldset[disabled] .btn-template-primary.active {
     background: #808285;
 }
 
-#footer .panel.sidebar-menu .panel-heading h1, .panel.sidebar-menu .panel-heading h2, .panel.sidebar-menu .panel-heading h3, .panel.sidebar-menu .panel-heading h4, .panel.sidebar-menu .panel-heading h5 {
+.panel.sidebar-menu .panel-heading h1,
+.panel.sidebar-menu .panel-heading h2 ,
+.panel.sidebar-menu .panel-heading h3,
+.panel.sidebar-menu .panel-heading h4,
+.panel.sidebar-menu .panel-heading h5 {
+    color: #9c4d61;
+    border-color: #9c4d61;
+}
+
+#footer .panel.sidebar-menu .panel-heading h1,
+#footer .panel.sidebar-menu .panel-heading h2,
+#footer .panel.sidebar-menu .panel-heading h3,
+#footer .panel.sidebar-menu .panel-heading h4,
+#footer .panel.sidebar-menu .panel-heading h5 {
     border-color: #000000;
 }
 
@@ -6370,7 +6384,7 @@ fieldset[disabled] .btn-template-primary.active {
 /* Original Boostrap template overwrite */
 /* breadcrumbs */
 .breadcrumb {
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "MyriadPro", "PT Sans", sans-serif;
     text-transform: uppercase;
     background-color: none;
     letter-spacing: 0.08em;
@@ -7071,7 +7085,7 @@ hr {
 
 /* labels */
 .label {
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "MyriadPro", "PT Sans", sans-serif;
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -7106,7 +7120,7 @@ label {
     padding-top: 20px;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "MyriadPro", "PT Sans", sans-serif;
 }
 
 .pager li {
@@ -7139,7 +7153,7 @@ label {
 /* pagination */
 .pagination {
     margin: 20px 0;
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "MyriadPro", "PT Sans", sans-serif;
     border-radius: 0;
 }
 
@@ -7223,10 +7237,10 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "MyriadPro", "PT Sans", sans-serif;
     font-weight: 900;
     line-height: 1.1;
-    color: #333333;
+    color: #9c4d61;
 }
 
 h1,
