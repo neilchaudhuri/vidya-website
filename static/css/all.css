@@ -7608,7 +7608,3 @@ figure.max-width img {
     min-height: 150px;
     background: url(AjaxLoader.gif) no-repeat center center
 }
-
-.col-md-4 > * {
-    position: relative;
-}
