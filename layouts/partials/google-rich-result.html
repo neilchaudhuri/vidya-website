@@ -40,6 +40,7 @@
         "width": 700
     },
     "datePublished": "{{ .Date }}",
+    "dateModified": "{{ now }}",
     "author": {
         "@type": "Person",
         "name": "{{ .Params.author }}"
@@ -50,8 +51,8 @@
           "logo": {
               "@type": "ImageObject",
               "url": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}",
-              "width": 1085,
-              "height": 503
+              "width": 543,
+              "height": 252
           }
     }
 {{ end }}
