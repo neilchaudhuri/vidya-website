@@ -1,0 +1,60 @@
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "name": "{{ .Params.title }}",
+    "description": "{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.DefaultDescription }}{{ end }}",
+{{ if eq .Type "tutorial" }}
+    "@type": "VideoObject",
+    "thumbnailUrl": "{{if .Params.banner }}{{ .Site.BaseURL }}{{ .Params.Banner }}{{ else }}{{ .Site.BaseURL }}{{ .Site.Params.logo }}{{ end }}",
+    "uploadDate": "{{ .Date }}",
+    "publisher": {
+    "@type": "Organization",
+    "name": "Vidya",
+      "logo": {
+          "@type": "ImageObject",
+          "url": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}",
+          "width": 1085
+          "height": 503
+      }
+    },
+    "contentUrl": "https://www.youtube.com/watch?v={{ .Params.youtube }}",
+    "embedUrl": "https://www.youtube.com/embed/{{ .Params.youtube }}"
+{{ else if eq .Type "course" }}
+    "@type": "Course",
+    "provider": {
+        "@type": "Organization",
+        "name": "Vidya",
+        "sameAs": "{{ .Site.BaseURL }}"
+    }
+{{ else  }}
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ .URL | safeURL }}"
+    },
+    "headline": "{{ .Params.title }}",
+    "image": {
+        "@type": "ImageObject",
+        "url": "{{if .Params.banner }}{{ .Site.BaseURL }}{{ .Params.Banner }}{{ else }}{{ .Site.BaseURL }}{{ .Site.Params.logo }}{{ end }}",
+        "height": 527,
+        "width": 700
+    },
+    "datePublished": "{{ .Date }}",
+    "author": {
+        "@type": "Person",
+        "name": "{{ .Params.author }}"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Vidya",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}",
+              "width": 1085
+              "height": 503
+          }
+    },
+
+{{ end }}
+}
+</script>
