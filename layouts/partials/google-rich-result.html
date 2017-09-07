@@ -1,21 +1,34 @@
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
-    "name": "{{ .Params.title }}",
+    "name": "{{ if .Params.title }}{{ .Params.title }}{{ else }}{{ .Site.Title }}{{ end }}",
     "description": "{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.DefaultDescription }}{{ end }}",
-{{ if eq .Type "tutorial" }}
-    "@type": "VideoObject",
-    "thumbnailUrl": "{{if .Params.banner }}{{ .Site.BaseURL }}{{ .Params.Banner }}{{ else }}{{ .Site.BaseURL }}{{ .Site.Params.logo }}{{ end }}",
-    "uploadDate": "{{ .Date }}",
-    "publisher": {
+{{ if .IsHome }}
     "@type": "Organization",
-    "name": "Vidya",
-      "logo": {
+    "url": "{{ .Site.BaseURL }}",
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-202-430-5695",
+        "contactType": "Information on technology courses and consulting"
+    }
+    "logo": {
           "@type": "ImageObject",
           "url": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}",
           "width": 129,
           "height": 60
-      }
+    }
+{{ else if eq .Type "tutorial" }}
+    "@type": "VideoObject",
+    "thumbnailUrl": "{{if .Params.banner }}{{ .Site.BaseURL }}{{ .Params.Banner }}{{ else }}{{ .Site.BaseURL }}{{ .Site.Params.logo }}{{ end }}",
+    "uploadDate": "{{ .Date }}",
+    "publisher": {
+        "@type": "Organization",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}",
+          "width": 129,
+          "height": 60
+        }
     },
     "contentUrl": "https://www.youtube.com/watch?v={{ .Params.youtube }}",
     "embedUrl": "https://www.youtube.com/embed/{{ .Params.youtube }}"
