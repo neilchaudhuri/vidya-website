@@ -36,8 +36,14 @@
     "@type": "Course",
     "provider": {
         "@type": "Organization",
-        "name": "Vidya",
+        "name": "{{ .Site.Title }}",
         "sameAs": "{{ .Site.BaseURL }}"
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}",
+          "width": 129,
+          "height": 60
+        }
     }
 {{ else  }}
     "@type": "NewsArticle",
@@ -61,12 +67,12 @@
     "publisher": {
         "@type": "Organization",
         "name": "Vidya",
-          "logo": {
+        "logo": {
               "@type": "ImageObject",
               "url": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}",
               "width": 129,
               "height": 60
-          }
+        }
     }
 {{ end }}
 }
