@@ -16,7 +16,14 @@
           "url": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}",
           "width": 129,
           "height": 60
-    }
+    },
+    "sameAs": [
+        "https://www.facebook.com/VidyaSource",
+        "https://twitter.com/VidyaSource",
+        "https://www.youtube.com/channel/UC24LVc8Bb65SF6LW-SLog9A",
+        "https://www.linkedin.com/company/3285099",
+        "https://plus.google.com/+Vidyasource"
+    ]
 {{ else if eq .Type "tutorial" }}
     "@type": "VideoObject",
     "thumbnailUrl": "{{if .Params.banner }}{{ .Site.BaseURL }}{{ .Params.Banner }}{{ else }}{{ .Site.BaseURL }}{{ .Site.Params.logo }}{{ end }}",
@@ -28,7 +35,14 @@
           "url": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}",
           "width": 129,
           "height": 60
-        }
+        },
+    "sameAs": [
+        "https://www.facebook.com/VidyaSource",
+        "https://twitter.com/VidyaSource",
+        "https://www.youtube.com/channel/UC24LVc8Bb65SF6LW-SLog9A",
+        "https://www.linkedin.com/company/3285099",
+        "https://plus.google.com/+Vidyasource"
+    ]
     },
     "contentUrl": "https://www.youtube.com/watch?v={{ .Params.youtube }}",
     "embedUrl": "https://www.youtube.com/embed/{{ .Params.youtube }}"
@@ -43,7 +57,14 @@
           "url": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}",
           "width": 129,
           "height": 60
-        }
+        },
+        "sameAs": [
+            "https://www.facebook.com/VidyaSource",
+            "https://twitter.com/VidyaSource",
+            "https://www.youtube.com/channel/UC24LVc8Bb65SF6LW-SLog9A",
+            "https://www.linkedin.com/company/3285099",
+            "https://plus.google.com/+Vidyasource"
+        ]
     }
 {{ else  }}
     "@type": "NewsArticle",
@@ -62,7 +83,14 @@
     "dateModified": "{{ now }}",
     "author": {
         "@type": "Person",
-        "name": "{{ .Params.author }}"
+        "name": "{{ .Params.author }}",
+        "sameAs": [
+            "https://www.facebook.com/VidyaSource",
+            "https://twitter.com/VidyaSource",
+            "https://www.youtube.com/channel/UC24LVc8Bb65SF6LW-SLog9A",
+            "https://www.linkedin.com/in/neil-chaudhuri-ms-pmp-csm-csp-0306908/",
+            "https://plus.google.com/u/1/+NeilChaudhuri"
+        ]
     },
     "publisher": {
         "@type": "Organization",
@@ -72,7 +100,14 @@
               "url": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}",
               "width": 129,
               "height": 60
-        }
+        },
+        "sameAs": [
+            "https://www.facebook.com/VidyaSource",
+            "https://twitter.com/VidyaSource",
+            "https://www.youtube.com/channel/UC24LVc8Bb65SF6LW-SLog9A",
+            "https://www.linkedin.com/company/3285099",
+            "https://plus.google.com/+Vidyasource"
+        ]
     }
 {{ end }}
 }
