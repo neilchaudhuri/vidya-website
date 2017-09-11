@@ -28,7 +28,7 @@ potential. This website proves we practice what we preach. We built it with [Hug
 a stunningly fast static-site generator built on the popular [Go](/tags/go) programming language from Google, which continues
 to shoot up the [Tiobe Index](https://www.tiobe.com/tiobe-index/go/). 
 
-As great as Hugo is, the really cool thing about our new website is that it is a [Progressive Web Application](/tags/pwa) (PWA).
+As great as Hugo and Go are, the really cool thing about our new website is that it is a [Progressive Web Application](/tags/pwa) (PWA).
 We identified PWAs as a "trend in software engineering" in our [last talk](/blog/2017/06/05/speaking-at-code-writers-workshop-2017/).
 Google, Twitter, Starbucks, Pinterest, Alibaba, Microsoft, and numerous other mom-and-pop shops have invested in PWAs, and a quick 
 Google search will show you why. 
