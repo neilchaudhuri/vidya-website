@@ -35,7 +35,7 @@ Google search will show you why.
 Henrik Joreteg's [ode to PWAs](https://joreteg.com/blog/betting-on-the-web) is very informative, but since 
 his post is so long it might cause your [mobile](/tags/mobile) carrier to 
 [throttle your data](https://www.engadget.com/2017/08/22/verizon-video-throttling-net-neutrality-unfair-to-customers/), 
-here is a quick explanation. 
+here is an explanation that is less long. 
 
 ## PWAs are the future of the mobile web.
 
@@ -51,8 +51,8 @@ are just starting to enable this on [Android](/tags/android).
 
 From a business perspective, [mobile traffic exceeded desktop traffic for the first time in late 2016](http://gs.statcounter.com/press/mobile-and-tablet-internet-usage-exceeds-desktop-for-first-time-worldwide),
 so the speed and availability even offline of PWAs are attractive. Mobile consumers are the most loyal but are also downloading fewer apps.
-PWAs reconcile those trends by getting users to your business as directly as possible--without hops to an app store and waiting 
-for downloads and installations. Consequently, businesses like [Alibaba](https://developers.google.com/web/showcase/2016/alibaba) are seeing huge increases in conversions through PWAs.
+PWAs reconcile those trends by getting customers to your business as directly as possible--without hops to an app store and waiting 
+for downloads and installations--and improving their experience once they arrive. Consequently, businesses like [Alibaba](https://developers.google.com/web/showcase/2016/alibaba) are seeing huge increases in conversions through PWAs.
 
 From a developer perspective, [Create React App](https://github.com/facebookincubator/create-react-app), which builds 
 a scaffold for getting started with [React](/tags/react), creates PWAs by default, so Facebook is on board. PWAs in [Vue](/tags/vuejs) are
@@ -60,10 +60,10 @@ similarly made possible by the [vue-cli](https://github.com/vuejs/vue-cli). Deve
 security *from the start*. Service workers are very powerful, and [with great power comes great responsibility](https://www.youtube.com/watch?v=b23wrRfy7SM). 
 A man-in-the-middle could 
 use them [to do a lot of bad things](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers#you_need_https) to your PWA. 
-PWAs therefore *require* HTTPS. Don't worry though. Things work fine 
+PWAs therefore *require* HTTPS. Don't worry. Things work fine 
 when you're developing on `localhost`. When it comes time to deploy to production, many leading hosts have 
 automated, one-click HTTPS. If they don't, you can use [Let's Encrypt](https://letsencrypt.org/) to create and deploy 
-your own [TLS certificate](https://www.globalsign.com/en/blog/ssl-vs-tls-difference/) for free. Besides, PWA or not, [Google is making you move to HTTPS anyway](https://seo-hacker.com/google-adopt-https/).
+your own [TLS certificates](https://www.globalsign.com/en/blog/ssl-vs-tls-difference/) for free. Besides, PWA or not, [Google is making you move to HTTPS anyway](https://seo-hacker.com/google-adopt-https/).
 Finally, you can test your PWA by using [Lighthouse](https://developers.google.com/web/tools/lighthouse/) either from the 
 command line or as a Chrome plugin. Lighthouse grades your PWA on its speed, [configuration](https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/),
 [security](/categories/accessibility), and [accessibility](/categories/accessibility)
@@ -73,9 +73,9 @@ As you probably figured, it isn't all roses with PWAs, and it's primarily becaus
 Not every browser supports service workers--notably Safari. After all,
 Apple makes a lot of money from its App Store, but they will come around. I mean even [Microsoft Edge](https://www.thurrott.com/windows/windows-10/116101/microsoft-said-progressive-web-apps-build)
 is about to roll out PWA support. Still, even among progressive browsers, you have to be wary. Chrome gives
-you access to the camera on the device; will Edge? You have to be mindful of what your [target browser can do](https://whatwebcando.today/).
+you access to the camera on the device; will Edge? You have to be mindful of what your [target browsers can do](https://whatwebcando.today/).
 Also the tooling is in its infancy. The more complex your PWA (*e.g.* the more static assets to
-cache or the more frequent your updates) the more you will need good tools to help. 
+cache and/or the more frequent your updates and pushes) the more you will need good tools to help. 
 
 It always takes time to sort out browser issues. But just as browser applications all but overtook native desktop applications
 from when [The Fresh Prince originally aired](https://www.thesun.co.uk/tvandshowbiz/4164081/the-fresh-prince-of-bel-air-to-return-with-will-smith-20-years-after-it-last-aired-according-to-jazzy-jeff/),
