@@ -20,6 +20,8 @@ tags:
 - Vagrant
 - Ansible
 - Kubernetes
+- React
+- AngularJS
 categories: 
 - Agile
 - Project Management
@@ -53,7 +55,7 @@ without compromising credibility or the Scrum process.
 
 
 
-##Pay Down Technical Debt##
+## Pay Down Technical Debt
 
 [Technical debt](https://www.agilealliance.org/introduction-to-the-technical-debt-concept/) might be the biggest obstacle to
 productivity. Every development team remembers when either a lack of time or experience produced 
@@ -76,7 +78,7 @@ to maximize composability and reusability.
 In the end, your team will thank you if you've promoted loose coupling by paying enough technical debt that the next
 big change doesn't force everyone to work the weekend.
 
-##Speed Things Up##
+## Speed Things Up
 
 In their seminal book *Lean Software Development*, authors Mary and Tom Poppendieck describe seven principles--the first of 
 which is [Eliminate Waste](http://www.allaboutagile.com/lean-principles-1-eliminate-waste/). There are many forms 
@@ -116,7 +118,7 @@ developer and per-commit builds. Static analysis should only run daily in CI; do
 Beyond the build, look for ways to automate any manual tasks that are part of the development team's workflow. Consult 
 with the software engineers to identify where these opportunities for automation may reside.
 
-##Improve the Process##
+## Improve the Process
 
 A technically skilled ScrumMaster can also improve the software engineering process. For example, you can use 
 [AngularJS](/tags/angularjs) or [ReactJS](/tags/reactjs) to make [REST](/tags/rest) calls to the APIs for your 
