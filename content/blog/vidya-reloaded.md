@@ -71,8 +71,8 @@ with the help of [Axe](https://www.deque.com/products/axe/).
  
 As you probably figured, it isn't all roses with PWAs, and it's primarily because of browser variability. Isn't it always?
 Not every browser supports service workers--notably Safari. After all,
-Apple makes a lot of money from its App Store, but they will come around. I mean even [Microsoft Edge](https://www.thurrott.com/windows/windows-10/116101/microsoft-said-progressive-web-apps-build)
-is about to roll out PWA support. Still, even among progressive browsers, you have to be wary. Chrome gives
+Apple makes a lot of money from its App Store, but they will come around. I mean [Microsoft Edge](https://www.thurrott.com/windows/windows-10/116101/microsoft-said-progressive-web-apps-build)
+is about to roll out PWA support. Microsoft! Innovating in the browser! Still, even among progressive browsers, you have to be wary. Chrome gives
 you access to the camera on the device; will Edge? You have to be mindful of what your [target browsers can do](https://whatwebcando.today/).
 Also the tooling is in its infancy. The more complex your PWA (*e.g.* the more static assets to
 cache and/or the more frequent your updates and pushes) the more you will need good tools to help. 
