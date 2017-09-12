@@ -25,7 +25,7 @@ Welcome to the first new post on our brand new website! Thank you for checking i
 
 At Vidya we pride ourselves on embracing emerging technologies and helping our clients leverage them to realize their
 potential. This website proves we practice what we preach. We built it with [Hugo](https://gohugo.io/),
-a stunningly fast static-site generator built on the popular [Go](/tags/go) programming language from Google, which continues
+a stunningly fast static-site generator built on Google's popular [Go](/tags/go) programming language, which continues
 to shoot up the [Tiobe Index](https://www.tiobe.com/tiobe-index/go/). 
 
 As great as Hugo and Go are, the really cool thing about our new website is that it is a [Progressive Web Application](/tags/pwa) (PWA).
@@ -42,7 +42,7 @@ here is an explanation that is less long.
 [Originating at Google](https://developers.google.com/web/progressive-web-apps/), PWAs are built like any other website (*i.e.* with HTML, CSS, and [JavaScript](/tags/javascript)), but they are endowed
 with [service workers](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers) that allow mobile users
 with supporting browsers (more on this later) to enjoy a rich, native-app-like experience. Service workers use JavaScript `Promises` to 
-enable push notifications and caching for rapid and offline access. They can access native hardware as well to varying degrees. 
+enable push notifications and caching for rapid and offline access. They can access native hardware as well to varying degrees by browser. 
 
 A PWA also enables mobile users to add a home screen icon like a native app. Henrik dismisses that as a "glorified bookmark," but I think 
 that's cool. Eye candy or not, one day we will be able to set permissions for PWAs, view their battery consumption,
@@ -50,8 +50,8 @@ and do other things we take for granted with native apps. [WebAPKs](https://www.
 are just starting to enable this on [Android](/tags/android).
 
 From a business perspective, [mobile traffic exceeded desktop traffic for the first time in late 2016](http://gs.statcounter.com/press/mobile-and-tablet-internet-usage-exceeds-desktop-for-first-time-worldwide),
-so the speed and availability even offline of PWAs are attractive. Mobile consumers are the most loyal but are also downloading fewer apps.
-PWAs reconcile those trends by getting customers to your business as directly as possible--without hops to an app store and waiting 
+so the speed and offline availability of PWAs are attractive. Mobile consumers are the most loyal but are also downloading fewer apps.
+PWAs reconcile those trends by bringing customers to your business as directly as possible--without hops to an app store and waiting 
 for downloads and installations--and improving their experience once they arrive. Consequently, businesses like [Alibaba](https://developers.google.com/web/showcase/2016/alibaba) are seeing huge increases in conversions through PWAs.
 
 From a developer perspective, [Create React App](https://github.com/facebookincubator/create-react-app), which builds 
@@ -61,7 +61,7 @@ security *from the start*. Service workers are very powerful, and [with great po
 A man-in-the-middle could 
 use them [to do a lot of bad things](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers#you_need_https) to your PWA. 
 PWAs therefore *require* HTTPS. Don't worry. Things work fine 
-when you're developing on `localhost`. When it comes time to deploy to production, many leading hosts have 
+when you're developing on `localhost`. When it comes time to deploy to production, many leading hosts offer 
 automated, one-click HTTPS. If they don't, you can use [Let's Encrypt](https://letsencrypt.org/) to create and deploy 
 your own [TLS certificates](https://www.globalsign.com/en/blog/ssl-vs-tls-difference/) for free. Besides, PWA or not, [Google is making you move to HTTPS anyway](https://seo-hacker.com/google-adopt-https/).
 Finally, you can test your PWA by using [Lighthouse](https://developers.google.com/web/tools/lighthouse/) either from the 
