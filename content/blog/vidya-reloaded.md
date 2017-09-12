@@ -1,7 +1,7 @@
 ---
 title: "Vidya Reloaded"
 date: 2017-09-10T17:38:04-04:00
-description: "Our new website is a Progressive Web Application. Find out why that's cool."
+description: "Our new website is a Progressive Web Application. Here's why that's cool."
 banner: "img/banners/matrix.jpg"
 categories:
 - Mobile
