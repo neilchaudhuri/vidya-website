@@ -78,7 +78,7 @@ a Sun Certified Java Programmer when that was still a thing.
 
 ### Session I: Introduction to Java
 * History and fundamentals of the language
-* Language constructs (*e.g.* conditionals, iterations)
+* Language constructs (*e.g.* conditionals, iterations, generics)
 * Coding conventions
 * Writing code with nothing but a text editor
 
@@ -88,8 +88,12 @@ a Sun Certified Java Programmer when that was still a thing.
 * Inheritance and polymorphism
 
 ### Session III: The Evolution of Java
-* Generic collections, enhanced `for` loop, and other notable Java 5 features
-* Lambdas, temporals, default methods and other notable Java 8 features
+* Lambdas
+* `Optional`
+* Temporals
+* Immutable collections
+* Interfaces with default methods
+* `CompletableFuture`
 
 ### Session IV: Professional Java
 * Error handling
