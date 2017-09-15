@@ -63,25 +63,25 @@ paginate = 10
     pre = "<i class='fa fa-2x fa-phone'></i>"
 
 [[menu.topbar]]
-    weight = 3
+    weight = 8
     name = "GitHub"
     url = "https://github.com/VidyaSource"
     pre = "<i class='fa fa-2x fa-github'></i>"
 
 [[menu.topbar]]
-    weight = 4
+    weight = 3
     name = "Facebook"
     url = "https://www.facebook.com/VidyaSource"
     pre = "<i class='fa fa-2x fa-facebook'></i>"
 
 [[menu.topbar]]
-    weight = 5
+    weight = 4
     name = "Twitter"
     url = "https://twitter.com/VidyaSource"
     pre = "<i class='fa fa-2x fa-twitter'></i>"
 
  [[menu.topbar]]
-      weight = 6
+      weight = 5
       name = "YouTube"
       url = "https://www.youtube.com/channel/UC24LVc8Bb65SF6LW-SLog9A"
       pre = "<i class='fa fa-2x fa-youtube'></i>"
@@ -93,16 +93,22 @@ paginate = 10
       pre = "<i class='fa fa-2x fa-stack-overflow'></i>"
 
  [[menu.topbar]]
-       weight = 8
+       weight = 6
        name = "LinkedIn"
        url = "https://www.linkedin.com/company/3285099"
        pre = "<i class='fa fa-2x fa-linkedin'></i>"
 
  [[menu.topbar]]
-      weight = 9
+      weight = 10
       name = "Google Plus"
       url = "https://plus.google.com/+Vidyasource"
       pre = "<i class='fa fa-2x fa-google-plus'></i>"
+
+  [[menu.topbar]]
+       weight = 9
+       name = "RSS"
+       url = "https://www.vidyasource.com/index.xml"
+       pre = "<i class='fa fa-2x fa-rss'></i>"
 
 [params]
     viewMorePostLink = "/blog/"
@@ -201,3 +207,9 @@ paginate = 10
 [social]
     twitter = "VidyaSource"
     facebookAppId = "312450288897871"
+
+[outputs]
+  page = ["HTML", "AMP"]
+  blog = ["HTML", "AMP"]
+  course = ["HTML", "AMP"]
+  tutorial = ["HTML", "AMP"]
