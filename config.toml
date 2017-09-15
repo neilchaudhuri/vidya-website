@@ -107,7 +107,7 @@ paginate = 10
   [[menu.topbar]]
        weight = 9
        name = "RSS"
-       url = "https://www.vidyasource.com/index.xml"
+       url = "/index.xml"
        pre = "<i class='fa fa-2x fa-rss'></i>"
 
 [params]
@@ -209,6 +209,7 @@ paginate = 10
     facebookAppId = "312450288897871"
 
 [outputs]
+  home = ["HTML", "RSS"]
   page = ["HTML", "AMP"]
   blog = ["HTML", "AMP"]
   course = ["HTML", "AMP"]
