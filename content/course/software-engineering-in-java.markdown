@@ -84,7 +84,7 @@ a Sun Certified Java Programmer when that was still a thing.
 
 ### Session II: Objects and Inheritance
 * Understanding objects and methods
-* The Java object hierarchy and core objects (e.g. *java.lang.String*)
+* The Java object hierarchy and core objects (*e.g.* `String`)
 * Inheritance and polymorphism
 
 ### Session III: The Evolution of Java
