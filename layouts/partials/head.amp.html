@@ -17,22 +17,6 @@
 
     <link rel="manifest" href="/manifest.json">
 
-    <amp-analytics type="googleanalytics">
-        <script type="application/json">
-            {
-                "vars": {
-                    "account": "{{ .Site.GoogleAnalytics }}"
-                },
-                "triggers": {
-                    "trackPageview": {
-                        "on": "visible",
-                        "request": "pageview"
-                    }
-                }
-            }
-        </script>
-    </amp-analytics>
-
     {{ partial "facebook-opengraph" . }}
 
     {{ partial "twitter-card" . }}
@@ -41,6 +25,21 @@
 </head>
 
 <body>
+<amp-analytics type="googleanalytics">
+    <script type="application/json">
+        {
+            "vars": {
+                "account": "{{ .Site.GoogleAnalytics }}"
+            },
+            "triggers": {
+                "trackPageview": {
+                    "on": "visible",
+                    "request": "pageview"
+                }
+            }
+        }
+    </script>
+</amp-analytics>
 <!-- Start Navbar -->
 <header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4">
     <div role="button" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger md-hide lg-hide pr2">☰</div>
