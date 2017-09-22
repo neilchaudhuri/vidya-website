@@ -30,6 +30,12 @@
     "uploadDate": "{{ .Date }}",
     "publisher": {
         "@type": "Organization",
+        "url": "{{ .Site.BaseURL }}",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-202-430-5695",
+            "contactType": "Customer support"
+        },
         "logo": {
           "@type": "ImageObject",
           "url": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}",
@@ -51,7 +57,12 @@
     "provider": {
         "@type": "Organization",
         "name": "{{ .Site.Title }}",
-        "sameAs": "{{ .Site.BaseURL }}",
+        "url": "{{ .Site.BaseURL }}",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-202-430-5695",
+            "contactType": "Customer support"
+        },
         "logo": {
           "@type": "ImageObject",
           "url": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}",
@@ -95,6 +106,12 @@
     "publisher": {
         "@type": "Organization",
         "name": "Vidya",
+        "url": "{{ .Site.BaseURL }}",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-202-430-5695",
+            "contactType": "Customer support"
+        },
         "logo": {
               "@type": "ImageObject",
               "url": "{{ .Site.BaseURL }}{{ .Site.Params.logo }}",
