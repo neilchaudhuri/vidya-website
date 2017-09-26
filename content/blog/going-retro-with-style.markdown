@@ -87,7 +87,7 @@ It is up to you to decide whether leadership will appreciate your candor and the
 and whether this kind of team is where you want to work.
  
 If I see the software engineer who asked this salient question at a future ALN event, I hope to 
-share these thoughts with him. I think if leadership has the willingness to improve and the 
+share these thoughts with him. If leadership has the willingness to improve and the 
 message is constructive and data-driven rather than disparaging and defensive, this approach will work.
 
 Then again, if leadership really is perfect and there are no metrics suggesting otherwise, then your team
