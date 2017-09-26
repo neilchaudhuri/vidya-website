@@ -27,6 +27,10 @@
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 
+  {{ if .IsPage }}
+    <link rel="amphtml" href="/amp{{ .Permalink | relURL }}" />
+  {{ end }}
+
   <!-- Responsivity for older IE -->
   {{ `
     <!--[if lt IE 9]>
