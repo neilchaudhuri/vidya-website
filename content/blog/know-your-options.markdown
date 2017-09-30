@@ -70,7 +70,7 @@ is accomplished with type safety rather than a problematic exception.
 
 Second, and even better, the caller's code is really clean. You could call our method like this:
 
-{{< gist 12ada41ce66430cdd3c7 >}}
+{{< gist neilchaudhuri 12ada41ce66430cdd3c7 >}}
 
 If you have worked with Scala collections before, you'll notice how similar it is to use `Option`. In this case, 
 if `findById` returns `Some`, the `map` call extracts the `Employee` instance “inside” the `Some`, and you can do whatever you want 
