@@ -30,6 +30,7 @@
     "uploadDate": "{{ .Date }}",
     "publisher": {
         "@type": "Organization",
+        "name": "{{ .Site.Title }}",
         "url": "{{ .Site.BaseURL }}",
         "contactPoint": {
             "@type": "ContactPoint",
@@ -105,7 +106,7 @@
     },
     "publisher": {
         "@type": "Organization",
-        "name": "Vidya",
+        "name": "{{ .Site.Title }}",
         "url": "{{ .Site.BaseURL }}",
         "contactPoint": {
             "@type": "ContactPoint",
