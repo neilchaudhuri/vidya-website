@@ -5,6 +5,7 @@ title: "A New Strategy for Scala"
 description: "The report of the death of the Strategy Pattern has been greatly exaggerated."
 banner: "img/banners/scala.png"
 date: 2016-12-24
+gist: true
 tags:
 - Scala
 - Java

@@ -5,6 +5,7 @@ title: "Zero Tolerance"
 description: "In your Java program, is your BigDecimal 0? It depends on what the meaning of the word of is is." 
 banner: "img/banners/zero.jpg" 
 date: 2014-11-06
+gist: true
 tags:
 - Java
 categories: 

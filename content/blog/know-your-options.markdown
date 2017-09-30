@@ -5,6 +5,7 @@ title: "Know Your Options"
 description: "Null is a real pain, but functional languages like Scala can make it a lot easier." 
 banner: "img/banners/options.jpeg" 
 date: 2014-08-04
+gist: true
 tags:
 - Java
 - Scala

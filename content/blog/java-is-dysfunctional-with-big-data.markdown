@@ -5,6 +5,7 @@ title: "Java is Dysfunctional with Big Data"
 description: "Java is great, but there are far better options for big data analytics."
 date: 2013-10-27
 banner: "img/banners/big-data.jpg"
+gist: true
 aliases: 
  - /blog/Java/Scala/Data/Hadoop/Analytics/2013/10/27/java-is-dysfunctional-with-big-data
 categories:
