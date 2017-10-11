@@ -34,7 +34,7 @@ categories:
 
 I will be speaking at [Tech Talk DC](https://www.meetup.com/TechTalkDC/events/243181157/) on October 25th in
 Arlington, Virginia, on *Here's What's Trending In Software Engineering*. Whether you build software, manage projects, 
-or run enterprises, you’ll discover tools, techniques, and technologies that will give you an edge in the years to come.
+or run enterprises, you’ll discover techniques and technologies that will give you an edge in the years to come.
 
 If you saw me speak on this topic at 
 [Code Writers Workshop](/blog/2017/06/05/speaking-at-code-writers-workshop-2017/) in the summer, rest assured this talk will be different.
