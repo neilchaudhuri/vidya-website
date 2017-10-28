@@ -9,17 +9,18 @@ doesn't shut off at 5 PM, and we want to show you how easy it really is to do gr
 
 Maybe you're at a small
 company or nonprofit where everyone has to wear a lot of hats, and someone has asked you to retool the website when you've
-never done anything more complicated on the web than tagging people on [Facebook](www.facebook.com).
+never done anything more complicated on the web than tagging people on Facebook.
 
 Or maybe
 you are an experienced software engineer tired of your job working on the same boring technology you mastered years ago, and you're
 worried that your skills are slipping as technology accelerates around you. Why should [Tony Stark](http://www.youtube.com/watch?v=3o2ACEr9NmQ)
 be the only one to build cool stuff?
 
-Or maybe you just want something
-built fast and built the right way.
+Or maybe you just want something built fast and built the right way.
 
-No matter what you need, we want to be of service to you.
+Or maybe you want a passionate ally in promoting diversity and equal, positive treatment in the information technology space.
+
+No matter what you need, we want to be of service to you. 
 
 ## Our offerings
 
@@ -51,7 +52,8 @@ each other.
 
 *Vidya* is associated with the Hindu deity
 [Saraswati](http://en.wikipedia.org/wiki/Sarasvati) because she is the Goddess of Learning.
-In ancient Indian art and literature, she is often depicted wearing a spotless white sari and riding a white swan.
+In ancient Indian art and literature, she is often depicted wearing a spotless white 
+[sari](https://en.wikipedia.org/wiki/Sari) and riding a white swan.
 
 We just hope you like the swan more than [Billy Madison](http://www.youtube.com/watch?v=n91ckeyNvQU).
 
