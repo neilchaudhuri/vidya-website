@@ -40,7 +40,7 @@ quite as hilarious though potentially just as offensive to some, here are a few.
 
 
 <br>
-###JAVA and SCRUM
+### JAVA and SCRUM
 
 Stop yelling at me! [Java](/tags/java) is the most popular programming language in the world. [Scrum]((/tags/scrum)
 is the most popular agile framework
@@ -48,7 +48,7 @@ in the world. So why do so many people, including software engineers who should 
 [Stack Overflow](http://stackoverflow.com/), I would impose a lifetime ban on anyone who uses all caps for Java and Scrum.
 
 <br>
-###J2EE
+### J2EE
 
 Speaking of Java, enough already with calling the Java Platform, Enterprise Edition “J2EE.” J2EE hasn’t been a thing
 [since May 2006](http://en.wikipedia.org/wiki/Java_Platform,_Enterprise_Edition)! That’s the same year [the first
@@ -64,7 +64,7 @@ use *JEE*. Either way, just stop with J2EE. If you can come to terms with
 to terms with Java EE.
 
 <br>
-###”A code”
+### ”A code”
 
 *[Morse](http://en.wikipedia.org/wiki/Morse_code)* is a code. *[Da Vinci](http://www.imdb.com/title/tt0382625/)* is a
 code. Thanks to *[How I Met Your Mother](http://www.imdb.com/title/tt0460649/)*, even
@@ -75,7 +75,7 @@ with “I wrote *a code* and…”  This offense would also earn a lifetime ban 
 get into [cryptography](http://en.wikipedia.org/wiki/Cryptography). Programming is just code.
 
 <br>
-###Referring to HTML and CSS “code”
+### Referring to HTML and CSS “code”
 
 Speaking of code…
 
@@ -91,8 +91,8 @@ list of rules with unique syntax that provide *style*. But neither actually *doe
 *CSS styles*. Calling either *code* is simply an insult to real code everywhere.
 
 <br>
-###”I believe in the right tool for the job”
-###“I believe we should keep things simple”
+### ”I believe in the right tool for the job”
+### “I believe we should keep things simple”
 
 If a politician says, “I believe in a robust economy and a stout national defense,” he or she has provided you with an empty,
 meaningless platitude no one can possibly argue with, which is probably the point. But as you know, it’s the details that matter.
@@ -116,7 +116,7 @@ Not so obvious, is it? This is why anyone who uses these platitudes on a softwar
 a *specific* course of action and the rationale for it.
 
 <br>
-###Managers who want to see the metrics for unit tests
+### Managers who want to see the metrics for unit tests
 
 As I wrote in [my first column for *Government Computing News*](http://gcn.com/Articles/2013/12/10/software-testing.aspx?Page=1),
 unit tests are *by* developers *for* developers. Unit tests are essential for helping developers confirm their code works
