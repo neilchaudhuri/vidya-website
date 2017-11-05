@@ -13,7 +13,7 @@
     {{ if .Params.gist }}
         <script async custom-element="amp-gist" src="https://cdn.ampproject.org/v0/amp-gist-0.1.js"></script>
     {{ end }}
-    {{ if eq .Type "tutorial" }}
+    {{ if or (eq .Type "tutorial") (.Params.youtube) }}
         <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
     {{ end }}
     <!-- <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script> -->
