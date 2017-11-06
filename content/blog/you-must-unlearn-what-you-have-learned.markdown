@@ -5,6 +5,7 @@ title: "You Must Unlearn What You Have Learned"
 description: "Embrace the wisdom of Yoda to succeed in technology and project management."
 banner: "img/banners/yoda.jpg"
 date: 2014-03-14
+youtube: BQ4yd2W50No
 tags:
 - Java
 - Ruby
