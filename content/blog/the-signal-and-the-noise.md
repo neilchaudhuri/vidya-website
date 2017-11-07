@@ -27,7 +27,7 @@ and Facebook General Counsel Colin Stretch:
 
 Senator Franken, who has not lost the sarcasm and timing that made him a great satirist, clearly was annoyed with 
 Mr. Stretch for his refusal to accept the proposition that payment in foreign currency for ads pertaining to American elections
-is a clear indicator of something nefarious. His reason? 
+is a clear indicator of something nefarious. His reason? As Mr. Stretch put it:
 
 <blockquote>
 The currency signal...it's very easy to manipulate.....The reason I am hesitating on foreign currency is that it is 
