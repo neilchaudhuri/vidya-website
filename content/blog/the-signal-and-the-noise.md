@@ -57,7 +57,7 @@ be a no-brainer. In fact, we could generalize his thinking beyond the United Sta
 
 As it turns out, you don't even need data science to have rejected many ads on social media from the 2016 campaign season--just a raw comparison of data elements.
 That may have been the source of Senator Franken's frustration. Of course if the condition is `true` (*e.g.* an 
-American campaign ad is paid for in dollars), you need 
+American campaign ad is paid for with American currency), you need 
 real analytics to refine a model that predicts whether the ad is funded by a bad actor, but *can't we at least reject 
 outright all the obvious bad actors who don't even try to hide their intentions and can be identified with no analysis at all*? 
 
@@ -72,7 +72,7 @@ finance and law to others.
 Technology continues to move faster than the speed of law as its grip on every aspect of our lives grows tighter, but it 
 remains a black box to the very people who need to understand it. Senator Franken made a valiant effort to hold social 
 media accountable for their actions during the 2016 elections, but until politics and law make the effort to discern 
-signals from the noise produced by large tech companies, their [unchecked influence will have tremendous repercussions on 
+signals from the noise produced by large tech companies, their [unchecked influence will have continuously greater repercussions for 
 all of us](https://www.youtube.com/watch?v=b23wrRfy7SM). 
 
 
