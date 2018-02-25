@@ -59,7 +59,7 @@ We just hope you like the swan more than [Billy Madison](http://www.youtube.com/
 
 ## Our founder
 
-[Neil Chaudhuri](http://www.linkedin.com/pub/neil-chaudhuri-ms-pmp-csp/8/690/30)
+[Neil Chaudhuri](https://www.linkedin.com/in/neil-chaudhuri-ms-pmp-csp-sm-0306908/)
 is the founder and president
 of Vidya. He has well over a decade of experience building complex software applications using
 numerous technologies for a wide array of commercial and government clients in the United States. His passion for
