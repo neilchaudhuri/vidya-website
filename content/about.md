@@ -79,13 +79,15 @@ Neil is the author of several papers and presentations.
 <li><a href="http://soft.vub.ac.be/FFSE/Workshops/ELISA-submissions/09-Chaudhuri-full.pdf">J2EE or .NET: A Managerial Perspective</a></li>
 </ul>
 
-Neil also writes [monthly columns](http://gcn.com/Forms/Search-Results.aspx?query=chaudhuri&collection=GCN_Web) 
-for [Government Computing News](http://www1.gcn.com/Home.aspx) on a wide array of 
-software engineering and project management topics. It isn't a high bar, but he is probably the funniest writer on there.
+Neil has written [monthly columns](http://gcn.com/Forms/Search-Results.aspx?query=chaudhuri&collection=GCN_Web) 
+for Government Computing News on a wide array of 
+software engineering and project management topics. It isn't a high bar, but he was probably the funniest writer on there.
 
 Neil was selected as one of the "experienced users" to contribute to a United States
-[Government Accountability Office](http://www.gao.gov/) report called *[SOFTWARE DEVELOPMENT: Effective Practices and
-Federal Challenges in Applying Agile Methods](http://www.gao.gov/assets/600/593091.pdf)*.
+Government Accountability Office report called *[SOFTWARE DEVELOPMENT: Effective Practices and
+Federal Challenges in Applying Agile Methods](http://www.gao.gov/assets/600/593091.pdf)*. He is currently a member 
+of the GAO Agile Expert Group, which advises the GAO on how best to audit government software development projects for their commitment
+to agile--particularly Scrum for now--principles.
 
 Neil worked on a team assembled by the Executive Office of the President to [revolutionize federal government contracting of digital
 services](https://www.challenge.gov/challenge/digital-service-contracting-professional-training-and-development-program-challenge-2/) 
