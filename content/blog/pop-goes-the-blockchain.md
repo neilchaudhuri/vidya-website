@@ -200,8 +200,8 @@ To echo a previous point, standards related to privacy would sure come in handy 
 
 Blockchain has been around for a decade and only just now is emerging as a potential solution for everything from
 banking to health care to improving the taste of fat-free ranch dressing. Until Blockchain learns the lessons of the past and
-resolves its own inherent paradoxes, we will not realize its true potential if enough early adopters get burned to turn
-off future ones.
+resolves its own inherent paradoxes, we will not realize the true potential of this otherwise transformative technology
+if enough early adopters get burned to turn off future ones.
 
 
 
