@@ -130,7 +130,7 @@ upon a time, [Service-Oriented Architecture (SOA)](http://www.opengroup.org/soa/
 concept whose hype motivated vendors to sell overengineered solutions to doe-eyed customers desperate to appear visionary only
 to find themselves locked into heavyweight, proprietary products. And SOA had far more standardization than Blockchain.
 Today people are more scared to utter "SOA" than they are "[Voldemort](https://daviesnow.files.wordpress.com/2016/01/img_1031.png)" 
-despite proof of its viability manifest in modern [microservices](/categories/microservices) architectures.   
+despite its vindication by modern [microservices](/categories/microservices) architectures.   
 
 I worry the same fate could befall Blockchain.
 
