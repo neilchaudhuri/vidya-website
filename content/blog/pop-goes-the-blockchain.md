@@ -130,16 +130,16 @@ upon a time, [Service-Oriented Architecture (SOA)](http://www.opengroup.org/soa/
 concept whose hype motivated vendors to sell overengineered solutions to doe-eyed customers desperate to appear visionary only
 to find themselves locked into heavyweight, proprietary products. And SOA had far more standardization than Blockchain.
 Today people are more scared to utter "SOA" than they are "[Voldemort](https://daviesnow.files.wordpress.com/2016/01/img_1031.png)" 
-despite its relevance to modern [microservices](/categories/microservices) architectures.   
+despite proof of its viability manifest in modern [microservices](/categories/microservices) architectures.   
 
 I worry the same fate could befall Blockchain.
 
 #### Open tooling
 
-Blockchain also needs to be open to developers to build mindshare and excitement--
-perhaps ultimately even create so many blockchain developers they become cheap. This means as always
-there needs to be tooling support for syntax checking and debugging along with all the software engineering tasks 
-we have automated over the last 
+Blockchain also needs to be open to developers to build mindshare and excitement--perhaps 
+ultimately even create so many blockchain developers they become cheap. This means as always
+there needs to be tooling support for syntax checking and debugging along with automation of all the software engineering tasks 
+we have come to appreciate over the last 
 decade or so of [agile software development](/categories/agile/): [testing](/categories/testing/), 
 [static analysis](https://www.owasp.org/index.php/Static_Code_Analysis), 
 [continuous integration](/categories/continuous-delivery/), and [continuous delivery](/categories/continuous-delivery/). 
