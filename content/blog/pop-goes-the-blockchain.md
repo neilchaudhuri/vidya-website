@@ -190,8 +190,8 @@ There are a lots of ideas out there for solving this problem with [Zcash](https:
 Zcash is a cryptocurrency that offers the potential for privacy through even more clever cryptography 
 in the form of [zero-knowledge proofs](https://en.wikipedia.org/wiki/Zero-knowledge_proof). Another compelling alternative
 is [Corda](https://github.com/corda/corda), an [open-source](/categories/open-source/) "Blockchain for business" written
-in [Kotlin](/tags/kotlin) that makes privacy (along with interoperability) a first-class citizen. Various vendors offer 
-proprietary solutions as well.
+in [Kotlin](/tags/kotlin) that makes privacy (along with interoperability and [tooling](https://docs.corda.net/getting-set-up.html)) 
+a first-class citizen. Various vendors offer proprietary solutions as well.
 
 To echo a previous point, standards related to privacy would sure come in handy here. 
 
