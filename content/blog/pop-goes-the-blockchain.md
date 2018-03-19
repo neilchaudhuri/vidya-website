@@ -106,8 +106,8 @@ by [smart contracts](https://blockgeeks.com/guides/smart-contracts/) written in 
 programming language. In order to keep matters between the parties involved, a smart contract needs to maintain state--
 everything there is to know about how the contract is executed. You store that state 
 in [memory on the Ethereum Virtual Machine using the Solidity API](https://solidity.readthedocs.io/en/latest/frequently-asked-questions.html#what-is-the-memory-keyword-what-does-it-do).
-As contracts become more complex and developers potentially mismanage memory like in the old days of C++, memory can be 
-a concern along with compute.
+As contracts become more complex and store more data--and developers potentially mismanage memory like in the old C++ days--memory 
+can be a concern along with compute.
 
 ## Openness: Blockchain lacks standards, needs tooling, and must avoid a class system
 
@@ -137,7 +137,7 @@ I worry the same fate could befall Blockchain.
 #### Open tooling
 
 Blockchain also needs to be open to developers to build mindshare and excitement--perhaps 
-ultimately even create so many blockchain developers they become cheap. This means as always
+ultimately even create so many Blockchain developers they become cheap. This means as always
 there needs to be tooling support for syntax checking and debugging along with automation of all the software engineering tasks 
 we have come to appreciate over the last 
 decade or so of [agile software development](/categories/agile/): [testing](/categories/testing/), 
@@ -146,7 +146,7 @@ decade or so of [agile software development](/categories/agile/): [testing](/cat
 Blockchain tools are strewn about the landscape--[the MetaMask Chrome plugin](https://metamask.io/), the 
 [Mist browser](https://github.com/ethereum/mist), an alpha-stage [Solidity plugin](https://github.com/intellij-solidity/intellij-solidity)
 for IntelliJ, and various language-specific clients like [Go Ethereum](https://geth.ethereum.org/). Despite the passion
-behind these initatives, they are all very immature.
+behind these initiatives, they are all very immature.
 
 Given these barriers, it is no surprise that as of this moment there are over 1000 times more [Java](/tags/java) questions on 
 [Stack Overflow](https://stackoverflow.com/)
