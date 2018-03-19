@@ -46,11 +46,11 @@ our ancestors conducted business by going to the bank or the post office, there 
 on a blockchain, which means that incompetence or malice won't compromise everyone (Like what happened with, not
 to call out anyone by name, but something that rhymes with [Requifax](https://www.cnbc.com/2017/09/07/credit-reporting-firm-equifax-says-cybersecurity-incident-could-potentially-affect-143-million-us-consumers.html)).
 
-Think of a transaction as a row on 
-a spreadsheet. Parties conduct business directly with each other according to rules agreed upon by the network, and 
+Parties conduct business directly with each other according to rules agreed upon by the network, and 
 the transactions are recorded to varying levels of detail by everyone on the network 
 ([full nodes and light nodes]([full nodes](https://bitcoin.stackexchange.com/questions/48436/what-is-the-meaning-of-the-term-full-node))). 
-A block is a fixed amount of transactions--like a single worksheet while the blockchain is the entire Excel workbook. 
+Think of a transaction as a row on 
+a spreadsheet. A block is a fixed amount of transactions--like a single worksheet while the blockchain is the entire Excel workbook. 
 
 Central authority is replaced by computer science and computer hardware. When a block reaches capacity, 
 "[miners](https://www.coindesk.com/information/how-bitcoin-mining-works/)" race to achieve consensus that all the transactions 
