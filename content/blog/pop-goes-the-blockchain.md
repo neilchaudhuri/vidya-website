@@ -106,7 +106,7 @@ by [smart contracts](https://blockgeeks.com/guides/smart-contracts/) written in 
 programming language. In order to keep matters between the parties involved, a smart contract needs to maintain state--
 everything there is to know about how the contract is executed. You store that state 
 in [memory on the Ethereum Virtual Machine using the Solidity API](https://solidity.readthedocs.io/en/latest/frequently-asked-questions.html#what-is-the-memory-keyword-what-does-it-do).
-As contracts become more complex and store more data--and developers potentially mismanage memory like in the old C++ days--memory 
+As contracts become more complex and store more data--and developers possibly mismanage memory like in the old C++ days--memory 
 can be a concern along with compute.
 
 ## Openness: Blockchain lacks standards, needs tooling, and must avoid a class system
@@ -187,7 +187,7 @@ debate--in this case, the right to privacy vs. the empowerment of law enforcemen
 contract in Ethereum is public; you have to handle encryption yourself to hide the details from prying eyes.      
 
 There are a lots of ideas out there for solving this problem with [Zcash](https://z.cash/) arguably the most promising.
-Zcash is a cryptocurrency that offers the potential for privacy through even more clever cryptography 
+Zcash is a cryptocurrency that offers privacy through even more clever cryptography 
 in the form of [zero-knowledge proofs](https://en.wikipedia.org/wiki/Zero-knowledge_proof). Another compelling alternative
 is [Corda](https://github.com/corda/corda), an [open-source](/categories/open-source/) "Blockchain for business" written
 in [Kotlin](/tags/kotlin) that makes privacy (along with interoperability and [tooling](https://docs.corda.net/getting-set-up.html)) 
@@ -198,7 +198,7 @@ To echo a previous point, standards related to privacy would sure come in handy 
 ## ******
 
 
-Blockchain has been around for a decade and only just now is emerging as a potential solution for everything from
+Blockchain has been around for a decade and only just now is emerging as a compelling solution for everything from
 banking to health care to improving the taste of fat-free ranch dressing. Until Blockchain learns the lessons of the past and
 resolves its own inherent paradoxes, we will not realize the true potential of this otherwise transformative technology
 if enough early adopters get burned to turn off future ones.
