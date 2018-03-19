@@ -9,6 +9,8 @@ tags:
 - Go
 - Java
 - Kotlin
+- Bitcoin
+- Solidity
 categories:
 - Blockchain 
 - Big Data
