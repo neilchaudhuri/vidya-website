@@ -37,7 +37,7 @@ Blockchain has great potential, but there are significant obstacles to address i
 garages to prove it is ready for prime time after all these years. 
 
 Those obstacles are *Performance, Openness, and Privacy*. POP! Let's understand why Blockchain must address these concerns
-and how Blockchain lies at the nexus of critical paradoxes we continue to wrestle with as a society.
+to become mainstream and how they are a microcosm of critical paradoxes we continue to wrestle with as a society.
 
 ## A Brief Blockchain Explainer
 
