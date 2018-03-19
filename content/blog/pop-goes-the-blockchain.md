@@ -60,7 +60,7 @@ on that block are legitimate according to a
 mining invests significant compute power in a cryptographic problem that's hard to solve but whose solution is easy to verify.
 Whoever pulls it off first gains consensus from the blockchain, 
 adds the block to the ledger, gets rewarded in some currency, and serves as the standard for each
-new machine to join. That solution is also integral to generating a 
+new node to join. That solution is also integral to generating a 
 [hash](https://en.wikipedia.org/wiki/Cryptographic_hash_function) of the block that is recorded by the *next* block,
 which is a fancy way of saying that any attempt to tamper with the blockchain will be easily detectable by everyone. This is
 the foundation of security on Blockchain.     
