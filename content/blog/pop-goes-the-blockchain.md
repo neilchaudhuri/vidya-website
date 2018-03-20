@@ -50,7 +50,7 @@ to call out anyone by name, but something that rhymes with [Requifax](https://ww
 
 Parties conduct business directly with each other according to rules agreed upon by the network, and 
 the transactions are recorded to varying levels of detail by everyone on the network 
-([full nodes and light nodes]([full nodes](https://bitcoin.stackexchange.com/questions/48436/what-is-the-meaning-of-the-term-full-node))). 
+([full nodes and light nodes](https://bitcoin.stackexchange.com/questions/48436/what-is-the-meaning-of-the-term-full-node)). 
 Think of a transaction as a row on 
 a spreadsheet. A block is a fixed amount of transactions--like a single worksheet while the blockchain is the entire Excel workbook. 
 
