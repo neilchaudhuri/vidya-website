@@ -73,8 +73,8 @@ and [Scrum Certified Professional](http://www.scrumalliance.org/certifications/p
 
 Neil is the author of several papers and presentations.
 <ul class="publications">
-<li>Trends in Software Engineering</li>
-<li>Nine Reasons to Try Scala</li>
+<li>Trends in <a href="/categories/software-engineering">Software Engineering</a></li>
+<li>Nine Reasons to Try <a href="/tags/scala">Scala</a></li>
 <li>Agile Project Management: PMBOK vs. Agile</li>
 <li><a href="http://www.pdfpower.com/XML2005Proceedings/ship/77/xmlbinding.PDF">XML Data Binding: Integrating XML and Object-Oriented Technologies</a></li>
 <li>Very Large Software Systems: A Service-Oriented Approach</li>
