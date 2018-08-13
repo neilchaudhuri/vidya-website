@@ -1,8 +1,8 @@
 ---
 
 author: "Neil Chaudhuri"
-title: "Welcoming Ninaday"
-description: "We are lucky to be working with Ninaday, a casting and creative agency serving Fortune 500 clients worldwide."
+title: "Welcoming Nina Day"
+description: "We are lucky to be working with Nina Day, a casting and creative agency serving Fortune 500 clients worldwide."
 banner: "img/partners/ninaday.png"
 date: 2018-08-10
 tags:
@@ -29,12 +29,12 @@ categories:
 
 ---
 
-Vidya is proud to be working with [Ninaday](http://ninaday.com/), a casting and creative agency serving a wide array of clients 
-worldwide. Ninaday finds the best talent--models, actors, musicians, and many others--for ads for Fortune 500 companies, 
+Vidya is proud to be working with [Nina Day](http://ninaday.com/), a casting and creative agency serving a wide array of clients 
+worldwide. Nina Day finds the best talent--models, actors, musicians, and many others--for ads for Fortune 500 companies, 
 TV and movies, and special campaigns like the [United Nations He for She campaign](http://ninaday.com/portfolio/he-for-she/) promoting 
 [gender equality worldwide](http://www.heforshe.org/).
 
-As you might imagine, a world class casting company needs a talent database, and we have built one for Ninaday. It's a
+As you might imagine, a world class casting company needs a talent database, and we have built one for Nina Day. It's a
 web application deployed with SSL/TLS that provides a host of features including the following:
 
 * Secure self-entry for talent
@@ -47,7 +47,7 @@ images and videos and generating PDFs for the presentation, a category, or indiv
 * The ability to view selections by user along with common selections made by multiple users and generate PDFs of those as well
 
     
-The Ninaday talent database began as a [Ruby on Rails](/tags/ruby-on-rails) web application with primarily a JQuery and 
+The Nina Day talent database began as a [Ruby on Rails](/tags/ruby-on-rails) web application with primarily a JQuery and 
 [Bootstrap](/tags/bootstrap) frontend and a [PostgreSQL](/tags/postgresql)
 and Amazon S3 backend with CloudFront CDN for worldwide distribution of images and videos.
 
@@ -69,5 +69,5 @@ integrated [TypeScript](https://www.typescriptlang.org/), [RxJS](https://rxjs-de
 [Immutable](http://facebook.github.io/immutable-js/) to provide a fair bit of the type safety and functional reactive
 programming that make Elm so cool.
 
-We are lucky to be working with Ninaday to use so many powerful, modern technologies to build software that is clean, fast, and
+We are lucky to be working with Nina Day to use so many powerful, modern technologies to build software that is clean, fast, and
 secure for our client and theirs worldwide. 
