@@ -29,8 +29,7 @@ categories:
 
 ---
 
-Vidya is proud to be working with [Nina Day](http://ninaday.com/), a casting and creative agency based in New York City
-serving a wide array of clients 
+Vidya is proud to be working with [Nina Day](http://ninaday.com/), a casting and creative agency based in New York City serving a wide array of clients 
 worldwide. Nina Day finds the best talent--models, actors, musicians, and many others--for ads for Fortune 500 companies, 
 TV and movies, and special campaigns like the [United Nations He for She campaign](http://ninaday.com/portfolio/he-for-she/) promoting 
 [gender equality worldwide](http://www.heforshe.org/).
