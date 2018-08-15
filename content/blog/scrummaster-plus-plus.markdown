@@ -21,7 +21,7 @@ tags:
 - Ansible
 - Kubernetes
 - React
-- AngularJS
+- Angular
 categories: 
 - Agile
 - Project Management
@@ -121,7 +121,7 @@ with the software engineers to identify where these opportunities for automation
 ## Improve the Process
 
 A technically skilled ScrumMaster can also improve the software engineering process. For example, you can use 
-[AngularJS](/tags/angularjs) or [ReactJS](/tags/reactjs) to make [REST](/tags/rest) calls to the APIs for your 
+[Angular](/tags/angular) or [React](/tags/react) to make [REST](/tags/rest) calls to the APIs for your 
 project management, source control, CI, and systems monitoring tools to produce a dashboard that
 presents all their data individually *and* mashed up to help identify the root causes of events. After all, a time series 
 on this dashboard could show that a surge in bugs coincides with the absence of the Product Owner
