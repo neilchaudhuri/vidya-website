@@ -66,7 +66,9 @@ We spent some time assessing the suitability of React, [Elm](http://elm-lang.org
 database UI, and as compelling as we find Elm in particular, we decided on React because of the established community 
 and consequently the availability of components that easily replicate existing functionality. Besides, we have also 
 integrated [TypeScript](https://www.typescriptlang.org/), [RxJS](https://rxjs-dev.firebaseapp.com/), and 
-[Immutable](http://facebook.github.io/immutable-js/) to provide a fair bit of the type safety and 
+[Immutable](http://facebook.github.io/immutable-js/) to provide a fair bit of the 
+[type safety](https://stackoverflow.com/questions/260626/what-is-type-safe?answertab=votes#tab-top), 
+[immutability](https://stackoverflow.com/questions/12207757/why-do-immutable-objects-enable-functional-programming?answertab=votes#tab-top), and 
 [functional reactive programming](https://medium.freecodecamp.org/functional-reactive-programming-frp-imperative-vs-declarative-vs-reactive-style-84878272c77f) 
 that make Elm so cool.
 
