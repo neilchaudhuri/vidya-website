@@ -66,8 +66,9 @@ We spent some time assessing the suitability of React, [Elm](http://elm-lang.org
 database UI, and as compelling as we find Elm in particular, we decided on React because of the established community 
 and consequently the availability of components that easily replicate existing functionality. Besides, we have also 
 integrated [TypeScript](https://www.typescriptlang.org/), [RxJS](https://rxjs-dev.firebaseapp.com/), and 
-[Immutable](http://facebook.github.io/immutable-js/) to provide a fair bit of the type safety and functional reactive
-programming that make Elm so cool.
+[Immutable](http://facebook.github.io/immutable-js/) to provide a fair bit of the type safety and 
+[functional reactive programming](https://medium.freecodecamp.org/functional-reactive-programming-frp-imperative-vs-declarative-vs-reactive-style-84878272c77f) 
+that make Elm so cool.
 
 We are lucky to be working with Nina Day to use so many powerful, modern technologies to build software that is clean, fast, and
 secure for our client and theirs worldwide. 
