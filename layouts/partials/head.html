@@ -4,7 +4,11 @@
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ .Title }}</title>
-  <meta name="author" content="{{ .Site.Author.name }}" />
+  {{ if .Params.author }}
+  <meta name="author" content="{{ .Params.author }}" />
+  {{else}}
+  <meta name="author" content="{{ .Site.Params.author }}" />
+  {{ end }}
 
   {{ if .Keywords }}
   <meta name="keywords" content="{{ delimit .Keywords ", " }}">
