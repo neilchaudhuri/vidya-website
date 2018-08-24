@@ -6218,6 +6218,10 @@ fieldset[disabled] .btn-template-primary.active {
     color: #000000;
 }
 
+#footer h1 {
+    font-size: 20px;
+}
+
 #footer h4 {
     font-size: 14px;
     font-weight: 800;
@@ -6245,6 +6249,7 @@ fieldset[disabled] .btn-template-primary.active {
 
 #footer .license a {
     color: #000000;
+    font-size: 14px;
 }
 
 #footer .photostream div {
