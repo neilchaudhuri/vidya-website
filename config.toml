@@ -138,7 +138,7 @@ paginate = 10
     email = "your@email.com"
 
     about_us = "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>"
-    copyright = "Copyright (c) 2017, Vidya, LLC; All Rights Reserved."
+    copyright = "Copyright (c) 2018, Vidya, LLC; All Rights Reserved."
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
@@ -196,12 +196,12 @@ paginate = 10
     # All clients are defined in their own files. You can find example items
     # at 'exampleSite/data/clients'.
     # For more informtion take a look at the README.
-    title = "Our Relationships"
+    title = "Vidya's Relationships"
     subtitle = "We are proud to have built relationships with the following outstanding companies and organizations."
 
 [params.recent_posts]
     enable = true
-    title = "From our blog"
+    title = "News from Vidya"
     subtitle = ""
 
 [social]
