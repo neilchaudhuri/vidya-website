@@ -32,14 +32,62 @@ categories:
 
 ---
 
-If you are a manager or executive in the technology space, heads up. Functional programming will generate more value 
-for your projects than you ever thought possible and get you the Tesla you always wanted.
-
-I get it. Functional programming isn't exactly a hot topic anywhere outside of technical conferences and
+Functional programming isn't exactly a fun topic anywhere outside of technical conferences and
 [The Big Bang Theory](https://www.youtube.com/watch?v=k0xgjUhEG3U). Even software engineers who love 
 code often tune out when they hear terms like [monad](http://stackoverflow.com/questions/44965/what-is-a-monad)
-and [referential transparency](https://stackoverflow.com/questions/210835/what-is-referential-transparency). But I promise
-(mostly) to avoid jargon and show you why introducing functional programming to your projects will make you extremely productive.
+and [referential transparency](https://stackoverflow.com/questions/210835/what-is-referential-transparency). 
+If you are a manager or executive in the technology space, heads up. Functional programming will help you build better 
+software faster than you ever thought possible and earn you the Tesla you always wanted. 
+
+Here's why.
+
+## Code Reuse For Real
+
+Code reuse is a vision long offered by object-oriented (OO) languages like [Java](/categories/java) but has proven to be a 
+myth--like the Fountain of Youth and fat-free ranch dressing that's edible. The reason is that OO languages tightly couple data
+with behavior, so it's hard to extract the behavior into reusable code others can use. 
+
+In functional programming (FP), it's not objects but *behavior*--in the form of functions that take single inputs and deterministically produce single
+outputs--that is the first-class citizen. This means that you can compose functions into data flows where the output of one function
+becomes the input to the next many times over on down the line. You can also mix and match functions to create new data flows.
+In the end, building software is basically like [building Legos](https://cdn-images-1.medium.com/max/1600/1*yGnDGRW4pTgmcDUi4oC8Uw.png).
+This makes your code easier to understand--or in the vernacular of functional programming, "reason about"--and makes code reuse
+a natural outcome that is simply part of your day-to-day process.
+
+## Satisfaction Guaranteed. Literally.
+
+If you manage OO projects, you may have heard of "design patterns," which came out of a 
+[book by a group of expert software engineers](https://en.wikipedia.org/wiki/Design_Patterns) known as the "Gang of Four".
+Design patterns offer suggestions for writing code that solves common problems in ways that make the code resilient to change. 
+In other words, thoughtfully applied design patterns reduce your time to market without
+forcing everyone to work the weekend and hating you after your mercurial client changes course.
+
+Sounds great, right?
+
+The problem is that design patterns are opinion--expert opinion borne of decades of experience and quite valuable--but opinion nonetheless. 
+As programming languages and technical challenges evolve, there is no way to know how well they will stand the test of time. The
+[Singleton](https://www.geeksforgeeks.org/singleton-design-pattern/) design pattern, for example, has 
+been [particularly controversial](https://stackoverflow.com/questions/137975/what-is-so-bad-about-singletons).
+
+On the other hand, FP offers *mathematical* guarantees that the code you write is sound. The mathematical 
+laws that govern it--[Type theory](https://en.wikipedia.org/wiki/Type_theory) and 
+[Category theory](https://en.wikipedia.org/wiki/Category_theory) in particular--are not vulnerable to the whims of the broader
+technology landscape. Math isn't opinion. 
+
+This is why [Elm](https://elm-lang.org/) developers often report 
+["0 runtime exceptions" in production](https://www.slideshare.net/InfoQ/fullscale-elm-in-production). Note this isn't the same 
+as "0 bugs." No paradigm can guarantee that. FP can't stop a developer running on Red Bull and moxie after staying up all night playing 
+Fortnite from calculating the total of a customer's shopping cart by multiplying rather than adding. Still, the mathematical
+guarantees FP 
+offers--along with other principles like [immutability](https://www.quora.com/Why-is-immutability-important-in-functional-programming)--
+makes it harder to write bugs and uncovers the ones you *do* write more quickly and cheaply.
+
+## 
+   
+
+
+
+
 
  
 
