@@ -76,7 +76,7 @@ That's a huge win, but note "0 runtime exceptions" isn't the same
 as "0 bugs." No paradigm can guarantee that. FP can't stop a developer surviving on Red Bull and moxie after staying up all night playing 
 Fortnite from calculating the total of a customer's shopping cart by subtracting rather than adding. Still, FP 
 --along with companion principles like [immutability](https://www.quora.com/Why-is-immutability-important-in-functional-programming)--
-provides guardrails making it harder to write bugs and uncovers the ones your team *does* write more quickly and cheaply by virtue of 
+provides safeguards making it harder to write bugs and uncovers the ones your team *does* write more quickly and cheaply by virtue of 
 mathematical guarantees that endure.
 
 ## More Quality in Less Time
@@ -84,7 +84,7 @@ mathematical guarantees that endure.
 That shopping cart bug should be caught by tests, but most software engineers look at unit and integration testing like [flossing](https://www.dentalassociates.com/application/files/4214/7760/0003/flossing-is-beneficial-1.jpg).
 They get why it's necessary, but they don't really look forward to it. The consequences of this mentality become especially
 problematic when leadership enables it. Testing takes so long that they are satisfied with a few token tests.
-If [agile](/categories/agile) safeguards aren't in place, the result is illusory productivity--a bunch of alpha- and beta-quality features
+If [agile](/categories/agile) validation mechanisms aren't in place, the result is illusory productivity--a bunch of alpha- and beta-quality features
 whose quick delivery might impress unsuspecting clients but will demand fixes later that are orders of magnitude more 
 expensive.
 
