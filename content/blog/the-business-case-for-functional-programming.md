@@ -44,7 +44,7 @@ into deterministic single outputs. This empowers engineers to compose functions 
 [Rube Goldberg machine](https://www.youtube.com/watch?v=kr_z37TgQO4) where the output 
 becomes the input to the next function and so on down the line. You can also mix and match functions to create new data flows.
 In the end, building software is basically like [building Legos](https://cdn-images-1.medium.com/max/1600/1*yGnDGRW4pTgmcDUi4oC8Uw.png).
-This makes your code easier to understand--or in the vernacular of functional programming, "reason about"--and makes code reuse
+This makes your code easier to understand--or in FP vernacular, "reason about"--and makes code reuse
 a natural outcome that is simply part of your day-to-day process.
 
 ## Satisfaction Guaranteed. Literally.
