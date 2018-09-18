@@ -104,7 +104,7 @@ All of that is cumbersome, but FP can make it easier.
 The first thing you should do--FP or not--is to reduce dependencies. Lots of dependencies is a smell. 
 Then replace the remaining object dependencies 
 with *functional dependencies*. Gradually have the engineers evolve their APIs towards behavior rather than objects.
-Thing hard to mock like REST calls can be replaced with functions as simple as
+Things hard to mock like REST calls can be replaced with functions as simple as
 `"" => """{"fake": true}"""` to use [Scala](/tags/scala) syntax. That's really easy. No mocking libraries
 necessary.
 
