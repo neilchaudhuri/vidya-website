@@ -129,7 +129,7 @@ It is very likely that today you can begin to enjoy many of the FP advantages I'
 --offer some degree of FP either in the core language or through open-source extensions. 
 
 It is also critical to keep in mind that it isn't a zero-sum game among FP and other paradigms. In fact, the fundamental
-academic premise of Scala is that OO and FP can not only coexist but complement to produce an ideal language offering
+academic premise of Scala is that OO and FP can not only coexist but complement each other to produce an ideal language offering
 the best of both. Similarly, FP can complement other paradigms like the imperative, procedural philosophy that
 drives [Go](/tags/go) programming.  
 
