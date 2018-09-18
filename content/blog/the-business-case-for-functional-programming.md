@@ -70,7 +70,8 @@ technology landscape. Math isn't opinion.
 
 This is why [Elm](https://elm-lang.org/) developers often report 
 ["0 runtime exceptions" in production](https://www.slideshare.net/InfoQ/fullscale-elm-in-production), which sounds like a 
-dream to [JavaScript](/tags/javascript) developers resigned to a lifetime of perplexing `undefined` errors at runtime. 
+dream to [JavaScript](/tags/javascript) developers resigned to a lifetime of perplexing `undefined` 
+[errors](https://stackoverflow.com/questions/48333993/javascript-function-is-undefined-only-in-ie11) at runtime. 
 That's a huge win, but note "0 runtime exceptions" isn't the same 
 as "0 bugs." No paradigm can guarantee that. FP can't stop a developer running on Red Bull and moxie after staying up all night playing 
 Fortnite from calculating the total of a customer's shopping cart by subtracting rather than adding. Still, FP 
