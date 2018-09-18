@@ -84,7 +84,7 @@ mathematical guarantees that endure.
 That shopping cart bug should be caught by tests, but most software engineers look at unit and integration testing like [flossing](https://www.dentalassociates.com/application/files/4214/7760/0003/flossing-is-beneficial-1.jpg).
 They get why it's necessary, but they don't really look forward to it. The consequences of this mentality become especially
 problematic when leadership enables it. Testing takes so long that they are satisfied with a few token tests.
-If [agile](/categories/agile) validation mechanisms aren't in place, the result is illusory productivity--a bunch of alpha- and beta-quality features
+If [agile](/categories/agile) validation mechanisms aren't in place, the result is illusory productivity--a mess of alpha- and beta-quality features
 whose quick delivery might impress unsuspecting clients but will demand fixes later that are orders of magnitude more 
 expensive.
 
