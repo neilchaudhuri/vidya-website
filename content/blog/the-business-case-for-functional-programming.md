@@ -124,7 +124,7 @@ on [Stack Overflow](https://stackoverflow.com/questions/43729262/how-to-write-un
 of how powerful this can be for testing [Big Data](/categories/big-data) jobs using [Apache Spark](/tags/apache-spark). 
 
 
-## Doesn't Take Much
+## Easier Than You Think
 
 It is very likely that today you can begin to enjoy many of the FP advantages I've described. Most modern languages--even Java finally
 --offer some degree of FP either in the core language or through open-source extensions. 
