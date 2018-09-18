@@ -17,6 +17,7 @@ categories:
 - Big Data
 - Analytics
 - Programming
+- Functional Programming
 - Architecture
 - Open-source
 aliases:

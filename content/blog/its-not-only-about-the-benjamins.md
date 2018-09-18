@@ -6,6 +6,7 @@ description: "The highest paying languages are also among the most fun and produ
 banner: "img/banners/benjamins.jpeg"
 categories:
 - Programming
+- Functional Programming
 - Open-Source
 - Analytics
 - Software Engineering

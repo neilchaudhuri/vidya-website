@@ -12,6 +12,7 @@ tags:
 - Ruby
 categories: 
 - Programming
+- Functional Programming
 aliases:
 - /blog/Programming/Java/Scala/Ruby/2014/08/04/know-your-options
 ---

@@ -27,6 +27,7 @@ categories:
 - Project Management
 - Software Engineering
 - Programming
+- Functional Programming
 - Testing
 - Continuous Delivery
 aliases:

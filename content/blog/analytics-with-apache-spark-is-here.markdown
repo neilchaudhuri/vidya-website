@@ -13,6 +13,7 @@ tags:
 - Apache Spark
 categories: 
 - Programming
+- Functional Programming
 - Big Data
 - Analytics
 - Testing

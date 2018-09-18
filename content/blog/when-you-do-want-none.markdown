@@ -10,6 +10,7 @@ tags:
 - Scala
 categories: 
 - Programming
+- Functional Programming
 aliases:
 - /blog/Programming/Scala/2015/02/25/when-you-do-want-none
 ---

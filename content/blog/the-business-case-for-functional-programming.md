@@ -1,34 +1,25 @@
 ---
-draft: true
 author: "Neil Chaudhuri"
 title: "The Business Case for Functional Programming"
-description: "A ScrumMaster with technical skills can use them without compromising the Scrum process."
-banner: "img/banners/settings.jpeg"
-date: 2018-09-20
+description: "Learn how functional programming can make your teams more productive than you ever imagined."
+banner: "img/banners/functions.jpg"
+date: 2018-09-18
 tags:
+- Agile
 - Scrum
 - Java
 - Scala
-- Ruby
 - Go
-- DevOps
 - Technical debt
-- Gradle
-- SBT
 - ScalaCheck
-- Docker
-- Vagrant
-- Ansible
-- Kubernetes
-- React
-- Angular
 categories: 
 - Agile
 - Project Management
 - Software Engineering
 - Programming
+- Functional Programming
 - Testing
-- Continuous Delivery
+- Continuous Integration
 
 ---
 
@@ -36,20 +27,22 @@ Functional programming isn't exactly a fun topic anywhere outside of technical c
 [The Big Bang Theory](https://www.youtube.com/watch?v=k0xgjUhEG3U). Even software engineers who love 
 code often tune out when they hear terms like [monad](http://stackoverflow.com/questions/44965/what-is-a-monad)
 and [referential transparency](https://stackoverflow.com/questions/210835/what-is-referential-transparency). 
-If you are a manager or executive in the technology space, heads up. Functional programming will help you build better 
-software faster than you ever thought possible and earn you the Tesla you always wanted. 
+But if you are a technical manager or executive, heads up. Functional programming will limit your 
+[technical debt](tags/technical-debt) so you build better 
+software faster than you imagined and will earn you the Tesla you always wanted. 
 
 Here's why.
 
 ## Code Reuse For Real
 
 Code reuse is a vision long offered by object-oriented (OO) languages like [Java](/categories/java) but has proven to be a 
-myth--like the Fountain of Youth and fat-free ranch dressing that's edible. The reason is that OO languages tightly couple data
+myth--like the Fountain of Youth and fat-free ranch dressing that's edible. In practice OO languages tightly couple data
 with behavior, so it's hard to extract the behavior into reusable code others can use. 
 
-In functional programming (FP), it's not objects but *behavior*--in the form of functions that take single inputs and deterministically produce single
-outputs--that is the first-class citizen. This means that you can compose functions into data flows where the output of one function
-becomes the input to the next many times over on down the line. You can also mix and match functions to create new data flows.
+In functional programming (FP), *behavior* is the first-class citizen--in the form of functions that transform single inputs 
+into deterministic single outputs. This empowers engineers to compose functions into data flows where providing data to one function sets off a 
+[Rube Goldberg machine](https://www.youtube.com/watch?v=kr_z37TgQO4) where the output 
+becomes the input to the next function and so on down the line. You can also mix and match functions to create new data flows.
 In the end, building software is basically like [building Legos](https://cdn-images-1.medium.com/max/1600/1*yGnDGRW4pTgmcDUi4oC8Uw.png).
 This makes your code easier to understand--or in the vernacular of functional programming, "reason about"--and makes code reuse
 a natural outcome that is simply part of your day-to-day process.
@@ -58,13 +51,14 @@ a natural outcome that is simply part of your day-to-day process.
 
 If you manage OO projects, you may have heard of "design patterns," which came out of a 
 [book by a group of expert software engineers](https://en.wikipedia.org/wiki/Design_Patterns) known as the "Gang of Four".
-Design patterns offer suggestions for writing code that solves common problems in ways that make the code resilient to change. 
-In other words, thoughtfully applied design patterns reduce your time to market without
-forcing everyone to work the weekend and hating you after your mercurial client changes course.
+Design patterns offer suggestions for writing code that solves common problems while resilient to change. 
+In other words, thoughtfully applied patterns reduce your time to market so your team won't have to work the weekend
+after your mercurial client changes course. That spares you a lot of resentment and 
+the cost of two pizzas--more [if I am on your team](/consulting/).
 
-Sounds great, right?
+Sounds great, right? It is! Sort of.
 
-The problem is that design patterns are opinion--expert opinion borne of decades of experience and quite valuable--but opinion nonetheless. 
+The problem is that design patterns are opinion--expert opinion borne of decades of experience--but opinion nonetheless. 
 As programming languages and technical challenges evolve, there is no way to know how well they will stand the test of time. The
 [Singleton](https://www.geeksforgeeks.org/singleton-design-pattern/) design pattern, for example, has 
 been [particularly controversial](https://stackoverflow.com/questions/137975/what-is-so-bad-about-singletons).
@@ -77,178 +71,78 @@ technology landscape. Math isn't opinion.
 This is why [Elm](https://elm-lang.org/) developers often report 
 ["0 runtime exceptions" in production](https://www.slideshare.net/InfoQ/fullscale-elm-in-production). Note this isn't the same 
 as "0 bugs." No paradigm can guarantee that. FP can't stop a developer running on Red Bull and moxie after staying up all night playing 
-Fortnite from calculating the total of a customer's shopping cart by multiplying rather than adding. Still, the mathematical
-guarantees FP 
-offers--along with other principles like [immutability](https://www.quora.com/Why-is-immutability-important-in-functional-programming)--
-makes it harder to write bugs and uncovers the ones you *do* write more quickly and cheaply.
+Fortnite from calculating the total of a customer's shopping cart by subtracting rather than adding. Still, FP 
+--along with companion principles like [immutability](https://www.quora.com/Why-is-immutability-important-in-functional-programming)--
+makes it harder to write bugs and uncovers the ones you *do* write more quickly and cheaply by virtue of 
+mathematical guarantees that stand the test of time.
 
-## 
-   
+## More Quality in Less Time
 
+That shopping cart bug should be caught by tests, but most software engineers look at unit and integration testing like [flossing](https://www.dentalassociates.com/application/files/4214/7760/0003/flossing-is-beneficial-1.jpg).
+They get why it's necessary, but they don't really look forward to it. The consequences of this mentality become especially
+problematic when executives enable it. Testing takes so long that they are satisfied with a few token tests.
+If [agile](/categories/agile) safeguards aren't in place, the result is illusory productivity--a bunch of alpha- and beta-quality features
+whose quick delivery might impress unsuspecting clients but will demand fixes later that are orders of magnitude more 
+expensive.
 
+To be fair, developer testing can be a pain. Test setup is slow because you need to 
+"[double](http://xunitpatterns.com/Test%20Double.html)"
+your inputs (*i.e* mock or stub, often with the help of an open-source library like [Mockito](https://site.mockito.org/) 
+or [unittest.mock](https://docs.python.org/3/library/unittest.mock.html)) along with any dependencies
+necessary for the code you're testing to execute a scenario. 
 
+*And* you have to repeat this process for each likely happy-path scenario and some
+arbitrary number of alternate-path and error scenarios. 
 
+*And* you need
+to write your tests efficiently so that the test suite doesn't take hours to run in [continuous integration](/categories/continuous-integration).
 
- 
+All of that is cumbersome, but FP can make it easier.
 
+The first thing you should do--FP or not--is to reduce dependencies. Lots of dependencies is a smell. 
+Then replace the remaining object dependencies 
+with *functional dependencies*. Gradually have the engineers evolve their APIs towards behavior rather than objects.
+Thing hard to mock like REST calls can be replaced with functions as simple as
+`"" => """{"fake": true}"""` to use [Scala](/tags/scala) syntax. That's really easy. No mocking libraries
+necessary.
 
+As for test inputs, consider [property-based testing](http://www.scalatest.org/user_guide/property_based_testing). 
+For the cost of less initial setup than you do now for a single input, tools like 
+[ScalaCheck](/tags/scalacheck) will generate literally
+hundreds of inputs that will put the code through the wringer against data you never imagined and give you confidence it works.
+I think it makes a lot of sense to execute property-based tests as the first line of defense in 
+development but conventional, scenario-based tests 
+with functional dependencies to reproduce and fix bugs discovered in functional testing or production.   
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Anyone with a basic knowledge of [Scrum](/tags/scrum), and certainly everyone who has taken 
-[Agile Software Project Management With Scrum](/course/agile-software-project-management-with-scrum),
-knows the role of the ScrumMaster--to be a [servant leader](http://www.inc.com/peter-economy/7-secrets-of-servant-leadership-that-will-lead-you-to-success.html),
-to act as guardian of the Scrum process, to remove obstacles for the
-delivery team, to negotiate any tension between the [Product Owner](https://www.mountaingoatsoftware.com/agile/scrum/roles/product-owner) 
-and the delivery team, to encourage the team to [self-organize](https://hbr.org/2004/09/get-self-organized) and be 
-[cross-functional](http://www.quickbase.com/blog/5-great-reasons-to-have-cross-functional-teams), and
-[so on](http://www.scrumguides.org/scrum-guide.html#team-sm). These are so well understood they're almost clichés. 
-The difficulty is learning how these abstract ideas apply to day-to-day software engineering.
-
-For example, a common question is "Does Scrum permit a ScrumMaster with a technical background to help deliver features for the team he 
-or she leads?" While this is a common practice and some teams have made it work, the general consensus answer is "No" or at least "Not ideally."
-The primary reason is that a ScrumMaster can't be an honest broker when resolving disagreements between the Product Owner and 
-delivery team if he or she is writing code as a member of that delivery team. No one likes a conflict of interest, right?
-
-However, there are other ways that a ScrumMaster with technical skills can apply them to provide significant value to the project and 
-dramatically increase [velocity](https://www.mountaingoatsoftware.com/blog/know-exactly-what-velocity-means-to-your-scrum-team)
-without compromising credibility or the Scrum process. 
+Finally, if your team's tests have sophisticated setup with an expensive resource you'd like to share across tests and 
+clean up afterwards, have your engineers employ the [Loan Pattern](https://www.outbrain.com/techblog/2017/05/effective-testing-with-loan-pattern-in-scala/),
+which is one of the FP-est things you can do. I wrote an example 
+on [Stack Overflow](https://stackoverflow.com/questions/43729262/how-to-write-unit-tests-in-spark-2-0/43769845#43769845) 
+of how powerful this can be for testing [Big Data](/categories/big-data) jobs using [Apache Spark](/tags/apache-spark). 
 
 
+## Doesn't Take Much
 
-## Pay Down Technical Debt
+It is very likely that today you can begin to enjoy many of the FP advantages I've described. Most modern languages--even Java finally
+--offer some degree of FP either in the core language or through open-source extensions. 
 
-[Technical debt](https://www.agilealliance.org/introduction-to-the-technical-debt-concept/) might be the biggest obstacle to
-productivity. Every development team remembers when either a lack of time or experience produced 
-suboptimal design. In my own experience, I've known exactly where the biggest debt is, and it nags at me that I don't have the time 
-to tackle it. A technical ScrumMaster can [branch off trunk](http://guides.beanstalkapp.com/version-control/intro-to-version-control.html)
-and begin to address technical debt. For example, address all those 
-[TODOs](http://stackoverflow.com/questions/335378/how-do-you-flag-code-so-that-you-can-come-back-later-and-work-on-it) 
-in the code. Turn all those repeated code blocks into functions to stay [DRY](https://dzone.com/articles/next-level-dont-repeat). 
-Extract hardcoded values into configuration. Address all those compiler warnings and significant 
-[static analysis](https://www.owasp.org/index.php/Static_Code_Analysis) errors.
+It is also critical to keep in mind that it isn't a zero-sum game among FP and other paradigms. In fact, the fundamental
+academic premise of Scala is that OO and FP can not only coexist but complement to produce an ideal language offering
+the best of both. Similarly, FP can complement other paradigms like the imperative, procedural philosophy that
+drives [Go](/tags/go) programming.  
 
-Particularly savvy ScrumMasters can do even more. If the code base uses an object-oriented language, look for opportunities
-for abstractions that can be expressed through [design patterns](http://www.blackwasp.co.uk/gofpatterns.aspx) or cleaner code 
-utilizing [concepts like encapsulation and the SOLID principles](http://www.codemag.com/article/1001061). If the language 
-is functional, make sure functions are as [pure](https://www.sitepoint.com/functional-programming-pure-functions/) as possible
-by limiting side effects. Utilize structures like [monads](http://stackoverflow.com/questions/44965/what-is-a-monad) and techniques like 
-[currying](http://stackoverflow.com/questions/36314/what-is-currying) and [type classing](http://danielwestheide.com/blog/2013/02/06/the-neophytes-guide-to-scala-part-12-type-classes.html)
-to maximize composability and reusability. 
-
-In the end, your team will thank you if you've promoted loose coupling by paying enough technical debt that the next
-big change doesn't force everyone to work the weekend.
-
-## Speed Things Up
-
-In their seminal book *Lean Software Development*, authors Mary and Tom Poppendieck describe seven principles--the first of 
-which is [Eliminate Waste](http://www.allaboutagile.com/lean-principles-1-eliminate-waste/). There are many forms 
-of waste, but none is more frustrating for developers than waiting. Any good ScrumMaster will work to eliminate bureaucratic waste
-and will make sure the development team gets the answers it needs quickly, but a technically skilled ScrumMaster can do even more.
-
-In particular, speed up the build. There are a lot of ways to do this. First, maximize the value from your build tool. For example,
-[Gradle](https://gradle.org/) features a [Daemon](https://docs.gradle.org/current/userguide/gradle_daemon.html#sec:why_the_daemon) 
-(enabled by default in version 3.x) that offers tremendous performance improvements. Gradle also lets you run tests 
-and, as an incubating feature, 
-even [subprojects](https://docs.gradle.org/current/userguide/multi_project_builds.html#sec:parallel_execution) in parallel. 
-Meanwhile, [SBT](http://www.scala-sbt.org/index.html) was built from the ground up 
-to [run tasks in parallel](http://www.scala-sbt.org/0.13/docs/Parallel-Execution.html).
-
-Of course, these enhancements can only take you so far if the tasks executed by the build tool are inherently slow and/or unparallelizable. The biggest culprit
-is typically the test bed. Speed up the tests by applying the [xUnit Test Patterns](http://xunitpatterns.com/Slow%20Tests.html) 
-defined by [Gerard Meszaros](https://www.linkedin.com/in/gerardmeszaros/). Make sure unit tests really are unit tests where every dependency is "[doubled](http://xunitpatterns.com/Test%20Double.html)" 
-(*i.e* mocked, stubbed, dummied, or faked). Also make sure that all tests, especially the integration tests where setup is expensive,
-share [test fixtures](https://github.com/junit-team/junit4/wiki/test-fixtures) by using the test framework to group tests 
-into suites and/or using the facilities of the language--like with superclasses in [Ruby](/tags/ruby) or 
-[Java](/tags/java) or [traits](http://alvinalexander.com/scala/scala-trait-examples) or the 
-[Loan Pattern](http://stackoverflow.com/questions/20762240/loaner-pattern-in-scala) in [Scala](/tags/scala).
-
-Then separate unit tests from integration tests so that only the former run with each commit 
-while the latter run less frequently. Remember that only a representative subset of the tests--rather than 
-*all* of them--needs to be run with each commit as long as *all of them run regularly and often* in 
-[continuous integration](https://www.martinfowler.com/articles/continuousIntegration.html) (CI). Every testing framework
-from [RSpec](http://stackoverflow.com/questions/10029250/organizing-rspec-2-tests-into-unit-and-integration-categories-in-rails) 
-to [JUnit](https://github.com/junit-team/junit4/wiki/categories) to 
-[ScalaTest](http://www.scalatest.org/user_guide/tagging_your_tests) to [Go's testing package](https://golang.org/pkg/testing/) 
-provides ways to organize and categorize your tests. This adds a lot of value and fits perfectly in the skill set
-of a technically savvy ScrumMaster.
- 
-You can also speed up the build by removing tasks like documentation generation and static analysis from 
-developer and per-commit builds. Static analysis should only run daily in CI; documentation weekly.
-
-Beyond the build, look for ways to automate any manual tasks that are part of the development team's workflow. Consult 
-with the software engineers to identify where these opportunities for automation may reside.
-
-## Improve the Process
-
-A technically skilled ScrumMaster can also improve the software engineering process. For example, you can use 
-[Angular](/tags/angular) or [React](/tags/react) to make [REST](/tags/rest) calls to the APIs for your 
-project management, source control, CI, and systems monitoring tools to produce a dashboard that
-presents all their data individually *and* mashed up to help identify the root causes of events. After all, a time series 
-on this dashboard could show that a surge in bugs coincides with the absence of the Product Owner
-or a spike in technical debt when new engineers joined the team. That's valuable information.
-
-New development tools can also improve the process. A savvy ScrumMaster on a Scala project could introduce 
-[ScalaCheck](https://www.scalacheck.org/) to improve the robustness of the tests and to enable
-developers to write more tests faster. 
-
-Developers hate writing documentation, and as a result documentation is almost never current. That same ScrumMaster could also 
-improve documentation by introducing [tut](https://github.com/tpolecat/tut) so the Scala developers can write documentation 
-that is compiled--thus always current--and run as part of CI. The fact it's code makes writing tut 
-documentation almost fun. Similarly [Swagger](http://swagger.io/), a tool that generates REST API documentation, runs off the existing REST endpoints 
-in the code so that the documentation stays current. Introducing automation like tut and Swagger--along with manually editing the source code 
-to keep the method-level documentation in, for example, [Javadoc](http://www.oracle.com/technetwork/articles/java/index-137868.html),
-[RDoc](https://rdoc.github.io/rdoc/), or
-[Scaladoc](http://docs.scala-lang.org/style/scaladoc.html) current--will make developers much happier and more productive;
-and the documentation much better.
-
-Another area where a technical ScrumMaster can really help the delivery team is with [IDE](http://www.webopedia.com/TERM/I/integrated_development_environment.html) integration. Most software
-engineers don't enjoy context switching away from their IDEs
-to other tools, especially to perform tasks that they--right or wrong--don't enjoy or consider meaningless to their work like updating the project
-management tool with their hours or updating the status of an issue in the bug tracker. I think any ScrumMaster should shoulder as 
-much of that administrative burden as possible, but a ScrumMaster with development experience can 
-do even more to fill that gap by leveraging integrations with leading software engineering tools most IDEs offer 
-out of the box. If you enable developers to view the project management tool, source control, the CI dashboard, the bug tracker, the continuous monitoring dashboard,
-and other tools without having to context switch away from their IDEs, you will ease their administrative burden and maintain
-the productivity that [context switching always compromises](https://www.quora.com/Elon-Musk-What-does-My-context-switching-penalty-is-high-and-my-process-isolation-is-not-what-it-used-to-be-mean).
-
-One last really important area where a technically skilled ScrumMaster can dramatically improve the process is in 
-[DevOps](https://continuousdelivery.com/). It demands a lot of work and an organizational commitment to build a mature
-DevOps practice, but you can still take incremental steps to lead your team there. Augment your CI pipeline with
-[infrastructure as code](https://www.thoughtworks.com/insights/blog/infrastructure-code-reason-smile) to create a 
-continuous delivery (CD) pipeline. Learn how tools like [Vagrant](https://www.vagrantup.com/), [Ansible](https://www.ansible.com/), 
-[Docker](https://www.docker.com/), and [Kubernetes](https://kubernetes.io/) can dramatically increase your velocity. It
-will likely take more than the efforts of one ambitious ScrumMaster to build a robust CD pipeline for the team, but
-you will be surprised at how much more productive everyone will be with just a little hard work applying your skills 
-to DevOps. You will also likely impress the Product Owner, who will be happy to devote sprint [capacity](http://softwareengineering.stackexchange.com/questions/264426/scrum-capacity-vs-velocity-when-planning-a-sprint) 
-towards continuous delivery in the future.
+Consequently, you should not worry that FP demands a radical transformation of your code 
+base that is unrealistic for your timeline and unthinkable for your client. No need to send everyone to Haskell training.
 
 
-This is a long post, but these are just a few of the ways a technical ScrumMaster can add significant value to the team, the product, and the process.
-Of course discipline is critical to make sure that changes to the code don't break the tests and that they seamlessly merge with the 
-new features built by the developers on the more conventional Scrum path, but never doubt that a ScrumMaster can 
-apply technicals skills in a manner entirely consistent with the Scrum process.
+## Conclusion
 
- 
- 
-
-
- 
-
+When you are facing increasing pressure to deliver more features in less time, your team needs to leverage the full capabilities
+of your engineering stack to maximize productivity. No matter your situation, let functional programming be a weapon
+in your arsenal. Whether you transition to
+fundamentally functional languages like [Elixir](https://elixir-lang.org/) or Scala or Elm, leverage functional capabilities 
+or extensions in other languages like Java or [JavaScript](/tags/javascript), 
+or even just adopt corollary principles like immutability, your team will write fewer bugs and catch others faster than you
+thought possible. You should see improvement in as little as a single sprint (in [Scrum](/tags/scrum) speak), and it's an 
+investment [most software engineers are happy to make](/blog/the-art-of-software-engineering) that will generate huge
+value for all of you.

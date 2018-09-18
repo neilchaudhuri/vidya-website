@@ -10,6 +10,7 @@ aliases:
  - /blog/Java/Scala/Data/Hadoop/Analytics/2013/10/27/java-is-dysfunctional-with-big-data
 categories:
 - Programming
+- Functional Programming
 - Big Data
 - Analytics
 tags: 

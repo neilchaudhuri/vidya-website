@@ -18,6 +18,7 @@ tags:
 categories: 
 - Big data
 - Programming
+- Functional Programming
 - Open-source
 aliases:
 - /blog/Programming/Scala/Java/Data/Hadoop/Analytics/2014/01/25/lighting-a-spark-with-hbase

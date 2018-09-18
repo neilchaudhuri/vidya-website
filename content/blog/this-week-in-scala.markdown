@@ -9,6 +9,7 @@ tags:
 - Scala
 categories: 
 - Programming
+- Functional Programming
 aliases:
 - /blog/Scala/Programming/2015/04/29/this-week-in-scala
 ---

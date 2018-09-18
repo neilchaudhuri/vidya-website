@@ -23,6 +23,7 @@ tags:
 categories: 
 - Software Engineering
 - Programming
+- Functional Programming
 - Testing
 - Architecture
 - Mobile

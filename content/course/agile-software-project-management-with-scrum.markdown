@@ -7,7 +7,7 @@ aliases:
 - /course/Agile/Scrum/Projects/2015/01/07/agile-software-project-management-with-scrum
 ---
 
-Learn from a [Scrum](/tags/scrum) expert with years of experience in software development. Move beyond [agile](/tags/agile) platitudes and use
+Learn from a [Scrum](/tags/scrum) expert with years of experience in software development. Move beyond [agile](/categories/agile) platitudes and use
 Scrum to solve the real-life problems that happen
 on projects so you can deliver high-quality software to customers on time and under budget.
 

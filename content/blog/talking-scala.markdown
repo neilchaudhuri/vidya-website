@@ -12,6 +12,7 @@ tags:
 - Play Framework
 categories: 
 - Programming
+- Functional Programming
 - Architecture
 - Mobile
 - Big Data

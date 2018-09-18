@@ -22,6 +22,7 @@ tags:
 - PostgreSQL
 categories: 
 - Programming
+- Functional Programming
 - Project Management
 - Big Data
 - Agile

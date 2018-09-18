@@ -11,6 +11,7 @@ tags:
 - Java
 categories:
 - Programming
+- Functional Programming
 - Software Engineering
 - Agile
 aliases:
