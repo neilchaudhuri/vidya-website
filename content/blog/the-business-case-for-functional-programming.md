@@ -89,7 +89,7 @@ expensive.
 
 To be fair, developer testing can be a pain. Test setup is slow because you need to 
 "[double](http://xunitpatterns.com/Test%20Double.html)"
-your inputs (*i.e* mock or stub, often with the help of an open-source library like [Mockito](https://site.mockito.org/) 
+your inputs (*i.e* mock or stub them, often with the help of an open-source library like [Mockito](https://site.mockito.org/) 
 or [unittest.mock](https://docs.python.org/3/library/unittest.mock.html)) along with any dependencies
 necessary for the code you're testing to execute a scenario. 
 
