@@ -69,7 +69,9 @@ laws that govern it--[Type theory](https://en.wikipedia.org/wiki/Type_theory) an
 technology landscape. Math isn't opinion. 
 
 This is why [Elm](https://elm-lang.org/) developers often report 
-["0 runtime exceptions" in production](https://www.slideshare.net/InfoQ/fullscale-elm-in-production). Note this isn't the same 
+["0 runtime exceptions" in production](https://www.slideshare.net/InfoQ/fullscale-elm-in-production), which sounds like a 
+dream to [JavaScript](/tags/javascript) developers resigned to a lifetime of perplexing `undefined` errors at runtime. 
+That's a huge win, but note "0 runtime exceptions" isn't the same 
 as "0 bugs." No paradigm can guarantee that. FP can't stop a developer running on Red Bull and moxie after staying up all night playing 
 Fortnite from calculating the total of a customer's shopping cart by subtracting rather than adding. Still, FP 
 --along with companion principles like [immutability](https://www.quora.com/Why-is-immutability-important-in-functional-programming)--
@@ -141,7 +143,7 @@ When you are facing increasing pressure to deliver more features in less time, y
 of your engineering stack to maximize productivity. No matter your situation, let functional programming be a weapon
 in your arsenal. Whether you transition to
 fundamentally functional languages like [Elixir](https://elixir-lang.org/) or Scala or Elm, leverage functional capabilities 
-or extensions in other languages like Java or [JavaScript](/tags/javascript), 
+or extensions in other languages like Java or JavaScript, 
 or even just adopt corollary principles like immutability, your team will write fewer bugs and catch others faster than you
 thought possible. You should see improvement in as little as a single sprint (in [Scrum](/tags/scrum) speak), and it's an 
 investment [most software engineers are happy to make](/blog/the-art-of-software-engineering) that will generate huge
