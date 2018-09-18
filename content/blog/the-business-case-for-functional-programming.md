@@ -54,11 +54,11 @@ If you manage OO projects, you may have heard of "design patterns," which came o
 Design patterns offer suggestions for writing code that solves common problems while resilient to change. 
 In other words, thoughtfully applied patterns reduce your time to market so your team won't have to work the weekend
 after your mercurial client changes course. That spares you a lot of resentment and 
-the cost of two pizzas--more [if I am on your team](/consulting/).
+the cost of at least two pizzas--more [if I am on your team](/consulting/).
 
 Sounds great, right? It is! Sort of.
 
-The problem is that design patterns are opinion--expert opinion borne of decades of experience--but opinion nonetheless. 
+The problem is design patterns are opinion--expert opinion borne of decades of experience to be sure--but opinion nonetheless. 
 As programming languages and technical challenges evolve, there is no way to know how well they will stand the test of time. The
 [Singleton](https://www.geeksforgeeks.org/singleton-design-pattern/) design pattern, for example, has 
 been [particularly controversial](https://stackoverflow.com/questions/137975/what-is-so-bad-about-singletons).
@@ -69,15 +69,15 @@ laws that govern it--[Type theory](https://en.wikipedia.org/wiki/Type_theory) an
 technology landscape. Math isn't opinion. 
 
 This is why [Elm](https://elm-lang.org/) developers often report 
-["0 runtime exceptions" in production](https://www.slideshare.net/InfoQ/fullscale-elm-in-production), which sounds like a 
-dream to [JavaScript](/tags/javascript) developers resigned to a lifetime of perplexing `undefined` 
+["0 runtime exceptions" in production](https://www.slideshare.net/InfoQ/fullscale-elm-in-production), which sounds like 
+paradise to [JavaScript](/tags/javascript) developers resigned to a lifetime of perplexing `undefined` 
 [errors](https://stackoverflow.com/questions/48333993/javascript-function-is-undefined-only-in-ie11) at runtime. 
 That's a huge win, but note "0 runtime exceptions" isn't the same 
-as "0 bugs." No paradigm can guarantee that. FP can't stop a developer running on Red Bull and moxie after staying up all night playing 
+as "0 bugs." No paradigm can guarantee that. FP can't stop a developer surviving on Red Bull and moxie after staying up all night playing 
 Fortnite from calculating the total of a customer's shopping cart by subtracting rather than adding. Still, FP 
 --along with companion principles like [immutability](https://www.quora.com/Why-is-immutability-important-in-functional-programming)--
-makes it harder to write bugs and uncovers the ones you *do* write more quickly and cheaply by virtue of 
-mathematical guarantees that stand the test of time.
+provides guardrails making it harder to write bugs and uncovers the ones your team *does* write more quickly and cheaply by virtue of 
+mathematical guarantees that endure.
 
 ## More Quality in Less Time
 
