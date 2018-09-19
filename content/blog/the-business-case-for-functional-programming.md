@@ -71,9 +71,9 @@ technology landscape. Math isn't opinion.
 
 This is why [Elm](https://elm-lang.org/) developers often report 
 ["0 runtime exceptions" in production](https://www.slideshare.net/InfoQ/fullscale-elm-in-production), which sounds like 
-fat-free ranch dressing that's edible to [JavaScript](/tags/javascript) developers resigned to a lifetime of perplexing `undefined` 
-[errors](https://stackoverflow.com/questions/48333993/javascript-function-is-undefined-only-in-ie11) at runtime. 
-That's a huge win, but note "0 runtime exceptions" isn't the same 
+fat-free ranch dressing that's edible to [JavaScript](/tags/javascript) developers resigned to a lifetime of `undefined` 
+[errors](https://stackoverflow.com/questions/48333993/javascript-function-is-undefined-only-in-ie11) at runtime that would make 
+[Sisyphus](https://www.britannica.com/topic/Sisyphus) cry. That's a huge win, but note "0 runtime exceptions" isn't the same 
 as "0 bugs." No paradigm can guarantee that. FP can't stop a developer surviving on Red Bull after staying up all night playing 
 Fortnite from calculating the total price of a customer's shopping cart by subtracting rather than adding. Still, FP 
 --along with companion principles like [immutability](https://www.quora.com/Why-is-immutability-important-in-functional-programming)--
@@ -108,15 +108,17 @@ with functional dependencies. Gradually have the engineers evolve their APIs tow
 For example, let's say one of your user stories involves fetching a username by an identifier to use it for subsequent business logic. 
 Typically, that code has a dependency on some object that knows how to read from the database. Testing the logic in isolation
 requires the overhead of writing your own stub for that database object or importing a library to mock it. What if instead the 
-dependency was on a simple function that takes a number (the identifier) and returns a string (the username)? This 
+dependency was on a simple function that takes a number (the identifier) and returns a string (the username)? In Scala, 
+that might look like `Int => String`. This 
 elegantly decouples the logic from the database concern or any particular family of objects; all it knows is 
 "If I give this function the right identifier, I get the username back." Even better, I can stub that function really easily:
 
-* One happy path (using Scala syntax): `123 => "neil"`
+* One happy path: `123 => "neil"`
 * One error path: `999 => throw new UserNotFoundException("No user with id 999")` 
   
 
-That's really easy. No mocking libraries necessary.
+That's really easy. No mocking libraries necessary. The logic will use a function performing the real database lookup in production, but it
+will still have the identical `Int => String` shape.
 
 As for test inputs, consider [property-based testing](http://www.scalatest.org/user_guide/property_based_testing). 
 For the cost of less initial setup than you do now for a single input, tools like 
