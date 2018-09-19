@@ -12,6 +12,7 @@ tags:
 - Go
 - Technical debt
 - ScalaCheck
+- REST
 categories: 
 - Agile
 - Project Management
@@ -45,13 +46,13 @@ into single outputs. This empowers engineers to compose functions into data flow
 becomes the input to the next function and so on down the line. You can also mix and match functions to create new data flows.
 In the end, building software is basically like [building Legos](https://cdn-images-1.medium.com/max/1600/1*yGnDGRW4pTgmcDUi4oC8Uw.png).
 This makes your code easier to understand--or in FP vernacular, "reason about"--and makes code reuse
-a natural outcome that is simply part of your day-to-day process.
+a natural outcome of your day-to-day process.
 
 ## Satisfaction Guaranteed. Literally.
 
 If you manage OO projects, you may have heard of "design patterns," which came out of a 
-[book by a group of expert software engineers](https://en.wikipedia.org/wiki/Design_Patterns) known as the "Gang of Four".
-Design patterns offer suggestions for writing code that solves common problems while resilient to change. 
+[book by a group of expert software engineers](https://en.wikipedia.org/wiki/Design_Patterns) known as the "Gang of Four."
+Design patterns offer suggestions for writing code that solves common problems in a manner resilient to change. 
 In other words, thoughtfully applied patterns reduce your time to market so your team won't have to work the weekend
 after your mercurial client changes course. That spares you a lot of resentment and 
 the cost of at least two pizzas--more [if I am on your team](/consulting/).
@@ -70,11 +71,11 @@ technology landscape. Math isn't opinion.
 
 This is why [Elm](https://elm-lang.org/) developers often report 
 ["0 runtime exceptions" in production](https://www.slideshare.net/InfoQ/fullscale-elm-in-production), which sounds like 
-paradise to [JavaScript](/tags/javascript) developers resigned to a lifetime of perplexing `undefined` 
+fat-free ranch dressing that's edible to [JavaScript](/tags/javascript) developers resigned to a lifetime of perplexing `undefined` 
 [errors](https://stackoverflow.com/questions/48333993/javascript-function-is-undefined-only-in-ie11) at runtime. 
 That's a huge win, but note "0 runtime exceptions" isn't the same 
-as "0 bugs." No paradigm can guarantee that. FP can't stop a developer surviving on Red Bull and moxie after staying up all night playing 
-Fortnite from calculating the total of a customer's shopping cart by subtracting rather than adding. Still, FP 
+as "0 bugs." No paradigm can guarantee that. FP can't stop a developer surviving on Red Bull after staying up all night playing 
+Fortnite from calculating the total price of a customer's shopping cart by subtracting rather than adding. Still, FP 
 --along with companion principles like [immutability](https://www.quora.com/Why-is-immutability-important-in-functional-programming)--
 provides safeguards making it harder to write bugs and uncovers the ones your team *does* write more quickly and cheaply by virtue of 
 mathematical guarantees that endure.
@@ -85,11 +86,11 @@ That shopping cart bug should be caught by tests, but most software engineers lo
 They get why it's necessary but don't look forward to it at all. The consequences are particularly profound
 when leadership acts as an enabler. Not that you would ever do this, but many technology leaders find testing takes so long that 
 they are satisfied with a few token tests. The result is illusory productivity. Delivering a mess of alpha- and beta-quality features
-quickly might impress unsuspecting clients at first, but their enthusiasm will drain when the inevitability 
+quickly might impress unsuspecting clients at first, but watch their enthusiasm wane when the inevitability 
 of bug fixes orders of magnitude more expensive becomes apparent.
 
 To be fair, developer testing can be a pain. Test setup is slow because you need to 
-mock or stub your inputs along with any dependencies necessary for the code to execute a scenario. This
+mock or stub your inputs along with any dependencies necessary for the code to execute a scenario like databases or [REST](/tags/rest) clients. This
 often requires an open-source library like [Mockito](https://site.mockito.org/) or [unittest.mock](https://docs.python.org/3/library/unittest.mock.html).  
 
 *And* you have to repeat this process for multiple happy-path scenarios and some
@@ -100,7 +101,7 @@ to write your tests efficiently so that the test suite doesn't take hours to run
 
 All of that is cumbersome, but FP can make it easier.
 
-The first thing you should do--FP or not--is to reduce dependencies. Lots of dependencies is a smell. 
+The first thing you should do--FP or not--is to reduce dependencies. Lots of dependencies is a [smell](https://martinfowler.com/bliki/CodeSmell.html). 
 Then replace the remaining object dependencies 
 with functional dependencies. Gradually have the engineers evolve their APIs towards *behavior* rather than objects. 
 
@@ -111,7 +112,7 @@ dependency was on a simple function that takes a number (the identifier) and ret
 elegantly decouples the logic from the database concern or any particular family of objects; all it knows is 
 "If I give this function the right identifier, I get the username back." Even better, I can stub that function really easily:
 
-* One happy path (using Scala syntax): `123 => "Neil"`
+* One happy path (using Scala syntax): `123 => "neil"`
 * One error path: `999 => throw new UserNotFoundException("No user with id 999")` 
   
 
@@ -139,10 +140,11 @@ It is very likely that today you can begin to enjoy many of the FP advantages I'
 It is also critical to keep in mind that it isn't a zero-sum game among FP and other paradigms. In fact, the fundamental
 academic premise of Scala is that OO and FP can not only coexist but complement each other to produce an ideal language offering
 the best of both. Similarly, FP can complement other paradigms like the imperative, procedural philosophy that
-drives [Go](/tags/go) programming.  
+drives [Go](/tags/go).  
 
 Consequently, you should not worry that FP demands a radical transformation of your code 
-base that is unrealistic for your timeline and unthinkable for your client. No need to send everyone to Haskell training.
+base that is unrealistic for your timeline and unthinkable for your client. No need to send everyone to Haskell training
+and rewrite your code base.
 
 
 ## Conclusion
@@ -153,6 +155,6 @@ in your arsenal. Whether you transition to
 fundamentally functional languages like [Elixir](https://elixir-lang.org/) or Scala or Elm, leverage functional capabilities 
 or extensions in other languages like Java or JavaScript, 
 or even just adopt corollary principles like immutability, your team will write fewer bugs and catch others faster than you
-thought possible. You should see improvement in as little as a single sprint (in [Scrum](/tags/scrum) speak), and it's an 
+thought possible. You should see improvement in as little as a single sprint (in a [Scrum](/tags/scrum) project), and it's an 
 investment [most software engineers are happy to make](/blog/the-art-of-software-engineering) that will generate huge
 value for all of you.
