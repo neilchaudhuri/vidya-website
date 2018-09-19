@@ -52,7 +52,7 @@ a natural outcome of your day-to-day process.
 
 If you manage OO projects, you may have heard of "design patterns," which came out of a 
 [book by a group of expert software engineers](https://en.wikipedia.org/wiki/Design_Patterns) known as the "Gang of Four."
-Design patterns offer suggestions for writing code that solves common problems in a manner resilient to change. 
+Design patterns offer suggestions for modeling code that solves common problems in a manner resilient to change. 
 In other words, thoughtfully applied patterns reduce your time to market so your team won't have to work the weekend
 after your mercurial client changes course. That spares you a lot of resentment and 
 the cost of at least two pizzas--more [if I am on your team](/consulting/).
@@ -64,8 +64,8 @@ As programming languages and technical challenges evolve, there is no way to kno
 [Singleton](https://www.geeksforgeeks.org/singleton-design-pattern/) design pattern, for example, has 
 been [particularly controversial](https://stackoverflow.com/questions/137975/what-is-so-bad-about-singletons).
 
-On the other hand, FP offers *mathematical* guarantees that the code you write is sound. The mathematical 
-laws that govern it--[Type theory](https://en.wikipedia.org/wiki/Type_theory) and 
+On the other hand, FP offers *mathematical* guarantees that the code you write is sound. The laws that govern 
+it--[Type theory](https://en.wikipedia.org/wiki/Type_theory) and 
 [Category theory](https://en.wikipedia.org/wiki/Category_theory) in particular--are not vulnerable to the whims of the broader
 technology landscape. Math isn't opinion. 
 
@@ -117,7 +117,7 @@ elegantly decouples the logic from the database concern or any particular family
 * One error path: `999 => throw new UserNotFoundException("No user with id 999")` 
   
 
-That's really easy. No mocking libraries necessary. The logic will use a function performing the real database lookup in production, but it
+That's really easy. No mocking libraries necessary. In production the logic will use a function performing the real database lookup, but it
 will still have the identical `Int => String` shape.
 
 As for test inputs, consider [property-based testing](http://www.scalatest.org/user_guide/property_based_testing). 
@@ -127,7 +127,7 @@ hundreds of inputs that will put the code through the wringer against data you n
 I would suggest property-based tests as the first line of defense in development but conventional, scenario-based tests 
 with functional dependencies to address bugs discovered in functional testing or production.   
 
-Finally, if your team's tests have sophisticated setup with an expensive resource you'd like to share across tests and 
+Finally, if your team's tests have sophisticated setup with expensive resources you'd like to share across tests and 
 clean up afterwards, have your engineers employ the [Loan Pattern](https://www.outbrain.com/techblog/2017/05/effective-testing-with-loan-pattern-in-scala/),
 which is one of the FP-est things you can do. I wrote an example 
 on [Stack Overflow](https://stackoverflow.com/questions/43729262/how-to-write-unit-tests-in-spark-2-0/43769845#43769845) 
@@ -145,17 +145,16 @@ the best of both. Similarly, FP can complement other paradigms like the imperati
 drives [Go](/tags/go).  
 
 Consequently, you should not worry that FP demands a radical transformation of your code 
-base that is unrealistic for your timeline and unthinkable for your client. No need to send everyone to Haskell training
-and rewrite your code base.
+base that is unrealistic for your timeline and unthinkable for your client. No need to send everyone to Haskell training either.
 
 
 ## Conclusion
 
-When you are facing increasing pressure to deliver more features in less time, your team needs to leverage the full capabilities
+As you face increasing pressure to deliver more features in less time at higher quality, your team needs to leverage the full capabilities
 of your engineering stack to maximize productivity. No matter your situation, let functional programming be a weapon
 in your arsenal. Whether you transition to
 fundamentally functional languages like [Elixir](https://elixir-lang.org/) or Scala or Elm, leverage functional capabilities 
-or extensions in other languages like Java or JavaScript, 
+(or extensions) in other languages like Java or JavaScript, 
 or even just adopt corollary principles like immutability, your team will write fewer bugs and catch others faster than you
 thought possible. You should see improvement in as little as a single sprint (in a [Scrum](/tags/scrum) project), and it's an 
 investment [most software engineers are happy to make](/blog/the-art-of-software-engineering) that will generate huge
