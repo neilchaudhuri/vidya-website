@@ -82,19 +82,17 @@ mathematical guarantees that endure.
 ## More Quality in Less Time
 
 That shopping cart bug should be caught by tests, but most software engineers look at unit and integration testing like [flossing](https://www.dentalassociates.com/application/files/4214/7760/0003/flossing-is-beneficial-1.jpg).
-They get why it's necessary, but they don't really look forward to it. The consequences of this mentality become especially
-problematic when leadership enables it. Testing takes so long that they are satisfied with a few token tests.
-If [agile](/categories/agile) validation mechanisms aren't in place, the result is illusory productivity--a mess of alpha- and beta-quality features
-whose quick delivery might impress unsuspecting clients but will demand fixes later that are orders of magnitude more 
-expensive.
+They get why it's necessary but don't look forward to it at all. The consequences are particularly profound
+when leadership acts as an enabler. Not that you would ever do this, but many technology leaders find testing takes so long that 
+they are satisfied with a few token tests. The result is illusory productivity. Delivering a mess of alpha- and beta-quality features
+quickly might impress unsuspecting clients at first, but their enthusiasm will drain when the inevitability 
+of bug fixes orders of magnitude more expensive becomes apparent.
 
 To be fair, developer testing can be a pain. Test setup is slow because you need to 
-"[double](http://xunitpatterns.com/Test%20Double.html)"
-your inputs (*i.e* mock or stub them, often with the help of an open-source library like [Mockito](https://site.mockito.org/) 
-or [unittest.mock](https://docs.python.org/3/library/unittest.mock.html)) along with any dependencies
-necessary for the code you're testing to execute a scenario. 
+mock or stub your inputs along with any dependencies necessary for the code to execute a scenario. This
+often requires an open-source library like [Mockito](https://site.mockito.org/) or [unittest.mock](https://docs.python.org/3/library/unittest.mock.html).  
 
-*And* you have to repeat this process for each likely happy-path scenario and some
+*And* you have to repeat this process for multiple happy-path scenarios and some
 arbitrary number of alternate-path and error scenarios. 
 
 *And* you need
@@ -104,18 +102,27 @@ All of that is cumbersome, but FP can make it easier.
 
 The first thing you should do--FP or not--is to reduce dependencies. Lots of dependencies is a smell. 
 Then replace the remaining object dependencies 
-with *functional dependencies*. Gradually have the engineers evolve their APIs towards behavior rather than objects.
-Things hard to mock like REST calls can be replaced with functions as simple as
-`"" => """{"fake": true}"""` to use [Scala](/tags/scala) syntax. That's really easy. No mocking libraries
-necessary.
+with functional dependencies. Gradually have the engineers evolve their APIs towards *behavior* rather than objects. 
+
+For example, let's say one of your user stories involves fetching a username by an identifier to use it for subsequent business logic. 
+Typically, that code has a dependency on some object that knows how to read from the database. Testing the logic in isolation
+requires the overhead of writing your own stub for that database object or importing a library to mock it. What if instead the 
+dependency was on a simple function that takes a number (the identifier) and returns a string (the username)? This 
+elegantly decouples the logic from the database concern or any particular family of objects; all it knows is 
+"If I give this function the right identifier, I get the username back." Even better, I can stub that function really easily:
+
+* One happy path (using Scala syntax): `123 => "Neil"`
+* One error path: `999 => throw new UserNotFoundException("No user with id 999")` 
+  
+
+That's really easy. No mocking libraries necessary.
 
 As for test inputs, consider [property-based testing](http://www.scalatest.org/user_guide/property_based_testing). 
 For the cost of less initial setup than you do now for a single input, tools like 
 [ScalaCheck](/tags/scalacheck) will generate literally
-hundreds of inputs that will put the code through the wringer against data you never imagined and give you confidence it works.
-I think it makes a lot of sense to execute property-based tests as the first line of defense in 
-development but conventional, scenario-based tests 
-with functional dependencies to reproduce and fix bugs discovered in functional testing or production.   
+hundreds of inputs that will put the code through the wringer against data you never imagined and would never have time to write yourself.
+I would suggest property-based tests as the first line of defense in development but conventional, scenario-based tests 
+with functional dependencies to address bugs discovered in functional testing or production.   
 
 Finally, if your team's tests have sophisticated setup with an expensive resource you'd like to share across tests and 
 clean up afterwards, have your engineers employ the [Loan Pattern](https://www.outbrain.com/techblog/2017/05/effective-testing-with-loan-pattern-in-scala/),
