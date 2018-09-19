@@ -1,6 +1,8 @@
 <meta property="og:title" content="{{if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:image" content="{{if .Params.banner }}{{ .Site.BaseURL }}{{ .Params.Banner }}{{ else }}{{ .Site.BaseURL }}{{ .Site.Params.logo }}{{ end }}" />
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="387" />
 <meta property="og:description"     content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.DefaultDescription }}{{ end }}" />
 <meta property="og:site_name"       content="{{ .Site.Title }}">
 {{ if .IsPage }}
