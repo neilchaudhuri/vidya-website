@@ -27,8 +27,8 @@ found that your tests break so often that you don't want to write any more?
 
 I have. With multiple clients.
 
-Part of the problem is code coverage is a misleading indicator of quality. Even worse, you are writing tests
-that don't test anything except the implementation details of your code. That's almost worse than writing no tests
+Part of the problem is [code coverage is a misleading indicator of quality](http://blog.codepipes.com/testing/software-testing-antipatterns.html#anti-pattern-6---paying-excessive-attention-to-test-coverage). 
+Even worse, you are writing tests that don't test anything except the implementation details of your code. That's almost worse than writing no tests
 at all.
 
 This has really hit me as I learn to write tests for [React](/tags/react). My career has been built primarily on [Java](/tags/java), 
