@@ -1,9 +1,9 @@
 ---
 author: "Neil Chaudhuri"
 title: "Lessons from Java for Testing in React"
-description: "Learn how functional programming can make your teams more productive than you ever imagined."
+description: "See how years of testing in Java have taught us lessons you can apply to improve your testing in React."
 banner: "img/banners/react.png"
-date: 2018-10-22
+date: 2018-10-21
 tags:
 - React
 - JavaScript
