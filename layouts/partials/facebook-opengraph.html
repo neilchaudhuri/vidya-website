@@ -1,5 +1,7 @@
 {{ if .Params.author }}
-<meta property="article:author" content="{{ .Params.author }}" />
+<meta property="article:author" content="neil.chaudhuri.7" />
+{{else}}
+<meta property="article:author" content="VidyaSource" />
 {{ end }}
 <meta property="og:title" content="{{if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
