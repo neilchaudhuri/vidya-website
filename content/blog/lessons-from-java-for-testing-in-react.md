@@ -54,7 +54,7 @@ to avoid discussing politics, religion, and React state management preferences.
 Testing in React is no different--no consensus on "best practices." Luckily though my experience testing on the server 
 offers insight that significantly clarifies things for me.
 
-## When We Need Kent More Than Superman
+## Kent Saves Us When Superman Can't
 
 You will find that one consistent voice of reason emerging from the cacophony of React advice is 
 [Kent C. Dodds](https://blog.kentcdodds.com/) (KCD), Paypal engineer and React expert. The Notorious KCD is 
