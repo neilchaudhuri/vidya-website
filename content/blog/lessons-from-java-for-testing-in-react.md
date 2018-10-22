@@ -35,7 +35,7 @@ This has really hit me as I learn to write tests for [React](/tags/react). My ca
 [Scala](/tags/scala), [Ruby](/tags/ruby), and [Python](/tags/python)--*i.e.* backend development.
 Over the years I have written a lot of [JavaScript](/tags/javascript) too, but we are taking it to the next level and enduring some growing pains as 
 we migrate the front end of a [Scala application we built for a client](/blog/2018/08/10/welcoming-ninaday/) to React 
-(with all the trimmings--[Webpack](/tags/webpack), [TypeScript](/tags/typescript), [RxJS](/tags/rxjs), [Immutable.js](/tags/immutablejs), etc.). 
+(with all the trimmings--[Webpack](/tags/webpack), [TypeScript](/tags/typescript), [RxJS](/tags/rxjs), [Immutable.js](/tags/immutablejs), *etc.*). 
 React is spearheaded by Facebook and fortified by a vibrant community, so I assumed a consensus on patterns and practices. 
 
 Nope!
@@ -109,7 +109,7 @@ But for him, this is proof that [Guillermo Rauch was right all along](https://tw
 For me, the key insight I gleaned from looking at the Java analogue of `HiddenMessage` is not about the dichotomy 
 between unit and integration testing, a 
 [controversy fraught with baggage](https://stackoverflow.com/questions/4904096/whats-the-difference-between-unit-functional-acceptance-and-integration-test/4904533#4904533)
-because no one can even agree on how we define them, but about why we test at all. 
+because no one can even agree on how we define those terms, but about why we test at all. 
 
 We write tests because we want to create something like a lab experiment--a controlled environment where we see how our code
 behaves when it is exercised just as clients will in production. It is a precondition that your code is initialized
@@ -130,7 +130,7 @@ The whole point of mocks and stubs is to supply the code you're testing with dep
 in a way that's deterministic so we have the control and predictability every experiment needs. Applying idioms from testing 
 in Java can inspire you to consider any combination of these approaches for testing in React:
 
-* Use [Jest](https://jestjs.io/) as KCD recommends to mock components and side effects like REST calls just as a Java 
+* Use Jest as KCD recommends to mock components and side effects like REST calls just as a Java 
 developer uses Mockito.
 * Use props to mimic constructor injection of mocked or stubbed dependencies. In fact, [render props](https://reactjs.org/docs/render-props.html), 
 which are now *en vogue* for sharing React components, essentially enable constructor injection of components. You can supply
@@ -141,9 +141,9 @@ and using TypeScript you could have a prop `fetch: (s: string) => Promise<string
 In your test, you supply a stubbed implementation like `(s: string) => { Promise.resolve("{\"id\": 5}") }` while your 
 production code supplies a function with the same shape that makes real REST calls. This is analogous in Java to having a 
 constructor parameter of type `Function<String, CompletableFuture<String>>` that you stub with 
-`(s) -> CompletableFuture.completedFuture("{\"id\": 5}")` in your JUnit tests. In either case, no mocking library needed.
+`(s) -> CompletableFuture.completedFuture("{\"id\": 5}")` in your JUnit tests. In either case, no mocking library is needed.
 
-Or...moving away from specifically Java, stop being scared and 
+Or...moving away from Java, stop being scared and 
 [embrace the Haskell-like idioms in Elm](https://package.elm-lang.org/packages/ryanolsonx/elm-mock-http/latest/).
 
 I prefer eschewing a third-party mocking library. For one thing, that's one less 
@@ -153,17 +153,18 @@ of your component, which will change all the time. Focus on the intent of your c
 Don't mistake a preference for a rule though. Despite the [absolutist language](https://www.youtube.com/watch?v=wgpytjlW5wU) 
 in many programming blog posts out there, each approach has pros and cons. Nothing is all good or all bad. Keep all
 these options on the table--even the shallow rendering and [snapshot testing](https://jestjs.io/docs/en/snapshot-testing) that neither KCD nor I really likes, 
-and choose the one that balances the time it takes to write a test with your level of confidence in the quality and durability of the outcome.
+and choose the one that balances the time it takes to write a test with your level of confidence in the quality and 
+durability of the outcome. You will likely find a blend of these approaches works best.
 
 
 ## Conclusion
 
 It's great to see we have evolved from debating whether testing is necessary to debating how best to do it. As full stack
 engineers--equally adept at building efficient services as elegant user interfaces--become more common, it makes sense
-to leverage knowledge across domains. I'm no expert at testing in React, and I am happy to integrate as much as I can from
+to leverage knowledge across domains. I'm no expert at testing in React, and I welcome the opportunity to integrate as much as I can from
 experts like KCD with my own experience testing on the server in languages like Java where we have tackled many of the same
 issues. I hope to see for myself which strategies work best to solve various problems in testing in React. 
 
 There will always be debate. If nothing else, let's agree to focus on API contracts rather than implementation details and 
-keep things simple so you don't lose as many weekends refactoring tests every time a client wants a new feature.
+keep things simple so we don't lose as many weekends refactoring tests every time a client wants a new feature.
 
