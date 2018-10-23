@@ -120,7 +120,7 @@ in test code to achieve the control we need--though [some say that's a smell in 
 In the Java version of `HiddenMessage`, you have to 
 [work a little harder to mock the dependencies](https://stackoverflow.com/questions/36173947/mockito-mock-private-field-initialization) 
 because they are private implementation details. Most Java developers would correctly find this awkward and smelly, but any
-`HiddenMessage` test is worthless if it isn't given the tools it needs one way or another to satisfy its API contract. 
+`HiddenMessage` test is worthless if it isn't supplied the tools it needs one way or another to satisfy its API contract. 
 Shallow rendering fails because it eschews this basic concept--not because it proves
 integration tests beat unit tests.
 
