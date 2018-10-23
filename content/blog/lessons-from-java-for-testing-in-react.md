@@ -97,7 +97,7 @@ A quick aside: *I recognize that this makes for unorthodox Java code, but the go
 React component `HiddenMessage` as accurately as possible in a "Java way."* 
 
 Now look at this and imagine a test for `HiddenMessage` where `Fade` and `CSSTransition` are disabled into no-ops. All you do is render
-a button that proves you can toggle a flag. [Paddy Tannanger would not be impressed](http://i.qkme.me/3q4n8o.jpg). 
+a button that proves you can toggle a flag. [Who cares?](http://i.qkme.me/3q4n8o.jpg). 
 There is so much more `HiddenMessage` is designed to do that we never explore. Such a test offers no insight into 
 whether `HiddenMessage` really works.
  
@@ -112,8 +112,8 @@ between unit and integration testing, a
 because no one can even agree on how we define those terms, but about why we test at all. 
 
 We write tests because we want to create something like a lab experiment--a controlled environment where we see how our code
-behaves when it is exercised just as clients will in production. It is a precondition that your code is initialized
-as it expects so it can satisfy the public API contract it has with its clients. In Java, you typically accomplish that
+behaves when it is exercised just as clients will in production. It is a precondition that your code is initialized to some "ready state"
+so it can satisfy the public API contract it has with its clients. In Java, you typically accomplish that
 with a constructor (that may throw `IllegalArgumentException` if necessary) into which mock or stub dependencies are injected 
 in test code to achieve the control we need--though [some say that's a smell in itself](https://www.youtube.com/watch?v=EaxDl5NPuCA). 
 
