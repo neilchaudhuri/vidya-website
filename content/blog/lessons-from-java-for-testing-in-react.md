@@ -109,7 +109,7 @@ But for him, this is proof that [Guillermo Rauch was right all along](https://tw
 For me, the key insight I gleaned from looking at the Java analogue of `HiddenMessage` is not about the dichotomy 
 between unit and integration testing, a 
 [controversy fraught with baggage](https://stackoverflow.com/questions/4904096/whats-the-difference-between-unit-functional-acceptance-and-integration-test/4904533#4904533)
-because no one can even agree on how we define those terms, but about why we test at all. 
+because no one can even agree on how we define those terms to begin the conversation, but about why we test at all. 
 
 We write tests because we want to create something like a lab experiment--a controlled environment where we see how our code
 behaves when it is exercised just as clients will in production. It is a precondition that your code is initialized to some "ready state"
