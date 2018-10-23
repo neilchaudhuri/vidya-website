@@ -137,7 +137,7 @@ which are now *en vogue* for sharing React components, essentially enable constr
 any component you want to a render prop in your test. 
 * [Use the functional nature of JavaScript to your advantage](/blog/2018/09/18/the-business-case-for-functional-programming/) in testing.
 For example, REST calls are the most common side effects in JavaScript programming, 
-and using TypeScript you could have a prop `fetch: (s: string) => Promise<string>` to represent a REST call returning JSON.
+and using TypeScript you could have a function prop `fetch: (s: string) => Promise<string>` to represent a REST call returning JSON.
 In your test, you supply a stubbed implementation like `(s: string) => { Promise.resolve("{\"id\": 5}") }` while your 
 production code supplies a function with the same shape that makes real REST calls. This is analogous in Java to having a 
 constructor parameter of type `Function<String, CompletableFuture<String>>` that you stub with 
