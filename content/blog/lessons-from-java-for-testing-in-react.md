@@ -98,7 +98,7 @@ React component `HiddenMessage` as accurately as possible in a "Java way."*
 
 Now look at this and imagine a test for `HiddenMessage` where `Fade` and `CSSTransition` are disabled into no-ops. All you do is render
 a button that proves you can toggle a flag. [Who cares?](http://i.qkme.me/3q4n8o.jpg). 
-There is so much more `HiddenMessage` is designed to do that we never explore. Such a test offers no insight into 
+There is so much more to `HiddenMessage` we never explore. Such a test offers no insight into 
 whether `HiddenMessage` really works.
  
 So yes, it is pretty clear shallow rendering is not helpful just as KCD argues.
