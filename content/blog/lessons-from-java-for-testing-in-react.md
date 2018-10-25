@@ -4,6 +4,7 @@ title: "Lessons from Java for Testing in React"
 description: "See how years of testing in Java have taught us lessons you can apply to improve your testing in React."
 banner: "img/banners/react.png"
 date: 2018-10-21
+gist: true
 tags:
 - React
 - JavaScript
