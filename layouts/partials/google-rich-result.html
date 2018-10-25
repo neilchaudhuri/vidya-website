@@ -24,7 +24,7 @@
         "https://www.linkedin.com/company/3285099",
         "https://plus.google.com/+Vidyasource"
     ]
-{{ else if eq .Type "tutorial" }}
+{{ else if or (eq .Type "tutorial") (.Params.youtube) }}
     "@type": "VideoObject",
     "thumbnailUrl": "{{if .Params.banner }}{{ .Site.BaseURL }}{{ .Params.Banner }}{{ else }}{{ .Site.BaseURL }}{{ .Site.Params.logo }}{{ end }}",
     "uploadDate": "{{ .Date }}",

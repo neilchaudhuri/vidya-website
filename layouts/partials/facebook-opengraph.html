@@ -13,7 +13,7 @@
 {{ if .IsPage }}
     <meta property="og:updated_time" content="{{ .Date }}"/>
 {{ end }}
-{{ if eq .Type "tutorial" }}
+{{ if or (eq .Type "tutorial") (.Params.youtube) }}
     <meta property="og:type"                content="video" />
     {{if .Params.youtube }}
         <meta property="og:video:url"           content="https://www.youtube.com/embed/{{ .Params.youtube }}" />
