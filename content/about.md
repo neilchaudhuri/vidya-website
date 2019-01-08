@@ -2,6 +2,9 @@
 title = "About"
 +++
 
+Vidya is a technology services and consulting company based outside Washington, DC, USA and is a 
+certified Asian and minority-owned small business by the [US Pan Asian American Chamber of Commerce Education Foundation](https://uspaacc.com/).
+
 ## Our mission
 
 At Vidya, our mission is to make technology as fun and accessible as possible. The passion we have for technology
@@ -38,6 +41,12 @@ or whatever else you think can help you.
 
 Please [contact](/contact) us if you have suggestions for courses, tutorials, and blog posts or feedback of any kind on our
 existing offerings. We are *very* interested in what you have to offer as well.
+
+## Our commitment to diversity
+
+We are a passionate advocate for diversity in technology. Prejudice against anyone on the basis of gender, race, ethnicity, 
+nationality, religion, orientation, ability, or even academic background not only limits our individual growth but also 
+limits the creative energy necessary to develop the best software.
 
 ## Our name
 
