@@ -30,7 +30,7 @@ Certification by USPAACC shows the world that Vidya has demonstrated the kind of
 who need technology services take notice. USPAACC's [mission](https://uspaacc.com/about) is 
 "to be the gateway to corporate and government contracts...and...Pan Asian American...suppliers." We look forward to building
 new relationships and to delivering our services to even more clients in the Washington, DC, area and beyond. Look for us also to expand
-our current offerings by making our courses available online and competing in the realm of software product development.
+our current offerings by making our courses available online and building new software products.
 
 We want to thank USPAACC for recognizing Vidya's past success and future potential, and we cannot wait to do business
 with all of you. [Let's talk](/contact).
