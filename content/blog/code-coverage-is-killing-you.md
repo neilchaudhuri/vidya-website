@@ -2,7 +2,7 @@
 
 author: "Neil Chaudhuri"
 title: "Code Coverage Is Killing You"
-description: "Federal IT can leverage open-source tools, automation, and discipline to build quality into software from the start."
+description: "Code coverage is intuitive but dangerous. There are quality metrics that are so much better."
 banner: "img/banners/michael-scott.jpg"
 date: 2019-02-10
 tags:
@@ -102,7 +102,12 @@ older tools like [Selenium](/tags/selenium). You can also get a boost from your
 
 Keep these trend lines as low and as level as possible.
 
-You should be able to look at every test in your code base and recognize how it gives you confidence that your code will work
+The best part about all of these metrics is that they are easily derived from your engineering tools like JIRA and Git. Nothing 
+special is required of you. Of course
+you can always take the initiative to do some clever custom things like identifying particularly vulnerable and/or valuable parts
+of the code base and ensuring there is some minimum but high number of tests. That would be coverage-ish but more targeted and robust.
+
+In the end you should be able to look at every test in your code base and recognize how it gives you confidence that your code will work
 in production and that no one will be working weekends. The siren song of code coverage is intoxicating, but you can do
 so much better.
 
