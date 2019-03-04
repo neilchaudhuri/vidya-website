@@ -25,7 +25,7 @@ categories:
 
 ---
 
-Vidya is proud to have teamed with Accenture Federal Services to migrate [HealthCare.gov](https://www.healthcare.gov/) from
+Vidya is proud to have teamed with Accenture Federal Services to transition [HealthCare.gov](https://www.healthcare.gov/) from
 a conventional [Java](/categories/java) monolith built with [Spring](/categories/spring) into 
 [Scala](/categories/scala) [microservices](/categories/microservices) built with [Play Framework](/tags/play-framework). One of several factors
 that motivate software engineers is mission, and there are few missions more fulfilling than helping people access
