@@ -32,7 +32,7 @@ that motivate software engineers is mission, and there are few missions more ful
 health insurance and ultimately health care as efficiently as possible.
 
 As American readers know, HealthCare.gov faces a lot of exogenous pressure as a proxy in a raging American political
-and economic maelstrom. I did my best to ease that pressure by helping engineers deliver as quickly as possible.
+and economic maelstrom. I did my best to ease that pressure on engineers by helping them deliver as quickly as possible.
 I developed reusable primitives that utilize Scala's type system to summon the compiler to minimize
 mistakes. For example, I wrote [monads](https://slideslive.com/38908886/functional-programming-with-effects) 
 (without calling them monads) to ease composing data from multiple microservices asynchronously. I also introduced 
