@@ -88,6 +88,51 @@ Go has expanded into other domains as well
 with the CMS [Hugo](https://gohugo.io/) (which was used to build this site) and the microservices framework 
 [Go kit](https://gokit.io/).
 
+## Comparing Scala and Go
+
+Let's look at how Scala and Go handle the kinds of real-world problems you will encounter every day.
+
+*Disclaimer:* The sample code is not meant to showcase necessarily the "best" way to solve these problems--most performant, most elegant, 
+or whatever. Instead it is meant to showcase reasonable, idiomatic solutions and, more importantly, how they reflect
+the design philosophies of the respective languages. Of course 
+[you are welcome to suggest improvements](/contact/) regardless.
+
+### Null Safety
+
+Sir Tony Hoare called his invention of `null` to represent the absence of a value his 
+"[billion-dollar mistake](https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare." 
+You will have to deal with absent values all the time like when database queries for single entities return no hits or 
+when you are maintaining backwards-compatible microservices. Handling `null` well isn't glamorous, but if you do it poorly,
+you will suffer significant productivity loses. 
+
+#### Scala
+
+{{< gist neilchaudhuri 0faef521f6bb22d32ef75b1c041b6b62 >}}
+
+Although `null` exists in Scala as a JVM language, you should never interact with it directly. Instead, you should work with `Option`, a 
+[monad](https://stackoverflow.com/questions/44965/what-is-a-monad) designed specifically for this purpose. 
+We describe `Option` in more detail in [our tutorial](https://www.youtube.com/watch?v=rbZ6GzR8B7I),
+but essentially it compels you to account for the absence of a value at *compile* time. This avoids the costly
+`NullPointerException` at runtime that has sent thousands of [Java](/categories/java) developers to therapy.
+
+In this example, the `findStudent` function returns an `Option[Student]`. If the `Option` contains a value, the client 
+can transform it into a `String` with the `map` function on `Option`; otherwise, `getOrElse` handles the absent value.
+
+`Option` allows you to safely work with potentially absent values 
+[without fear](https://marvel.fandom.com/wiki/Daredevil:_The_Man_Without_Fear_Vol_1_1). The compile-time safety makes 
+you so productive. On the other hand, every transformation on the `Option`--via `map`, `filter`, *etc.*--produces a new
+value because of the functional programming bias towards [immutability](/blog/2018/09/18/the-business-case-for-functional-programming/).
+It almost certainly isn't a factor for you, but if memory is at a premium, maybe this concerns you.
+
+#### Go  
+
+{{< gist neilchaudhuri 5f4c9844dbfe1d92fb200c8089c00229 >}}
+
+
+
+ 
+ 
+
 
 
 
