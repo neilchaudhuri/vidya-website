@@ -5,6 +5,7 @@ title: "Scala or Go: Tastes Great or Less Filling?"
 description: "Scala and Go are two of the most popular emerging languages. Here's how you choose between them."
 banner: "img/banners/health-care-gov.jpg"
 date: 2019-03-22
+draft: true
 tags:
 - Golang
 - Play Framework
