@@ -106,6 +106,7 @@ You will have to deal with absent values all the time like when database queries
 when you are maintaining backwards-compatible microservices. Handling `null` well isn't glamorous, but if you do it poorly,
 you will suffer significant productivity loses. 
 
+
 #### Scala
 
 {{< gist neilchaudhuri 0faef521f6bb22d32ef75b1c041b6b62 >}}
@@ -125,11 +126,12 @@ you so productive. On the other hand, every transformation on the `Option`--via 
 value because of the functional programming bias towards [immutability](/blog/2018/09/18/the-business-case-for-functional-programming/).
 It almost certainly isn't a factor for you, but if memory is at a premium, maybe this concerns you.
 
+
 #### Go  
 
 {{< gist neilchaudhuri 5f4c9844dbfe1d92fb200c8089c00229 >}}
 
-
+Go handles the potential absence of a value through completely different idioms.
 
  
  
