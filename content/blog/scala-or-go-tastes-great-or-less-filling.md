@@ -5,7 +5,6 @@ title: "Scala or Go: Tastes Great or Less Filling?"
 description: "Scala and Go are two of the most popular emerging languages. Here's how you choose between them."
 banner: "img/banners/health-care-gov.jpg"
 date: 2019-03-22
-draft: true
 tags:
 - Golang
 - Play Framework
@@ -20,6 +19,7 @@ categories:
 - Functional programming
 - Microservices
 - REST
+- Agile
 
 ---
 
@@ -110,13 +110,13 @@ Handling absent values well isn't glamorous, but if you do it poorly, you will s
 
 ### Scala
 
-{{< gist neilchaudhuri 0faef521f6bb22d32ef75b1c041b6b62 >}}
-
 Although `null` exists in Scala as a JVM language, you should never interact with it directly. Instead, you should work with `Option`, a 
 [monad](https://stackoverflow.com/questions/44965/what-is-a-monad) designed specifically for this purpose. 
 We describe `Option` in more detail in [our tutorial](https://www.youtube.com/watch?v=rbZ6GzR8B7I),
 but essentially it compels you to account for the absence of a value at *compile* time. This avoids the costly
 `NullPointerException` at runtime that has sent thousands of [Java](/categories/java) developers to therapy.
+
+{{< gist neilchaudhuri 0faef521f6bb22d32ef75b1c041b6b62 >}}
 
 In this example, the `findStudent` function returns an `Option[Student]`. If the `Option` contains a value, the client 
 can transform it into a `String` with the `map` function on `Option`; otherwise, `getOrElse` handles the absent value.
@@ -130,12 +130,12 @@ It almost certainly isn't a factor for you, but if memory is at a premium, maybe
 
 ### Go  
 
-{{< gist neilchaudhuri 5f4c9844dbfe1d92fb200c8089c00229 >}}
-
 Go handles potentially absent values through completely different idioms. Functions can return multiple return values. 
 When a value is present, it's idiomatic to return the value and a `bool` value (named `ok` by convention) of `true`; otherwise, it returns 
 the ["zero value" of the return type](https://tour.golang.org/basics/12) and `false`. The client uses an imperative 
 `if` statement to distinguish.
+
+{{< gist neilchaudhuri 5f4c9844dbfe1d92fb200c8089c00229 >}}
 
 In this example, the `findStudent` function returns a `Student` *and* a `bool`. Go allows you to initialize and test 
 conditions in one line, and that's what we see here. If `ok` is `true`, we know we got something and act 
@@ -148,10 +148,62 @@ if you need to compose multiple potentially absent values, you need to write mul
 The simplicity may well be worth it though.
 
 
+## Error Handling
 
+This is another inglorious task that is critical to good software engineering. As programs become big and complex, proper
+error handling is critical to help diagnose bugs to move builds to production as quickly as possible. 
 
- 
- 
+### Scala
+
+As you might imagine from a language that places so much value on immutability and composability, Scala offers
+`Try` for error handling. Since it's a monad like `Option`, it works in a very similar way--except that it compels
+you to account for a possible error at compile time rather than the absence of a value. A `Try[Double]`, for example,
+returns either a `Double` if all is well or an error (or more precisely an instance of `Throwable`) otherwise.  
+
+{{< gist neilchaudhuri 5c4cc893d46e107aac4ee163f22e9d0d >}}
+
+In this example, the `squareRoot` function returns `Try[Double]`, and the client does something a bit more complicated 
+than the prior example. It calls `squareRoot` twice and uses a [for comprehension](https://docs.scala-lang.org/tour/for-comprehensions.html),
+which is syntactic sugar for otherwise cumbersome `map` and `flatMap` transformations, to take advantage of the composability of 
+monads to sum the results. If both calls work out, then the result is a `Try` with the sum; if either fails, the error information
+is passed on. You can do similar with `Option` too. This is why monad composability in Scala is so cool. The same pattern 
+works on very different types as long as they follow the [monad laws](https://miklos-martin.github.io/learn/fp/2016/03/10/monad-laws-for-regular-developers.html).
+
+As before though, keep in mind that you are generating new objects with each transformation. This means you're paying 
+for the protection immutability affords you with memory.
+
+### Go
+
+Just as `Option` and `Try` in Scala are similar, handling absent values and handling errors in Go are similar. Here again Go 
+takes advantage of multiple return values, but rather than a value accompanied by a `bool`, idiomatic Go error handling features a value accompanied by
+an `Error` (named `err` by convention). If `err` has the value of `nil`, then you can work with the value because it's all good; 
+otherwise, you handle the error and (probably) ignore the zero-value. 
+
+{{< gist neilchaudhuri 711fb4328e611dae4616de45ea3d4228 >}}
+
+In this example, look at the `sumRoots` function, which is the client of `squareRoot`, which returns a value and an error. 
+Those are saved from the first call to `squareRoot`. If there is an error, the function returns immediately; otherwise, it does the same 
+with the second call to `squareRoot`. If the function makes it to the end, then it returns the sum and a `nil` error. 
+You will see a similar approach in `main` with the call to `sumRoots`.
+
+There are a few interesting things to note. First, once again the code reflects Go's bias toward simplicity. Furthermore,
+as immutability is not a priority, variable reuse is common in Go. In 
+this case, `err` is reused to store the error returned from `squareRoot`. It doesn't happen here, but it isn't unheard of 
+to reuse the value variable as well once its initial value has served its purpose. Finally, we see a common pattern:
+
+* Call a function
+* Test `err` for `nil`
+* If an error is found, return
+* Call the next function
+* Test `err` for `nil`
+* If an error is found, return
+* Lather, rinse, repeat
+
+Absent Scala's function composition, it's a fair bit of boilerplate--particularly when you are calling a lot of functions 
+that may return errors. There are ways to make it more elegant like 
+[this pattern utilizing interfaces and pointers from Rob Pike](https://golang.org/doc/faq#exceptions),
+but this is one of the ways where Go's simplicity is a bit overrated. Still, it is almost certainly easier to master intermediate
+and advanced patterns in Go than it is in Scala.
 
 
 
