@@ -200,10 +200,53 @@ to reuse the value variable as well once its initial value has served its purpos
 * Lather, rinse, repeat
 
 Absent Scala's function composition, it's a fair bit of boilerplate--particularly when you are calling a lot of functions 
-that may return errors. There are ways to make it more elegant like 
+that may return errors. You can take advantage of language features to make it more elegant like 
 [this pattern utilizing interfaces and pointers from Rob Pike](https://golang.org/doc/faq#exceptions),
-but this is one of the ways where Go's simplicity is a bit overrated. Still, it is almost certainly easier to master intermediate
-and advanced patterns in Go than it is in Scala.
+but this is one of the ways where Go's simplicity is a bit overrated. Building custom abstractions from Go's toolkit requires creativity,
+and you will have to do that often when you use Go to build mature applications. Still, it is almost certainly easier to 
+master advanced patterns in Go than it is in Scala.
+
+## Collections
+
+I don't have to tell you that manipulating data from a database, a [stream](https://medium.com/stream-processing/what-is-stream-processing-1eadfca11b97),
+a REST request, or a host of other sources is a common task in application development. Languages that facilitate seamless
+transformation and aggregation of collections of data make your life a lot easier.
+
+### Scala
+
+Scala has a vast library of collections--both immutable and mutable though immutable is preferred--each of which offers in turn
+a vast collection of higher-order functions that let you manipulate the collection in numerous ways. 
+
+{{< gist neilchaudhuri fb288ef2b338930408fe300989ad3c0c >}}
+
+In this example, given a `List` of words, the code uses `groupBy` to convert it into a `Map` of each word (lowercased to normalize them) 
+to a list of occurrences of each word. Finally, those lists are transformed into their sizes, and the result is a `Map` 
+of each word to its count.
+
+There isn't much to see. This is a credit to Scala's powerful abstractions. Still, it is important to keep in mind that this
+code performs multiple *O(n)* traversals and with each one consumes memory with an entirely new collection--all but the first 
+and last of which are immediately thrown away. 
+
+### Go
+
+Go naturally takes a far more lightweight approach to collections. You will essentially only deal with [maps](https://blog.golang.org/go-maps-in-action) and
+[slices](https://blog.golang.org/go-slices-usage-and-internals), which are array views that enable memory-efficient
+operations on the backing arrays. 
+
+{{< gist neilchaudhuri 357962559b337e02be3b21d2a6a9ceb9 >}}
+
+In this example, the code uses `make` both to create an empty map (with values defaulting to the zero value, in this case literally 0) 
+to hold the word counts and to create a slice containing
+the words. It simply iterates over the slice and builds the word count using the `ok` idiom you saw before to check
+if there is an existing entry for the word in the map.
+ 
+The code is more verbose than its Scala counterpart, but it is significantly more efficient in time and space. There is a 
+single *O(n)* traversal with constant-time lookups in the map, and we maintain only two collections the entire time. The efficiency
+of Go collections and the simplicity of using them are among the best reasons to use Go in a project.
+
+
+
+find yourself making creative workarounds
 
 
 
