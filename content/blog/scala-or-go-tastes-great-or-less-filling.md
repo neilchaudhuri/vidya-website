@@ -31,7 +31,7 @@ programming languages that innovate in numerous ways to produce faster, more res
 
 The thing is Scala and Go have *very* different philosophies on what makes engineers most productive and what defines great
 applications. We are going to look at how Scala and Go solve five common programming tasks--absent values, error handling, 
-collections, parallelism, and polymorphism--and how their contrasting approaches reflect their contrasting philosophies.
+collections, concurrency and parallelism, and polymorphism--and how their contrasting approaches reflect their contrasting philosophies.
 Then you can decide for yourself which works best for your next application.
 
 But first, let me introduce you to Scala and Go.
@@ -206,6 +206,10 @@ but this is one of the ways where Go's simplicity is a bit overrated. Building c
 and you will have to do that often when you use Go to build mature applications. Still, it is almost certainly easier to 
 master advanced patterns in Go than it is in Scala.
 
+Finally, even though it doesn't appear in this example, `defer` [is a simple but powerful construct](https://gobyexample.com/defer)
+in Go that executes a call at the end of a function no matter what happens--error or otherwise. You can use `defer` to 
+clean things up after an error in the same way you'd use `finally` in other languages. 
+
 ## Collections
 
 I don't have to tell you that manipulating data from a database, a [stream](https://medium.com/stream-processing/what-is-stream-processing-1eadfca11b97),
@@ -244,6 +248,118 @@ The code is more verbose than its Scala counterpart, but it is significantly mor
 single *O(n)* traversal with constant-time lookups in the map, and we maintain only two collections the entire time. The efficiency
 of Go collections and the simplicity of using them are among the best reasons to use Go in a project.
 
+## Concurrency and Parallelism
+
+Modern software applications have a lot more to do in a lot less time, so it's important for your code to take advantage
+of every bit of power your machines have. Modern applications demand modern languages that enable you to leverage every
+core through abstractions that strike the right balance of power and intuitiveness. Perhaps most importantly, they need to provide
+mechanisms for handling errors because concurrent/parallel programming is notoriously hard to debug. It's a challenge to reproduce
+the conditions that generated the bug in the first place.
+
+By the way, as Rob Pike has taught us, [concurrency is not parallelism](https://www.youtube.com/watch?v=cN_DpYBzKso). Long story
+short, concurrency is about decomposing a problem into its components; each component might then run in parallel depending
+on available resources. Concurrency *manages* a lot of things at once while *parallelism* does a lot of things at once. 
+
+Regardless, doing concurrency and parallelism well is a hard problem. Whatever path you choose, you need to understand the 
+nature of your tasks to achieve peak performance. Are they IO- or CPU-intensive? Are they intrinsically parallel?
+
+### Scala
+
+As a core language in [reactive programming](https://www.reactivemanifesto.org/), Scala takes concurrency and parallelism very seriously. 
+It offers `Future` as its [core primitive](https://docs.scala-lang.org/overviews/core/futures.html) to facilitate concurrency and parallelism--in concert with an 
+`ExecutionContext`, which is basically a [thread pool](https://www.playframework.com/documentation/2.7.x/ThreadPools). 
+`Future` abstracts the threads away from you, which is nice, but its association with `ExecutionContext`
+can lead to some [complexity](https://stackoverflow.com/questions/27454798/is-future-in-scala-a-monad) in understanding 
+[how they work](http://www.beyondthelines.net/computing/scala-future-and-execution-context/).
+This is why notable [third-party libraries](https://alvinalexander.com/scala/differences-scalaz-task-scala-future-referential-lazy) 
+offer their own concurrency primitives. Still, `Future` at least approximates a monad, and that means we can *mostly*
+adhere to the familiar patterns we saw with `Option` and `Try`.
+
+At a low level, each asynchronous call delegates to an entirely new thread. This is a heavyweight operation as the operating 
+system needs to schedule threads against physical processors and manage expensive context switching. The result is that 
+for some problems parallelism with `Future` in Scala may potentially consume a lot of resources for a modest 
+increase in performance or even slow you down. When performance is a major concern, you need to configure your `ExecutionContext`
+smartly according to the capability of your machine(s) and the nature of your tasks. Are they IO- or CPU-intensive?
+Are they intrinsically parallelizable?
+
+{{< gist neilchaudhuri dad25808fb17f28d28d452d2d7b8d477 >}}
+
+In this example, the code uses [Play WS Standalone](https://github.com/playframework/play-ws) as a REST client to fetch 
+JSON containing a UUID. Play WS has an asynchronous, non-blocking API based on `Future`, so you need to 
+provide an `ExecutionContext` via [Akka](https://doc.akka.io/docs/akka/2.5/stream/). That's all the boilerplate at the 
+beginning of this example. Sometimes it will be done for you
+as when you use Play WS in the context of [Play Framework](https://www.playframework.com/). Nonetheless, you should be 
+aware it has to happen somewhere.
+
+In the `getUuid` function, the `get` call to Play WS makes an asynchronous, non-blocking request and returns a `Future` 
+containing the response. You need to be careful and make sure you only work directly with the `Future` itself lest you 
+lose the eventual result--the response or an error. Otherwise anything you do next outside the realm of the asynchronous call 
+will execute after the request is dispatched but completely independently from when the response returns. That's a common
+mistake for engineers new to `Future`. This is why everything that happens here after a call is dispatched is a method call on the
+`Future` object returned.
+
+Like a typical monad, `Future` offers `map` to enable clients to transform results, and `getUuid` does exactly that by parsing 
+the JSON response into the UUID string and returning a `Future[String]`. If the REST call returned an error, it
+remains preserved in the `Future.` The client of `getUuid` requires two calls to complete before
+moving forward, so it calls the function twice so the independent fetches can run in parallel
+and composes them as we saw with `Try` via `for` comprehension to produce a `Future[Tuple2[String, String]]`. Finally,
+the code calls `map` again to transform the tuple of strings into a printed result. If there is an error any step of the way,
+we handle it with `recover`.
+
+`Future` is a really nice concurrency primitive that we can treat as a monad, but it has its pitfalls. As mentioned,
+you need to supply a finely tuned `ExecutionContext`, and everything you do once you make an asynchronous call better happen in the
+context of the `Future` that returns. Otherwise, you will find very confusing results like silent failures. The 
+[amorphous referential transparency](https://www.reddit.com/r/scala/comments/3zofjl/why_is_future_totally_unusable/) 
+of `Future` can confuse you too. If the code made its calls to `getUuid` inside the `for` comprehension, they would have 
+been sequential and not parallel. The result is likely the same, which *feels* referentially transparent, but the fact
+where you make the call impacts the desired parallelism definitely doesn't. 
+
+`Future` also consumes a lot of system resources because it transacts in full threads that have to managed by the operating system.
+It's important to profile your application to understand what's going on because there will almost be certainly occasions
+where things don't perform as you expect. You will need to diagnose if it is a code or resource problem.
+
+### Go
+
+Concurrency and parallelism lie at the heart of Go's mission as well, but of course it takes a totally different approach
+with primitives called [goroutines](https://tour.golang.org/concurrency/1) and channels. The philosophy here is to break down your tasks into 
+independent functions, and spin them off into goroutines. The key thing to remember is 
+[goroutines are not threads](https://golang.org/doc/faq#goroutines); they are lightweight pieces of memory tracking thread usage.
+As a result, you can spin off literally hundreds of thousands of goroutines and use only a little memory on the stack while
+the Go scheduler, not you, uses clever algorithms to manage them in concert with the operating system and its actual threads.
+
+Goroutines use a paradigm called [communicating sequential processes](https://en.wikipedia.org/wiki/Communicating_sequential_processes) (CSP)
+developed by Sir Tony Hoare, the null guy. CSP is a message-passing model. Goroutines pass their data over channels rather than
+synchronize data, which slows things down. If you are familiar with messaging patterns like 
+[Gregor Hohpe's Enterprise Integration Patterns](https://www.enterpriseintegrationpatterns.com/), then you understand the power
+of this approach to manipulate message data as needed to produce the results you want--and at scale thanks to Go.    
+  
+{{< gist neilchaudhuri 3230c8388581c3d85977154f18090f47 >}}
+
+In this example, the code defines a type called `Result` containing a UUID and an error to hold the result of a concurrent 
+computation. Only one of those should be populated with a meaningful value, but there is no simple way to enforce that. 
+Meanwhile, the `main` function creates a [buffered channel](https://gobyexample.com/channel-buffering) for communicating
+`Result` values and spins off two goroutines for two concurrent `getUuid` calls, which take the channel as a write-only
+parameter.
+
+The `getUuid` function makes the REST call and unmarshals the JSON response. If an error occurs at either step, the code creates 
+a `Result` with the respective error (and the zero value, the empty string, for the UUID) and publishes it to the channel.
+If all goes well, the code creates a `Result` with the UUID (and the zero value, `nil`, for the error) and publishes
+it to the channel instead. The `main` function knows in this case how many `Results` to expect from the channel and consumes 
+the right amount of data from the channel. It bails at the first error it finds, or it accumulates the data into a slice of UUIDs.
+
+Goroutines are lightweight and flexible--and straightforward if you have a good grasp on messaging. Still, there are subtleties
+that can make them more complicated than we usually find in Go code. If you don't understand the difference between buffered
+and unbuffered channels, you may find [curious results](https://stackoverflow.com/questions/18660533/why-using-unbuffered-channel-in-the-same-goroutine-gives-a-deadlock).
+Error handling is also tricky because patterns aren't obvious. In this case we encapsulated success and error cases in a single
+struct, but some advise using [dedicated error channels](https://stackoverflow.com/a/42890750/1347281). This example is also 
+as simple as it gets: You have one channel, and you know how many computations will transpire. In more
+complicated cases you will need to utilize other Go functionality from the [sync](https://golang.org/pkg/sync/) package 
+like `Mutex`, `WaitGroup`, `Pool`. You might even need the [experimental](https://rodaine.com/2017/05/x-files-intro/) 
+`ErrGroup`. Finally, you need to be very careful with [pointers](https://tour.golang.org/moretypes/1) and mutability generally
+as always in concurrent programming. They save memory but you need to govern access carefully.
+
+Concurrency and parallelism are always hard. You have to decide which language offers primitives that comport with your mental
+model of how things should work.  
 
 
 find yourself making creative workarounds
