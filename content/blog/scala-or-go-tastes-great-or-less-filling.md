@@ -5,7 +5,6 @@ title: "Scala or Go: Tastes Great or Less Filling?"
 description: "Scala and Go are two of the most popular emerging languages. Here's how you choose between them."
 banner: "img/banners/health-care-gov.jpg"
 date: 2019-03-22
-draft: true
 tags:
 - Golang
 - Play Framework
@@ -24,18 +23,27 @@ categories:
 
 ---
 
-[Scala](/categories/scala) and [Go](/categories/go) (aka Golang (/tags/golang)) are two of the fastest growing leading-edge 
+[Scala](/categories/scala) and [Go](/categories/go) (aka Golang) are two of the fastest growing leading-edge 
 [programming](/categories/programming) languages in the world. In the United States, they are also among the 
 [most lucrative](https://adtmag.com/articles/2017/08/18/go-scala-salaries.aspx). Scala and Go are among a slew of 
 programming languages that innovate in numerous ways to produce faster, more resilient, more secure applications for a multicore,
 [cloud native](/categories/cloud-native), [mobile](/categories/mobile) world.   
 
 The thing is Scala and Go have *very* different philosophies on what makes engineers most productive and what defines great
-applications. We are going to look at how Scala and Go solve five common programming tasks--absent values, error handling, 
-collections, concurrency and parallelism, and polymorphism--and how their contrasting approaches reflect their contrasting philosophies.
-Then you can decide for yourself which works best for your next application.
+applications. We are going to look at how Scala and Go solve five common programming tasks
+and how their contrasting approaches reflect their contrasting philosophies.
+Then you can decide for yourself which works best for your next application. This is a really long post, so here are the 
+tasks we will consider so you can jump to the ones that interest you most:
 
-But first, let me introduce you to Scala and Go.
+* [Absent values](#absent-values)
+* [Error handling](#error-handling)
+* [Collections](#collections)
+* [Concurrency and Parallelism](#concurrency-and-parallelism)
+* [Polymorphism](#polymorphism)
+
+Or you can skip straight to my [conclusion](#so-how-do-you-decide)
+
+With that, let me introduce you to Scala and Go.
 
 # Scala
 
