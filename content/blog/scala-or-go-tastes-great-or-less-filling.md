@@ -276,12 +276,17 @@ This is why notable [third-party libraries](https://alvinalexander.com/scala/dif
 offer their own concurrency primitives. Still, `Future` at least approximates a monad, and that means we can *mostly*
 adhere to the familiar patterns we saw with `Option` and `Try`.
 
-At a low level, each asynchronous call delegates to an entirely new thread. This is a heavyweight operation as the operating 
+At a low level, each asynchronous call delegates to a different thread. This helps scale your application, but it's also 
+a heavyweight operation as the operating 
 system needs to schedule threads against physical processors and manage expensive context switching. The result is that 
 for some problems parallelism with `Future` in Scala may potentially consume a lot of resources for a modest 
 increase in performance or even slow you down. When performance is a major concern, you need to configure your `ExecutionContext`
 smartly according to the capability of your machine(s) and the nature of your tasks. Are they IO- or CPU-intensive?
-Are they intrinsically parallelizable?
+Are they intrinsically parallelizable? 
+
+Bottom line? Reactive programming doesn't necessarily make your applications faster (except maybe in those cases where you
+can do expensive work in parallel), but it usually allows them to be more resilient. Reactive applications
+scale under load with limited threads and memory especially when you have latency from inconsistent network IO like database and REST calls.
 
 {{< gist neilchaudhuri dad25808fb17f28d28d452d2d7b8d477 >}}
 
@@ -362,6 +367,91 @@ as always in concurrent programming. They save memory but you need to govern acc
 Concurrency and parallelism are always hard. You have to decide which language offers primitives that comport with your mental
 model of how things should work.  
 
+## Polymorphism
+
+You know polymorphism. Far beyond trite `Animal`-`Dog`-`Cat` examples, the business value of polymorphism is to
+leverage abstractions to limit changes to your code even as the functionality of your application grows. By defining 
+new behavior that can be accessed through old abstractions, you can build software efficiently, and you don't have
+to work weekends when your client demands new features immediately.
+
+### Scala
+
+As an OO language, Scala offers the familiar polymorphism that developers in Java, Ruby, and similar languages 
+have loved for years, but because it is a functional lanugage with a rich type system, it also offers 
+[typeclass polymorphism](https://medium.com/@sinisalouc/ad-hoc-polymorphism-and-type-classes-442ae22e5342) which enables
+completely unrelated types to exhibit polymorphic behavior. You can think of it as functional programming's take on the 
+[Open-Closed Principle](https://stackify.com/solid-design-open-closed-principle/) from OO. Perhaps most striking of all
+in comparison to Go, Scala offers parametric polymorphism--what the kids call "generics." 
+When [Java 5 introduced generics](https://docs.oracle.com/javase/tutorial/extra/generics/index.html),
+it was revolutionary, and Scala benefits as well.
+
+{{< gist neilchaudhuri 6102b1fd9539d18fc918d7a872b90a03 >}}
+
+In this example, we really see three examples of polymorphism in Scala. The first is the kind of straightforward runtime
+polymorphism familiar to Java developers--except with 
+[Scala traits rather than Java interfaces](https://stackoverflow.com/questions/16410298/what-are-the-differences-and-similarties-between-scala-traits-vs-java-8-interfa).
+`Connection` and `File` are marked as instances of `Closeable`, and the `showClosing` function accepts a `Closeable` parameter.
+Therefore either `Connection` or `File` is suitable to pass to `showClosing` and the result of the function is dynamically and
+polymorphically resolved.
+
+The second example of polymorphism is also familiar to Java developers. It's generics. In Scala, you never have just `List`;
+you have `List[T]`, where `T` is a type parameter indicating the type of item in the `List`. Scala's type inference deduces that 
+`numbers` is an instance of `List[Int]`; `strings` is an instance of `List[String]`. The `head` method returns the first element
+of a `List` and returns a `T`, and we see that with the two respective lists. `T` is `Int` with `numbers` and `String` with `strings`.
+Finally, just for demonstration purposes, the code uses defines a function `use` that's not only type parameterized but type
+bounded. It only accepts a type that's `File` or any subclass of `File`. If you try passing a `Connection` to it, the code
+won't compile.
+
+The last example is what I consider the coolest and most powerful form of polymorphism in Scala--typeclass polymorphism.
+`List` has a `sorted` method as you'd hope, but it requires an 
+[implicit ordering](https://www.scala-lang.org/api/current/scala/collection/immutable/List.html#sorted[B%3E:A](implicitord:scala.math.Ordering[B]):Repr).
+In other words, you have to tell `List[T]` how to sort its elements by providing a function that 
+[lifts](https://stackoverflow.com/questions/17965059/what-is-lifting-in-scala) `T` into an `Ordering[T]`. This makes
+perfect sense, and it is enforced by Scala's type system. The code defines
+a type called `Complex` and a typeclass called `ComplexOrdering` that defines how instance of `Complex` should be sorted.  
+Without this, `List[Complex]` wouldn't know how to sort its contents, and that last line wouldn't compile. This means you can 
+make any `T` sortable by defining an `Ordering[T]` typeclass. More broadly, it means you can use typeclasses to add 
+polymorphic behavior to completely unrelated types, which includes types you don't control like legacy types and/or 
+types found in imported dependencies. 
+
+Polymorphism in Scala is powerful and flexible because of its sophisticated type system. It allows you not only to extend functionality
+in clever ways but also to constrain the solution space. In other words, you can limit the number of ways a problem can be solved,
+which makes it harder to write bugs.     
+
+### Go
+
+Go is not an OO language. Structs have no capacity for inheritance by design--only composition via 
+"[embedding](https://golang.org/doc/effective_go.html#embedding)". Go is not quite functional either. However, polymorphic
+behavior is not only possible but a fundamental part of the power of Go via 
+[structural typing](https://en.wikipedia.org/wiki/Structural_type_system). You can take advantage by doing two things. First, you write 
+[interfaces](https://gobyexample.com/interfaces), which as usual define the method signatures for a set of API calls. You
+can also compose interfaces via embedding. Second, you can 
+endow any type--an existing Go type like `float64` or your own custom structs--with behavior by defining functions and assigning
+them to the type. When you do this, the type is called a [receiver](https://tour.golang.org/methods/8), and if the receiver 
+has been assigned all the functions associated with a given interface, it is an implicit instance of that interface. You
+can then pass the type to any function expecting an instance of that interface, and it's resolved at compile time, which 
+makes you more productive in stark contrast to [duck typing](https://en.wikipedia.org/wiki/Duck_typing) in dynamic languages like [Python](/categories/python).
+
+{{< gist neilchaudhuri 1b5c2024980149bf58ebed603b6f578d >}}    
+ 
+In this example, interface `Named` is embedded in `Connection` and `File`. Note that this does not denote any relationship
+among them, but there is a tight coupling similar to inheritance in that any changes to `Named` are reflected wherever it 
+is embedded. Interface `Closeable` is defined with a single function `close` with no parameters and returning a `string`. 
+Any type with an identical function is resolved at compile time as an instance of `Closeable`, and lucky for us, 
+`Connection` and `File` qualify as they are both receivers of a `close` function with the right signature. 
+As a result, `showClosing` works just fine when called on both kinds of structs.
+
+That's the extent of Go's polymorphism. Clearly it is not remotely as extensive as Scala's, but it promotes two important 
+values--composition over inheritance and abstraction over implementation. Engineers coming from traditional OO backgrounds
+may find Go's polymorphism takes a little getting used to, but with some creativity you will find it 
+[quite powerful](https://talks.golang.org/2015/json.slide#1). There is no question, however, that the absence of generics
+can be quite jarring for more complex applications. In fact, there has been such demand in the community that 
+[the maintainers of Go have begun considering it](https://go.googlesource.com/proposal/+/master/design/go2draft-generics-overview.md).
+As the debate rages on whether the benefits outweigh the costs--potentially the speed and simplicity fundamental to 
+Go's mission--just recognize you won't have the benefit of generics for a while.
+
+
+     
 
 find yourself making creative workarounds
 
