@@ -503,7 +503,7 @@ but Go both to replace any [bash or Python (or C++ or whatever) scripts](https:/
 that are part of my continuous delivery pipeline and 
 to create [lambda functions](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html), which are supposed to be lightweight,
 fast, and focused. This means you may not necessarily have to choose because nontrivial cloud native architectures will often 
-blend both microservices and lambdas.
+blend both microservices and lambdas, and you should *always* have a continuous delivery pipeline.
 
 I hope this helps. If you read the whole thing, you deserve a nap.
         
