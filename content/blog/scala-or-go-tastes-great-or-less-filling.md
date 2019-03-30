@@ -20,6 +20,8 @@ categories:
 - Microservices
 - REST
 - Agile
+- TypeScript
+- Elm
 
 ---
 
