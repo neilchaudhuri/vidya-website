@@ -460,8 +460,10 @@ That's the extent of Go's polymorphism. Clearly it is not remotely as extensive 
 values--composition over inheritance and abstraction over implementation. Engineers coming from traditional OO backgrounds
 may find Go's polymorphism takes a little getting used to, but with some creativity you will find it 
 [quite powerful](https://talks.golang.org/2015/json.slide#1). There is no question, however, that the absence of generics
-can be quite jarring for more complex applications. In fact, there has been such demand for generics in the community that 
-[the maintainers of Go have begun considering it](https://go.googlesource.com/proposal/+/master/design/go2draft-generics-overview.md).
+can be quite jarring for more complex applications. It's such a powerful and pervasive idiom that even front end languages
+like [TypeScript](https://www.typescriptlang.org/docs/handbook/generics.html) and [Elm](https://elmprogramming.com/type-system.html) have it. 
+As it happens, there has been such demand for generics from the Go community that 
+[the maintainers have begun considering it](https://go.googlesource.com/proposal/+/master/design/go2draft-generics-overview.md).
 As the debate rages on whether the benefits outweigh the costs--potentially the speed and simplicity fundamental to 
 Go's mission--just recognize you won't have the benefit of generics for a while.
 
