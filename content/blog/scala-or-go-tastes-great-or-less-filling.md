@@ -74,12 +74,15 @@ you can skip the ceremony of writing a class or test and instead use a command-l
 [Ammonite](https://ammonite.io/#Ammonite-REPL). Dependency management is achieved with [SBT](/tags/sbt) typically but 
 also more general JVM build tools like [Gradle](/tags/gradle) and Maven.
 
-Scala became really popular with the advent of ["Big Data"](/categories/big-data) because functional programming lends itself
-so naturally to analytics, and the learning curve for 
+Scala became really popular with the advent of ["Big Data"](/categories/big-data) because 
+[functional programming lends itself so naturally to analytics](https://www.vidyasource.com/blog/2013/10/27/java-is-dysfunctional-with-big-data/),
+and the learning curve for 
 [modern LISPs like Haskell and Clojure](https://en.wikipedia.org/wiki/Lisp_(programming_language)#2000_to_present) 
 is too high for too many. [Apache Spark](/tags/apache-spark) is built in Scala, and when it got big, Scala got big. Since then Scala has
-become a popular language for other domains including 
-[reactive web applications and microservices](https://www.reactivemanifesto.org/).  
+also become a popular language for other domains including 
+[reactive web applications and microservices](https://www.reactivemanifesto.org/) with 
+[Play Framework](https://www.playframework.com/) and [Akka](https://akka.io/) and even the front end with 
+[Scala.js](https://www.scala-js.org/).  
 
 # Go
 
