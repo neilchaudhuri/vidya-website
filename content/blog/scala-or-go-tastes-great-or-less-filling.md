@@ -454,7 +454,7 @@ behavior is not only possible but a fundamental part of the power of Go via
 [interfaces](https://gobyexample.com/interfaces), which as usual define the method signatures for a set of API calls. You
 can also compose interfaces via embedding. Second, you can 
 endow any type--an existing Go type like `float64` or your own custom structs--with behavior by defining functions and assigning
-them to the type. When you do this, the type is called a [receiver](https://tour.golang.org/methods/8), and if the receiver 
+them to the type. When you do this, the type is called a "[receiver](https://tour.golang.org/methods/8)", and if the receiver 
 has been assigned all the functions associated with a given interface, it is an implicit instance of that interface. You
 can then pass the type to any function expecting an instance of that interface, and it's resolved at compile time, which 
 makes you more productive in stark contrast to the runtime resolution of 
