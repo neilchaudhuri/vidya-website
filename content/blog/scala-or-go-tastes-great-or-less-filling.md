@@ -305,8 +305,7 @@ a heavyweight operation as the operating
 system needs to schedule threads against physical processors and manage expensive context switching. The result is that 
 for some problems parallelism with `Future` in Scala may potentially consume a lot of resources for merely a modest 
 increase in performance--or even slow you down. When performance is a major concern, you need to configure your `ExecutionContext`
-smartly according to the capability of your machine(s) and the nature of your tasks. Are they IO- or CPU-intensive?
-Are they intrinsically parallelizable? 
+smartly according to the capability of your machine(s) and the nature of your tasks. 
 
 Bottom line? Reactive programming doesn't necessarily make your applications faster (except maybe in those cases where you
 can do expensive work in parallel), but it usually allows them to be more resilient. Reactive applications
