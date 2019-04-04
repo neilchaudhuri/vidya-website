@@ -183,7 +183,7 @@ error handling is critical to diagnose bugs and move builds to production as qui
 As you might imagine from a language that prizes on immutability and composability, Scala offers another monad,
 `Try`, for error handling. Analogous to `Option`, it compels
 you to account for a possible error at compile time rather than the absence of a value. A `Try[Double]`, for example,
-returns either a `Double` if all is well or an error (or more precisely an instance of `Throwable`) otherwise.  
+represents either a `Double` if all is well or an error (or more precisely an instance of `Throwable`) otherwise.  
 
 {{< gist neilchaudhuri 5c4cc893d46e107aac4ee163f22e9d0d >}}
 
