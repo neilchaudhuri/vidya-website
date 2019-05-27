@@ -49,9 +49,11 @@ the most innovative customer-facing technology stack in the federal government:
 * [AWS](/tags/aws)
 
 The project itself takes something of a startup's view on quality by shifting the focus from functional testing to automation via a 
-[CI/CD](/categories/continuous delivery) pipeline powered by [Jenkins](/tags/jenkins) to build the microservices
-and perform basic [linting](https://github.com/golang/lint), [Docker](/tags/docker) for the images, 
-and [Kubernetes](/tags/kubernetes) to manage them. 
+[CI/CD](/categories/continuous-delivery) pipeline powered by [Jenkins](/tags/jenkins) to build the microservices
+and perform basic [linting](https://github.com/golang/lint), [Docker](/tags/docker) to build the images, 
+and [Kubernetes](/tags/kubernetes) to orchestrate them. A dedicated [Site Reliability Engineering](https://landing.google.com/sre/) team manages
+this pipeline, and their work is impressive. I have never been on a development effort that seemingly devotes more resources to 
+continuous delivery than to feature development.  
  
 It is rewarding to have learned so much about these emerging technologies and, even more importantly, to have helped make
 the best of America available to everyone.
