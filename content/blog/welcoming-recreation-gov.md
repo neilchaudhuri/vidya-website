@@ -2,7 +2,7 @@
 
 author: "Neil Chaudhuri"
 title: "Welcoming Recreation.gov"
-description: "We are proud to have helped Recreation.gov make our national treasures available to everyone."
+description: "We are proud to have worked with Recreation.gov to help make our national treasures available to everyone."
 banner: "img/banners/recreation.png"
 date: 2019-05-24
 tags:
