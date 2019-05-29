@@ -28,12 +28,12 @@ It's an honor and a privilege to have helped [2.6M developers and earned 25K poi
 on [Stack Overflow](https://stackoverflow.com).
 
 For those who don't know, Stack Overflow is a Q&A site similar to Quora and Reddit that is essential to life as a software engineer.
-I for one turn to it at least once a day to see if anyone else has tackled the same problem I have, and more often than not,
-some has. The wealth of practical knowledge on Stack Overflow is breathtaking, and the site has grown into a mature platform 
-that [conducts large-scale surveys and dtata analysis](https://insights.stackoverflow.com/survey/2019) to provide unique insight into the 
-development landscape and even puts job-seekers in touch with those looking for talent.
+I for one turn to it at least once a day to see if anyone else has tackled the same problem I'm tackling, and far more often than not,
+someone has. The wealth of practical knowledge on Stack Overflow is breathtaking, and the site has grown into a mature platform 
+that [conducts large-scale surveys and data analysis](https://insights.stackoverflow.com/survey/2019) to provide unique insight into the 
+development landscape and even puts [job-seekers in touch with those looking for talent](https://stackoverflow.com/jobs).
 
-Of course, as with any large group of engineers, you will have a mix of undeniable talent, hardened opinion, and of course 
+As with any group of software engineers online, you will have a mix of undeniable talent, hardened opinion, and of course 
 incessant trolling. This is still the Internet after all. There is a [Code of Conduct](https://stackoverflow.com/conduct),
 but it strikes me as only mildly effective.
 
@@ -56,6 +56,14 @@ is the satisfaction of contributing to something bigger than yourself. Our commu
 Slack channels to free tooling--is built on collaboration unlike few others. Be a part of that.
 
 Now just like other social media, there will always be trolls on Stack Overflow who want to take advantage of their online 
-anonymity to wreak havoc. They will be gratuitously mean. They will violate 
-[community guidelines by downvoting your answers](https://stackoverflow.com/help/privileges/vote-down) merely because they 
-disagree with an opinion--or so it seems since they don't leave an explanation.   
+anonymity to wreak havoc. They will be gratuitously mean. They will downvote your answers merely because they 
+disagree with an opinion--or so it seems since they don't improve the conversation by leaving an explanation or making an edit
+[in voliation of community guidelines](https://stackoverflow.com/help/privileges/vote-down). It's obnoxious, and frankly 
+it used to bother me until I recognized something that should have been obvious from the start. In a field plagued by
+[Imposter Syndrome](https://guide.freecodecamp.org/working-in-tech/imposter-syndrome/) and a 
+[lack of diversity](https://qz.com/1624252/pythons-creator-thinks-it-has-a-diversity-problem/), it's up to privileged (as I am), 
+good-faith (as I try to be) engineers like myself to get over trivial slights and use our privilege to turn Stack Overflow and all 
+public technology forums into a safe space where everyone feels welcome to learn and contribute. 
+
+So if you haven't already, please get started contributing your skills to Stack Overflow. I have been slacking on my 
+responses lately, so you'll catch me soon enough. 
