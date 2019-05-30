@@ -66,7 +66,7 @@ disagree with your approach or your word choice. It's obnoxious, and frankly
 it used to bother me until I recognized something that should have been obvious from the start. In a male-dominated field plagued by
 [Imposter Syndrome](https://guide.freecodecamp.org/working-in-tech/imposter-syndrome/) and a 
 [culture that harms diversity](https://qz.com/1624252/pythons-creator-thinks-it-has-a-diversity-problem/), it's up to privileged, 
-good-faith engineers to get over trivial slights and use our privilege to turn Stack Overflow and other 
+good-faith engineers to get over petty slights and use our privilege to turn Stack Overflow and other 
 technology forums both online and in the real world into safe spaces where everyone feels welcome to learn and contribute. 
 
 So if you haven't already, please get started contributing to Stack Overflow. I have been slacking on my 
