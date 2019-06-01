@@ -15,6 +15,8 @@ categories:
 - Functional Programming
 aliases:
 - /blog/Programming/Java/Scala/Ruby/2014/08/04/know-your-options
+- /blog/know-your-options
+
 ---
 
 Imagine a method in [Java](/tags/java) that retrieves an `Employee` entity from the database by the employee id. Something like this:
