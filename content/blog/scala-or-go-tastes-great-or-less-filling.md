@@ -24,6 +24,8 @@ categories:
 - TypeScript
 - Elm
 - Kotlin
+aliases:
+- /blog/2019/03/29/scala-or-go-tastes-great-or-less-filling/
 
 ---
 
