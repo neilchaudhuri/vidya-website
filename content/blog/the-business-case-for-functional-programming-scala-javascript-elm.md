@@ -21,7 +21,8 @@ categories:
 - Functional Programming
 - Testing
 - Continuous Integration
-
+aliases:
+- /blog/the-business-case-for-functional-programming/
 ---
 
 Functional programming isn't exactly a fun topic anywhere outside of technical conferences and
