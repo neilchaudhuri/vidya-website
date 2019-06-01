@@ -14,6 +14,8 @@ categories:
 - Programming
 aliases:
 - /blog/Programming/Ruby/Java/2014/01/21/idiom-savant
+- /blog/idiom-savant
+
 ---
 
 Idioms are a big deal in any language. They represent deep knowledge beyond syntax and grammar, a feel for getting the
