@@ -1,5 +1,5 @@
 baseurl = "https://www.vidyasource.com/"
-title = "Vidya | Technology Consulting, Courses, and Online Tutorials"
+title = "Vidya | Technology Consulting, Courses, and Tutorials"
 theme = "hugo-universal-theme"
 languageCode = "en-us"
 # Site language. Available translations in the theme's `/i18n` directory.

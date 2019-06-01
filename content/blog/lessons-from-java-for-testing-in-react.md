@@ -21,6 +21,8 @@ categories:
 - Programming
 - Testing
 - Continuous Integration
+aliases:
+- /blog/2018/10/21/lessons-from-java-for-testing-in-react/
 
 ---
 
