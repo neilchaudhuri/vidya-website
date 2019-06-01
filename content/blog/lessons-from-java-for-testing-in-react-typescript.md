@@ -142,10 +142,10 @@ any component you want to a render prop in your test.
 * [Use the functional nature of JavaScript to your advantage](/blog/2018/09/18/the-business-case-for-functional-programming/) in testing.
 For example, REST calls are the most common side effects in JavaScript programming, 
 and using TypeScript you could have a function prop `fetch: (s: string) => Promise<string>` to represent a REST call returning JSON.
-In your test, you supply a stubbed implementation like `(s: string) => { Promise.resolve("{\"id\": 5}") }` while your 
+In your test, you supply a stubbed implementation like `(s: string) => { Promise.resolve({id: 5}) }` while your 
 production code supplies a function with the same shape that makes real REST calls. This is analogous in Java to having a 
 constructor parameter of type `Function<String, CompletableFuture<String>>` that you stub with 
-`(s) -> CompletableFuture.completedFuture("{\"id\": 5}")` in your [JUnit](/tags/junit) tests. In either case, no mocking library is needed.
+`(s) -> CompletableFuture.completedFuture({id: 5})` in your [JUnit](/tags/junit) tests. In either case, no mocking library is needed.
 
 Or...moving away from Java, stop being scared and 
 [embrace the Haskell-like idioms in Elm](https://package.elm-lang.org/packages/ryanolsonx/elm-mock-http/latest/).
