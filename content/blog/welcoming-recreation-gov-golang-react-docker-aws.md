@@ -28,6 +28,9 @@ categories:
 - REST
 - Continuous Integration
 - Continuous Delivery
+aliases:
+- /blog/2019/05/24/vidya/technology/welcoming-recreation-gov/
+- /blog/2019/05/24/welcoming-recreation-gov/
 
 ---
 
