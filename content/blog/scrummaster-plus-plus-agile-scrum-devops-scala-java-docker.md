@@ -32,6 +32,7 @@ categories:
 - Continuous Delivery
 aliases:
 - /blog/Projects/Agile/Scrum/Programming/Java/Scala/Ruby/Testing/2017/02/18/scrummaster-plus-plus
+- /blog/scrummaster-plus-plus
 
 ---
 
