@@ -22,6 +22,7 @@ categories:
 - Open-source
 aliases:
 - /blog/Programming/Scala/Java/Data/Hadoop/Analytics/2014/01/25/lighting-a-spark-with-hbase
+- /blog/2014/01/25/lighting-a-spark-with-hbase
 ---
 
 Although most developers and users are still feeling their way through [Hadoop](http://hadoop.apache.org/) and (more
