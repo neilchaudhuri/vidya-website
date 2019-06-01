@@ -21,6 +21,8 @@ categories:
 - Agile
 - Continuous Integration
 - Continuous Delivery
+aliases:
+- /blog/2019/05/29/25k-and-counting
 
 ---
 
