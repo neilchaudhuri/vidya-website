@@ -27,6 +27,7 @@ categories:
 aliases:
 - /blog/2019/03/29/scala-or-go-tastes-great-or-less-filling/
 - /blog/scala-or-go-tastes-great-or-less-filling/
+- /blog/2019/03/29/vidya/technology/scala-or-go-tastes-great-or-less-filling/
 ---
 
 [Scala](/categories/scala) and [Go](/categories/go) (aka [Golang](/tags/golang)) are two of the fastest growing leading-edge 
