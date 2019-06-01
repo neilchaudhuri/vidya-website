@@ -13,6 +13,7 @@ categories:
 - Testing
 aliases:
 - /blog/Programming/Java/Testing/2014/11/06/zero-tolerance
+- /blog/zero-tolerance
 
 ---
 
