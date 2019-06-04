@@ -21,8 +21,10 @@ categories:
 - Agile
 - Continuous Integration
 - Continuous Delivery
+- Diversity
 aliases:
 - /blog/2019/05/29/25k-and-counting
+- /blog/vidya/technology/25k-and-counting
 
 ---
 
