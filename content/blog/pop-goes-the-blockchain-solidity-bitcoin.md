@@ -22,6 +22,8 @@ categories:
 - Software Engineering
 - Open Source
 - Microservices
+aliases:
+- /blog/2018/03/11/pop-goes-the-blockchain/
 ---
 
 [Blockchain](/categories/blockchain). 
