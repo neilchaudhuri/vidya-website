@@ -7,10 +7,13 @@ banner: "img/banners/uspaacc-cert.jpg"
 date: 2019-01-07
 categories: 
 - Partners
+- Diversity
 - Programming
 - Software Engineering
 - Agile
 - Lean
+aliases
+- /blog/welcoming-uspaacc
 
 ---
 
