@@ -12,7 +12,7 @@ categories:
 - Software Engineering
 - Agile
 - Lean
-aliases
+aliases:
 - /blog/welcoming-uspaacc
 
 ---
