@@ -4,8 +4,8 @@ title = "Consulting"
 
 At Vidya we are committed to making technology work for you. One way we do that is by providing [courses](/course),
 [tutorials](/tutorial), and [blog posts](/blog) so you can learn concepts on your own. We are certified by both 
-[CRMSDC](/blog/welcoming-crmsdc-diversity-technology-consulting-minority-owned-business.markdown) and 
-[USPAACC](/blog/welcoming-uspaacc-diversity-technology-consulting-minority-owned-business.markdown) as a minority-owned business.
+[CRMSDC](/blog/vidya/technology/welcoming-crmsdc-diversity-technology-consulting-minority-owned-business/) and 
+[USPAACC](/blog/vidya/technology/welcoming-crmsdc-diversity-technology-consulting-minority-owned-business/) as a minority-owned business.
 
 We are also available to join your team to help build high-quality software applications *fast* in whatever capacity you need.
 Software project management, high-level architecture, guidance on implementing efficiencies like continuous delivery,
@@ -24,7 +24,7 @@ We specialize in these disciplines and technologies:
 - **Programming languages:** Scala, Go, Kotlin, Java, TypeScript, JavaScript, Python, Dart
 - **Mobile:** Android and iOS, Flutter, Progressive Web Applications
 - **Big data analytics:** Hadoop, Apache Spark, Apache Kafka, MongoDB, Cassandra, Elasticsearch, RDBMS
-- **UI:** React, Vue, D3, Elm, RxJS
+- **UI:** React (with Hooks even!), Vue, D3, Elm, RxJS, JQuery, Sharp
 - **Web:** Play Framework, Spring Boot, Go kit, Gatsby, Hugo, Rails, Ktor
 - **Cloud Native:** AWS, Azure, Heroku, Netlify
 - **Miscellaneous:** Akka, Alpakka
@@ -45,7 +45,7 @@ We specialize in these development practices and tools:
 - **Testing:** JUnit, ScalaTest, ScalaCheck, Cucumber, Selenium, Cypress, Nightwatch, WireMock, Pact
 - **Version control:** Git, GitHub, GitLab
 - **Continuous Delivery:** Docker, Jenkins, GitLab, GitHub, Kubernetes, OpenShift, SonarQube
-- **Build tools:** SBT, Gradle, Maven
+- **Build tools:** SBT, Gradle, Maven, Webpack, Parcel
 
 We also are focused on design and architectural patterns and what Bob Martin calls "[clean code](http://www.cleancoders.com/)"
 
