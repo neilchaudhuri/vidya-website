@@ -3,12 +3,16 @@ title = "Consulting"
 +++
 
 At Vidya we are committed to making technology work for you. One way we do that is by providing [courses](/course),
-[tutorials](/tutorial), and [blog posts](/blog) so you can learn concepts on your own.
+[tutorials](/tutorial), and [blog posts](/blog) so you can learn concepts on your own. We are certified by both 
+[CRMSDC](/blog/welcoming-crmsdc-diversity-technology-consulting-minority-owned-business.markdown) and 
+[USPAACC](/blog/welcoming-uspaacc-diversity-technology-consulting-minority-owned-business.markdown) as a minority-owned business.
 
-But we are also available to join your team to help build high-quality software applications *fast* in whatever capacity you need.
-Software project management, high-level architecture, guidance on implementing efficiencies like test automation,
-or what we love most--software application development in a variety of the world's leading-edge, and at times
+We are also available to join your team to help build high-quality software applications *fast* in whatever capacity you need.
+Software project management, high-level architecture, guidance on implementing efficiencies like continuous delivery,
+or what we love most--software application development using the world's leading-edge, and at times
 bleeding-edge, technologies.
+
+We also have experience addressing the challenges of building software in United States government classified facilities.
 
 Take a look at what we can do. If you would like to discuss consulting opportunities, please [contact](/contact) us.
 
@@ -16,14 +20,14 @@ Take a look at what we can do. If you would like to discuss consulting opportuni
 
 We specialize in these disciplines and technologies:
 
-- Services: [REST](/categories/rest), [Microservices](/categories/microservices), and [Serverless](/categories/serverless)
-- Programming languages: [Scala](/tags/scala), [Java](/tags/java), [Go](/tags/go), [Kotlin](/tags/kotlin), [Swift](/tags/swift), [Ruby](/tags/ruby), and [Python](/tags/python)
-- [Mobile](/categories/mobile) development: [Android](/tags/android) and [iOS]((/tags/iOS)), [React Native](/tags/react-native), and [Progressive Web Applications](/tags/pwa)
-- [Big data](/categories/big-data) and [analytics](/categories/analytics): [Hadoop](/tags/hadoop), [Apache Spark](/tags/apache-spark), 
-[Apache Kafka](/tags/apache-kafka), [Akka](/tags/akka), [MongoDB](/tags/mongodb), [Cassandra](/tags/cassandra), [Elasticsearch](/tags/elasticsearch), RDBMS like
-[PostgreSQL](/tags/postgresql), and D3.js for visualization
-- Web frameworks: [Play Framework](/tags/play-framework), [Spring Boot](/tags/spring-boot), [VueJS](/tags/vuejs), [AngularS](/tags/vuejs), and [ReactJS](/tags/reactjs)  
-- [Cloud](/categories/cloud) technologies: [Amazon Web Services](/tags/aws), Heroku, and Netlify
+- **Services:** REST, Microservices, Serverless, GraphQL, gRPC
+- **Programming languages:** Scala, Go, Kotlin, Java, TypeScript, JavaScript, Python, Dart
+- **Mobile:** Android and iOS, Flutter, Progressive Web Applications
+- **Big data analytics:** Hadoop, Apache Spark, Apache Kafka, MongoDB, Cassandra, Elasticsearch, RDBMS
+- **UI:** React, Vue, D3, Elm, RxJS
+- **Web:** Play Framework, Spring Boot, Go kit, Gatsby, Hugo, Rails, Ktor
+- **Cloud Native:** AWS, Azure, Heroku, Netlify
+- **Miscellaneous:** Akka, Alpakka
 
 You will notice that there are pervasive technologies like .NET and PHP we don't mention here. We want to
 be honest. We can get up to speed on other technologies fairly quickly, but they aren't our thing.
@@ -38,12 +42,12 @@ and automation enable us to build fast and build quality. You can have both.
 
 We specialize in these development practices and tools:
 
-- [Testing](/categories/testing): [JUnit](/tags/junit), [ScalaTest](/tags/scalatest), [Cucumber](/tags/cucumber), [Selenium](/tags/selenium), RSpec, unittest
-- Version control: [Git](/tags/git), GitHub
-- [Continuous integration](/categories/continuous-integration): Jenkins, TravisCI, and TeamCity
-- [Continuous Delivery](/categories/continuous-delivery): Ansible, Puppet, Chef, Docker, Kubernetes 
-- Build tools: [SBT](/tags/sbt), [Gradle](/tags/gradle), [Maven](/tags/maven), and Ant
-- Design patterns and what Bob Martin calls "[clean code](http://www.cleancoders.com/)"
+- **Testing:** JUnit, ScalaTest, ScalaCheck, Cucumber, Selenium, Cypress, Nightwatch, WireMock, Pact
+- **Version control:** Git, GitHub, GitLab
+- **Continuous Delivery:** Docker, Jenkins, GitLab, GitHub, Kubernetes, OpenShift, SonarQube
+- **Build tools:** SBT, Gradle, Maven
+
+We also are focused on design and architectural patterns and what Bob Martin calls "[clean code](http://www.cleancoders.com/)"
 
 If you would like to discuss consulting opportunities, please [contact](/contact) us.
 
@@ -53,11 +57,9 @@ Every software project is different with unique circumstances--the team, the bus
 technical goals, market forces, and so on. It takes the right kind of approach to tackle the challenges that arise
 and produce high-quality software fast.
 
-We specialize in [lean]((/categories/lean)) and [agile](/categories/agile) software development. We know those terms are hard to disambiguate. We can help. 
+We specialize in Design Thinking and [lean]((/categories/lean)) and [agile](/categories/agile) software development. We know those terms are hard to disambiguate. We can help. 
 
 Our personnel are [PMP](/tags/pmp)- and [Scrum](/tags/scrum)-certified.
-
-We also have experience addressing the challenges of building software in United States government classified facilities.
 
 If you would like to discuss consulting opportunities, please [contact](/contact) us.
 
