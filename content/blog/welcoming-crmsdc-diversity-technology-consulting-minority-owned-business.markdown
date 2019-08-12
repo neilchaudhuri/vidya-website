@@ -3,7 +3,7 @@
 author: "Neil Chaudhuri"
 title: "Welcoming CRMSDC"
 description: "We are proud to be certified by CRMSDC as a Minority Business Enterprise."
-banner: "img/banners/crmsdc-cert.jpg"
+banner: "img/banners/crmsdc-cert.png"
 date: 2019-08-10
 categories: 
 - Partners
@@ -16,7 +16,7 @@ categories:
 ---
 
 I am very proud to announce that the the [Capital Region Minority Supplier Development Council](http://www.crmsdc.org/)
-(CRMSDC) has certified Vidya as an Asian and minority-owned small business.
+(CRMSDC) has certified Vidya as a Minority Business Enterprise.
 
 At Vidya, we have been very privileged to deliver high-quality software to a wide array of commercial and government clients
 using exciting technology while promoting [lean](/tags/lean) principles, [agile](/tags/agile) software development,
