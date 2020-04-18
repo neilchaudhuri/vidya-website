@@ -97,7 +97,6 @@ with distributed teams
 * Lesson conveyed in a "cookbook" style describing each problem, a quick solution, and the details of the solution
 * Ten examples of the problems that are addressed
     - *You want to try Scrum with your team, but your organization hasn't embraced it.*
-    - *Scrum projects must achieve compliance with ISO 9001 or CMMI.*
     - *The organization is unsure how to measure the success of its agile adoption.*
     - *The Product Owner is unavailable when needed or takes too long to answer questions.*
     - *There is pressure to sacrifice quality for faster delivery of critical features before an imminent deadline.*

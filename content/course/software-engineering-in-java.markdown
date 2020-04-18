@@ -94,6 +94,9 @@ a Sun Certified Java Programmer when that was still a thing.
 * Immutable collections
 * Interfaces with default methods
 * `CompletableFuture`
+* Using the REPL
+* Reactive Streams
+* Records
 
 ### Session IV: Professional Java
 * Error handling
