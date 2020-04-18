@@ -15,7 +15,7 @@ categories:
 
 ---
 
-I am very proud to announce that the the [Capital Region Minority Supplier Development Council](http://www.crmsdc.org/)
+I am very proud to announce that the [Capital Region Minority Supplier Development Council](http://www.crmsdc.org/)
 (CRMSDC) has certified Vidya as a Minority Business Enterprise.
 
 At Vidya, we have been very privileged to deliver high-quality software to a wide array of commercial and government clients

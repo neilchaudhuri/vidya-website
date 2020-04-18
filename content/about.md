@@ -2,17 +2,22 @@
 title = "About"
 +++
 
-Vidya is a technology services and consulting company based outside Washington, DC, USA and is a 
-certified Asian and minority-owned small business by the [US Pan Asian American Chamber of Commerce Education Foundation](https://uspaacc.com/).
+Vidya is a software services and consulting company based in Washington, DC, USA. We are a 
+certified Minority Business Enterprise by the [Capital Region Minority Supplier Development Council](http://www.crmsdc.org/)
+and a certified Asian and minority-owned small business by the [US Pan Asian American Chamber of Commerce](https://uspaacc.com/).
 
 ## Our mission
 
 At Vidya, our mission is to make technology as fun and accessible as possible. The passion we have for technology
 doesn't shut off at 5 PM, and we want to show you how easy it really is to do great things.
 
-Maybe you're at a small
-company or nonprofit where everyone has to wear a lot of hats, and someone has asked you to retool the website when you've
-never done anything more complicated on the web than tagging people on Facebook.
+Maybe you are a large company looking to deploy secure, modernized, cloud native services via an automated DevSecOps pipeline
+to cut costs and improve time to market while improving value to your customers. 
+
+Maybe you are a small
+company or nonprofit where everyone has to wear a lot of hats, and someone has asked you to transition your manual spreadsheet
+analysis into something automated or to
+retool your website when you've never done anything more complicated on the web than tagging people on Facebook.
 
 Or maybe
 you are an experienced software engineer tired of your job working on the same boring technology you mastered years ago, and you're
