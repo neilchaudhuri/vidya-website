@@ -36,19 +36,22 @@ the worst language imaginable.
 I am sorry it took the breathtaking privilege of Amy Cooper, who was so angry at [avid birder  
 Christian Cooper](https://www.npr.org/2020/06/03/869052336/-blackbirdersweek-seeks-to-make-the-great-outdoors-open-to-all) for 
 merely asking her to follow the rules and leash her dog (whom she clearly mistreats) that she called police and lied,
-"There's an African-American man recording me and threatening myself and my dog" with implicit knowledge of all of the above--
-that police are white supremacy's instrument for ending black lives and that she is welcome to tak advantage. 
-In fact, Amy Cooper's disgusting behavior undermines completely the "bad apples" argument made so often in defense of 
-police and an entire criminal justice apparatus who murder black people.
+"There's an African-American man recording me and threatening myself and my dog" with implicit knowledge
+that she has at her command the police, white supremacy's instrument for ending black lives. 
+In fact, Amy Cooper's disgusting behavior undermines completely the 
+"[bad apples](https://www.brookings.edu/blog/how-we-rise/2020/05/30/bad-apples-come-from-rotten-trees-in-policing/)" 
+argument made so often in defense of police and an entire criminal justice apparatus who destroy black lives.
 
 I am sorry I can't list the names of all the innocent black cis and trans lives going back centuries that we have lost to systemic,
 institutionalized racism and white supremacy sanctioning police brutality, corruption in the criminal justice system,
-terrorism, redlining, mass incarceration, climate change,
-insufficient investment in health care and education and black entrepreneurship, political disenfranchisement, and countless other insidious tactics.
+terrorism, redlining, mass incarceration, climate change, political disenfranchisement, 
+insufficient investment in health care and education and black entrepreneurship, and countless other insidious tactics.
 
-It's far too late but I am stating it here on the Vidya website.
+I am sorry our media, social media, and elements of our politics are motivated to conflate activism for black lives with 
+"politics." They make money and gain power by stoking division and outrage, and we need ways to 
+undermine these perverse incentives.
 
-**Black Lives Matter**
+It's far too late but I am finally stating it here on the Vidya website: **Black Lives Matter**
 
 # What will we do about it?
 
@@ -82,23 +85,85 @@ that we hope will help black people overcome institutional racism across society
 
 ### Software solutions
 
-Data architectures that ingest, transform, and store data that ultimately become the basis for training
-models and promote them to production systems where they can be queried and visualized are driven by software throughout
-the architecture. There is a litany of open-source and commercial cloud software dedicated to all of these concerns. In fact,
+Data architectures ingest, transform, store, and index data that ultimately become the basis for training
+models, and continuous delivery promotes these models to production systems where they can be queried and visualized to yield
+valuable insights and prompt further analysis. 
+
+Software drives this architecture. 
+
+There is a litany of open-source and commercial cloud software dedicated to all of these concerns. In fact,
 Palantir offers a complete enterprise 
 solution--[but for evil](https://www.vice.com/en_us/article/9kx4z8/revealed-this-is-palantirs-top-secret-user-manual-for-cops).
 
 The universe of software applications that can help save black lives is vast. From mobile applications that automate
 recording and notifications about encounters with police to those that help black people overcome voter suppression to
-make their voices heard. From APIs that enable data sharing to promote better health outcomes for black people to those that
-can convey which communities need the most investment to improve their schools. And on and on.
+make their voices heard. From APIs that enable data sharing to promote better health outcomes for black women who are 
+disproportionately vulnerable to COVID and whose maternal mortality rates are far too high to APIs that convey which 
+communities need the most investment to improve their schools. From simple websites that organize content, disseminate 
+information, and collect donations for fledgling organizations to clever voice assistant technology that provides information
+on your rights when police demand entry into your home and also notifies family of your situation. 
+ 
+And on and on.
 
-The problems are of course vast; the solutions complex. Vidya will be involved in building software to make the incremental
+The problems are of course vast; the solutions complex. Vidya will build software to make the incremental
 progress we need to save black lives.
 
 ### Monetary donations
 
-We are already avid donors to charity, but we will certainly be more active in donating to organizations focused 
+We are already avid donors, but we will certainly be more active in donating to organizations focused 
 particularly on saving and improving black lives. If you are able, please consider donating as well. Here are just a 
-few of the charities doing amazing work:
+few doing amazing work:
 
+[Black Lives Matter](https://blacklivesmatter.com/)
+
+[Black Mamas Matter Alliance](https://blackmamasmatter.org/)
+
+[Black Girls Code](https://www.blackgirlscode.com/)
+
+[Anti Racism Fund](Anti-Racism Fund)
+
+[Trans Justice Funding Project](https://www.transjusticefundingproject.org/)
+
+[Equal Justice Initiative](https://eji.org/)
+
+[Sister Song](https://sistersong.nationbuilder.com/)
+
+[The Harriet Tubman Collective](https://harriettubmancollective.tumblr.com/post/150072319030/htcvision4blacklives)
+
+[The Bail Project](https://secure.givelively.org/donate/the-bail-project)
+
+[Fair Fight](https://fairfight.com/)
+
+[The Loveland Foundation](https://thelovelandfoundation.org/loveland-therapy-fund/)
+
+[The Conscious Kid](https://www.theconsciouskid.org/donate)
+
+[National Police Accountability Project](https://www.nlg-npap.org/)
+
+[BET + United Way COVID-19 Relief Fund](https://secure.unitedway.org/j/step/bet-covid-19-donate)
+
+[R.E.S.I.S.T.](https://www.gofundme.com/f/yz2xx-resist)
+
+[Autistic People of Color Fund](https://autismandrace.com/autistic-people-of-color-fund/)
+
+[The Okra Project](https://www.theokraproject.com/)
+
+[NAACP Legal Defense Fund](https://www.naacpldf.org/about-us/)
+
+[Black Table Arts](http://www.blacktablearts.com/)
+
+[African American Cultural Heritage Action Fund](https://savingplaces.org/african-american-cultural-heritage#.Xt_nu55KiqA)
+
+[Campaign Zero](https://www.joincampaignzero.org/#vision)
+
+[Dream Defenders](https://dreamdefenders.org/)
+
+[Woke Vote](https://wokevote.us/)
+
+[Black Out Collective](https://blackoutcollective.org/)
+
+[GirlTrek](https://www.girltrek.org/)
+
+[National Birth Equity Collaborative](https://birthequity.org/)
+
+[Brave Space Alliance](http://www.bravespacealliance.org/)
