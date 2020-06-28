@@ -66,7 +66,7 @@ to build technology solutions that support black lives. Please [contact us](/con
 
 In her book [Weapons of Math Destruction](https://weaponsofmathdestructionbook.com/), mathematician and data scientist 
 Cathy O’Neil describes why we are foolish to have so much faith in the "objectivity" of the data models we use to solve racial bias. 
-Data models derived from unconscious bias produced biased outcomes. 
+Data models derived from unconscious bias produce biased outcomes. 
 
 Northpointe’s COMPAS algorithm to predict the likelihood of recidivism for criminal defendants 
 [turned out to be a disaster](https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm) because
