@@ -35,7 +35,7 @@ the worst language imaginable.
 
 I am sorry it took the breathtaking privilege of Amy Cooper, who was so angry at [avid birder  
 Christian Cooper](https://www.npr.org/2020/06/03/869052336/-blackbirdersweek-seeks-to-make-the-great-outdoors-open-to-all) for 
-merely asking her to follow the rules and leash her dog (whom she clearly mistreats) that she called police and lied,
+merely asking her to follow the rules and leash her dog that she called police and lied,
 "There's an African-American man recording me and threatening myself and my dog" with implicit knowledge
 that she has at her command the police, white supremacy's instrument for ending black lives. 
 In fact, Amy Cooper's disgusting behavior undermines completely the 
