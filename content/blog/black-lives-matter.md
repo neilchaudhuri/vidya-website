@@ -55,7 +55,8 @@ It's far too late but I am stating it here on the Vidya website.
 Not enough. It will never be enough. But we can try.
 
 Outside of expanding our longstanding efforts to promote black people, particularly black women, in STEM and of course tech through
-training, mentorship, and talks, we hope to do many other things in support of black lives.
+training, mentorship, and talks, we hope to do many other things in support of black lives. Please [contact us](/contact) 
+if you have ideas or would like to collaborate.
 
 ### Data science 
 
@@ -101,18 +102,3 @@ We are already avid donors to charity, but we will certainly be more active in d
 particularly on saving and improving black lives. If you are able, please consider donating as well. Here are just a 
 few of the charities doing amazing work:
 
-
-
-
-
- 
-
-
-
-
-<blockquote>
-
-</blockquote>
-
-You can read the rest of the column [here](http://gcn.com/articles/2014/07/10/6-steps-software-security.aspx) 
-and offer your own thoughts [here](/contact).
