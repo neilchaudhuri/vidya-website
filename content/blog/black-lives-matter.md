@@ -57,10 +57,10 @@ It's far too late but I am finally stating it here on the Vidya website: **Black
 
 Not enough. It will never be enough. But we can try.
 
-Outside of expanding our longstanding efforts to promote black people, particularly black women, in STEM and of course technology through
+We have made longstanding efforts to promote black people, particularly black women, in STEM and of course technology through
 our [courses](/course), talks at conferences, and volunteering to support organizations that help black women build careers
-in technology, we hope to do many other things in support of black lives. Please [contact us](/contact) 
-if you have ideas or would like to collaborate.
+in technology, and we will expand these efforts. Still, this moment calls for much more. We will work in the following areas
+to build technology solutions that support black lives. Please [contact us](/contact) if you have ideas or would like to collaborate.
 
 ### Data science 
 
