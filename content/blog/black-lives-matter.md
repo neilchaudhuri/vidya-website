@@ -54,7 +54,7 @@ It's far too late but I am stating it here on the Vidya website.
 
 Not enough. It will never be enough. But we can try.
 
-Outside of our longstanding efforts to promote black women in STEM and particularly in tech through
+Outside of expanding our longstanding efforts to promote black people, particularly black women, in STEM and of course tech through
 training, mentorship, and talks, we hope to do many other things in support of black lives.
 
 ### Data science 
@@ -82,15 +82,26 @@ that we hope will help black people overcome institutional racism across society
 ### Software solutions
 
 Data architectures that ingest, transform, and store data that ultimately become the basis for training
-models and promoting them to production systems where they can be queried and visualized are driven by software throughout
-the architecture.    
+models and promote them to production systems where they can be queried and visualized are driven by software throughout
+the architecture. There is a litany of open-source and commercial cloud software dedicated to all of these concerns. In fact,
+Palantir offers a complete enterprise 
+solution--[but for evil](https://www.vice.com/en_us/article/9kx4z8/revealed-this-is-palantirs-top-secret-user-manual-for-cops).
 
-### Training
+The universe of software applications that can help save black lives is vast. From mobile applications that automate
+recording and notifications about encounters with police to those that help black people overcome voter suppression to
+make their voices heard. From APIs that enable data sharing to promote better health outcomes for black people to those that
+can convey which communities need the most investment to improve their schools. And on and on.
+
+The problems are of course vast; the solutions complex. Vidya will be involved in building software to make the incremental
+progress we need to save black lives.
 
 ### Monetary donations
 
-We will be donating thousands to charity, which is a lot for us. If you are able, please consider doing the same. Here 
-are just a few of the charities doing amazing work:
+We are already avid donors to charity, but we will certainly be more active in donating to organizations focused 
+particularly on saving and improving black lives. If you are able, please consider donating as well. Here are just a 
+few of the charities doing amazing work:
+
+
 
 
 
