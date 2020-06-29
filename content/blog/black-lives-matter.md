@@ -37,7 +37,7 @@ I am sorry it took the breathtaking privilege of Amy Cooper, who was so angry at
 Christian Cooper](https://www.npr.org/2020/06/03/869052336/-blackbirdersweek-seeks-to-make-the-great-outdoors-open-to-all) for 
 merely asking her to follow the rules and leash her dog that she called police and lied,
 "There's an African-American man recording me and threatening myself and my dog" with implicit knowledge
-that she has at her command the police, white supremacy's instrument for ending black lives. 
+that she has at her command an instrument for ending black lives at her discretion. 
 In fact, Amy Cooper's disgusting behavior undermines completely the 
 "[bad apples](https://www.brookings.edu/blog/how-we-rise/2020/05/30/bad-apples-come-from-rotten-trees-in-policing/)" 
 argument made so often in defense of police and an entire criminal justice apparatus who destroy black lives.
@@ -47,7 +47,7 @@ institutionalized racism and white supremacy sanctioning police brutality, corru
 terrorism, redlining, mass incarceration, climate change, political disenfranchisement, 
 insufficient investment in health care and education and black entrepreneurship, and countless other insidious tactics.
 
-I am sorry our media, social media, and elements of our politics are motivated to conflate activism for black lives with 
+I am sorry our conventional media, social media, and elements of our politics are motivated to conflate activism for black lives with 
 "politics." They make money and gain power by stoking division and outrage, and we need ways to 
 undermine these perverse incentives.
 
