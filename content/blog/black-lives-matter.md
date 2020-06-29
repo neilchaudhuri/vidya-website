@@ -47,7 +47,7 @@ institutionalized racism and white supremacy sanctioning police brutality, corru
 terrorism, redlining, mass incarceration, climate change, political disenfranchisement, 
 insufficient investment in health care and education and black entrepreneurship, and countless other insidious tactics.
 
-I am sorry our conventional media, social media, and elements of our politics are motivated to conflate activism for black lives with 
+I am sorry conventional media, social media, and elements of our politics are motivated to conflate activism for black lives with 
 "politics." They make money and gain power by stoking division and outrage, and we need ways to 
 undermine these perverse incentives.
 
