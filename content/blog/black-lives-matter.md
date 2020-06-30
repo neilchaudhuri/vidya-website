@@ -112,7 +112,7 @@ progress we need to save black lives.
 
 ### Words matter
 
-It has always troubled us that the field of software engineering has featured offensive terminology. Thankfully, 
+It has always troubled us that the field of software engineering is rife with offensive terminology. Thankfully, 
 [we have not been alone](https://www.vice.com/en_us/article/8x7akv/masterslave-terminology-was-removed-from-python-programming-language) 
 in our concern.
 
