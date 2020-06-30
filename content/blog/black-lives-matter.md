@@ -110,7 +110,7 @@ And on and on.
 The problems are of course vast; the solutions complex. Vidya will build software to make the incremental
 progress we need to save black lives.
 
-### Nomenclature
+### Words matter
 
 It has always troubled us that the field of software engineering has featured offensive terminology. Thankfully, 
 [we have not been alone](https://www.vice.com/en_us/article/8x7akv/masterslave-terminology-was-removed-from-python-programming-language) 
