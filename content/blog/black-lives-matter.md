@@ -110,6 +110,30 @@ And on and on.
 The problems are of course vast; the solutions complex. Vidya will build software to make the incremental
 progress we need to save black lives.
 
+### Nomenclature
+
+It has always troubled us that the field of software engineering has featured offensive terminology. Thankfully, 
+[we have not been alone](https://www.vice.com/en_us/article/8x7akv/masterslave-terminology-was-removed-from-python-programming-language) 
+in our concern.
+
+In distributed computing, people often speak of a "master" node managing "slave" or "worker" nodes in a cluster. How about "primary" 
+and "replica"?
+ 
+In cybersecurity, people often refer to "blacklisting" users or IP addresses that are deemed threats and 
+"whitelisting" those that are deemed safe. How about "block" or "deny" and "allow" or "accept"?
+ 
+In distributed version control systems like Git, people often call the main line branch of the code base "master." 
+In fact, we are guilty of this in the name of following "standards" and "best practices," but part of being 
+anti-racist is acknowledging where you have failed and fighting to rectify it. So how about "main" as 
+[GitHub has promoted](https://www.zdnet.com/article/github-to-replace-master-with-alternative-term-to-avoid-slavery-references/)?
+ 
+While lazy, privileged engineers and executives in the tech space decry these moves as "political correctness," there is no
+reason we need to remind black people of the pain that has defined their experience, and it is cruel to dismiss it 
+so casually just because it isn't our pain. We can express exactly what we want in a way that's inclusive *and* in fact
+more accurate.    
+
+Words matter.
+
 ### Monetary donations
 
 We are already avid donors, but we will certainly be more active in donating to organizations focused 
