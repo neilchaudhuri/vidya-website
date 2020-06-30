@@ -76,7 +76,7 @@ generated an unnerving number of [false positives matching members of Congress a
 mugshots](https://www.aclu.org/blog/privacy-technology/surveillance-technologies/amazons-face-recognition-falsely-matched-28), 
 and these false positives were disproportionately biased against people of color.
 
-If only Northpointe and Amazon were as clever with their data science as they were with the names of their algorithms.
+If only Northpointe and Amazon were as clever with the reliability of their algorithms as they were with the names of their algorithms.
 
 These catastrophic failures aside, there will only be more data analytics not less, and the predictions and decisions by these
 models will have a profound impact on black lives. We will be working on products and services that leverage open-source
@@ -101,7 +101,7 @@ make their voices heard. From APIs that enable data sharing to promote better he
 disproportionately vulnerable to COVID and whose maternal mortality rates are far too high to APIs that convey which 
 communities need the most investment to improve their schools. From simple websites that organize content, disseminate 
 information, and collect donations for fledgling organizations to clever voice assistant technology that provides information
-on your rights when police demand entry into your home and also notifies family of your situation. 
+on your rights when police demand entry into your home and also notifies loved ones of your situation. 
  
 And on and on.
 
