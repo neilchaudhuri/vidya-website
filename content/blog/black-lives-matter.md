@@ -132,7 +132,7 @@ reason we need to remind black people of the pain that has defined their experie
 so casually just because it isn't our pain. We can express exactly what we want in a way that's inclusive *and* in fact
 more accurate.    
 
-Words matter.
+Words matter. At Vidya our words will represent our values.
 
 ### Monetary donations
 
