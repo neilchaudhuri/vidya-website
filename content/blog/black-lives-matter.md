@@ -52,6 +52,8 @@ undermine these perverse incentives.
 
 It's far too late but I am finally stating it here on the Vidya website: **Black Lives Matter**
 
+It's time to act. It was always time to act.
+
 # What will we do about it?
 
 Not enough. It will never be enough. But we can try.
