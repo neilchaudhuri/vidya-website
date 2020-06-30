@@ -128,9 +128,9 @@ anti-racist is acknowledging where you have failed and fighting to rectify it. S
 [GitHub has promoted](https://www.zdnet.com/article/github-to-replace-master-with-alternative-term-to-avoid-slavery-references/)?
  
 While lazy, privileged engineers and executives in the tech space decry these moves as "political correctness," there is no
-reason we need to remind black people of the pain that has defined their experience, and it is cruel to dismiss it 
-so casually just because it isn't our pain. We can express exactly what we want in a way that's inclusive *and* in fact
-more accurate.    
+reason we need to remind black people of the pain of their past and present, and it is cruel to dismiss it 
+so casually because no one inflicted such terrible pain on us. We can express exactly what we want in a way that's inclusive,
+more accurate, and promotes the resilience that defines the black experience. 
 
 Words matter. At Vidya our words will represent our values.
 
