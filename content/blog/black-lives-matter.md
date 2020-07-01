@@ -116,8 +116,8 @@ It has always troubled us that the field of software engineering is rife with of
 [we have not been alone](https://www.vice.com/en_us/article/8x7akv/masterslave-terminology-was-removed-from-python-programming-language) 
 in our concern.
 
-In distributed computing, people often speak of a "master" node managing "slave" or "worker" nodes in a cluster. How about "primary" 
-and "replica"?
+In distributed computing, people often speak of a "master" node managing "slave" or "worker" nodes in a cluster. I mean...really?
+How about "primary" and "replica"?
  
 In cybersecurity, people often refer to "blacklisting" users or IP addresses that are deemed threats and 
 "whitelisting" those that are deemed safe. How about "block" or "deny" and "allow" or "accept"?
