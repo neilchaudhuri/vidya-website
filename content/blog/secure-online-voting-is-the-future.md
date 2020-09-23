@@ -129,6 +129,14 @@ Part and parcel with usability is performance. Monitoring will help uncover issu
 voting system needs to be architected for performance. Performance issues will not only be annoying, but they could 
 also undermine confidence in the integrity of the vote. 
 
+### Simple
+
+To achieve all of this there will be a lot going on in a secure online voting platform--user interfaces, APIs, encryption,
+databases, multifactor authentication, monitoring. It will be tempting to add complexity to integrate it all, and we 
+need to resist that temptation. Otherwise, the application will become unusable for its stakeholders, which will bring
+us right back to the status quo of a voting platform that diminshes the confidence we have in the integrity of our elections.
+
+---
 
 This is a lot, and in order to achieve it, a secure voting platform needs to be engineered with a continuous deployment 
 model that automates testing (for functionality, security, performance, accessibility), static analysis, and deployment.
