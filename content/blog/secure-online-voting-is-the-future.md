@@ -73,7 +73,8 @@ be on the margins. There should be no core functionality that isn't available fo
 
 I would guess that every state election system in America is perimeter-based. It's all about firewalls. As we've seen time 
 and time again, perimeter-based security is flawed. Instead, we need a Zero Trust approach to security. I will let 
-[Chris Gerritz](https://www.scmagazine.com/home/opinion/executive-insight/what-is-the-zero-trust-framework-in-cybersecurity-and-5-considerations-for-building-a-zero-trust-it-environment/) explain what this means:
+[Chris Gerritz](https://www.scmagazine.com/home/opinion/executive-insight/what-is-the-zero-trust-framework-in-cybersecurity-and-5-considerations-for-building-a-zero-trust-it-environment/) 
+explain what this means:
 
 <blockquote>
 Rather than defending only a single, enterprise-wide perimeter, the Zero Trust approach moves this perimeter to every 
@@ -89,9 +90,10 @@ privileges and integrity.
 ### Transparent and Auditable
 
 While the source code will be fully transparent to give everyone confidence in the integrity and fairness
-of election outcomes, we also need that transparency to extend to the runtime operation of the software. We need to be 
-able to see every single thing that happens throughout the architecture--and who did it. This means continuous monitoring throughout the stack,
-elegant visualizations of the telemetry, and if we can manage it, anomaly detection through analytics.
+of election outcomes, we also need that transparency to extend to the runtime operation of the software. We need to 
+know the health of the system and to know every single thing that happens throughout the architecture--and who did it. 
+This means continuous monitoring throughout the stack, elegant visualizations of the telemetry, and if we can manage it, 
+anomaly detection through analytics. This level of auditability is necessary for Zero Trust.
 
 ## Immutable
 
@@ -112,9 +114,22 @@ The software needs to be agnostic to all these concerns, which will force compro
 it may not always be possible to apply the "coolest" solution if it couples the software to tightly to a particular vendor 
 or feature.
 
-### Accessible
+### Usable
+
+This might seem obvious, but secure online voting demands that all stakeholders consider it intuitive. This manifests in
+several ways. User interfaces need to reflect modern UX principles so that voters, poll workers, and state officials across age and other
+demographics find the software intuitive. This implies they be accessible as well to support users with disabilities. 
+
+Part and parcel with usability is performance. Monitoring will help uncover issues with performance, but a modern online
+voting system needs to be architected for performance. Performance issues will not only be annoying, but they could 
+also undermine confidence in the integrity of the vote. 
 
 
+This is a lot, and in order to achieve it, a secure voting platform needs to be engineered with a continuous deployment 
+model that automates testing (for functionality, security, performance, accessibility), static analysis, and deployment.
+We need a process that solves for the key metrics for software delivery performance Google describes in their 
+[State of DevOps](https://services.google.com/fh/files/misc/state-of-devops-2019.pdf) report: deployment frequency, 
+lead time for changes, time to restore service, and change failure rate.
 
 
 No blockchain
@@ -145,6 +160,11 @@ Questions
 how to stop bad pol from turning things off
 getting info out of existing systems
 what to do when system down
+
+good news
+simple form
+not a ton of data or volume
+
 
 [Blockchain](/categories/blockchain). 
 
