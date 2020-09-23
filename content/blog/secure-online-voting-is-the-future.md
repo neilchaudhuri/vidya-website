@@ -69,17 +69,34 @@ and integrity of the software and therefore in the outcomes of elections.
 Now we will see shortly that it may be necessary to incorporate some commercial solutions that are closed-source, but those should 
 be on the margins. There should be no core functionality that isn't available for all to see.
 
+### Zero Trust
+
+I would guess that every state election system in America is perimeter-based. It's all about firewalls. As we've seen time 
+and time again, perimeter-based security is flawed. Instead, we need a Zero Trust approach to security. I will let 
+[Chris Gerritz](https://www.scmagazine.com/home/opinion/executive-insight/what-is-the-zero-trust-framework-in-cybersecurity-and-5-considerations-for-building-a-zero-trust-it-environment/) explain what this means:
+
+<blockquote>
+Rather than defending only a single, enterprise-wide perimeter, the Zero Trust approach moves this perimeter to every 
+network, system, user, and devices within and outside the organization. This movement is enabled by strong identities, 
+multi-factor authentication, trusted endpoints, network segmentation, access controls, and user attribution to 
+compartmentalize and regulate access to sensitive data and systems.
+</blockquote>
+
+Advancements in technology make Zero Trust possible, and a modern voting solution will enforce Zero Trust to ensure
+that every interaction with every component of the architecture demands authentication and a thorough vetting of 
+privileges and integrity.
+
 ### Transparent and Auditable
 
 While the source code will be fully transparent to give everyone confidence in the integrity and fairness
 of election outcomes, we also need that transparency to extend to the runtime operation of the software. We need to be 
-able to see every single thing that happens throughout the architecture. This means continuous monitoring throughout the stack,
+able to see every single thing that happens throughout the architecture--and who did it. This means continuous monitoring throughout the stack,
 elegant visualizations of the telemetry, and if we can manage it, anomaly detection through analytics.
 
 ## Immutable
 
 I have [written](/blog/vidya/technology/talking-trends-at-tech-talk-dc/) and [spoken](/blog/vidya/technology/talking-trends-at-tech-talk-dc/)
-a great deal about the value of immutability, and I think it is absolutely essential to secure online voting. The software
+a great deal about the value of immutability, and I think it is essential to secure online voting. The software
 should not permit updates or deletes. Rather, any change to the data--a new candidate, a newly registered voter, a new address for an existing voter,
 and certainly every vote--should be represented as an immutable, append-only stream of events. As part of the 
 auditability of the software, we should be able to replay every event that's occurred to recreate state at any point
@@ -91,7 +108,7 @@ In fact, I would say immutability might be the single best defense against bad a
 
 A modern voting solution needs to serve a wide array of stakeholders--voters who need the freedom to access their ballots 
 on a wide array of devices, state governments with legacy on premise architectures unknown budgets for cloud deployments.
-The software needs to be agnostic to all these concerns, which will force compromises in the implmentation. In other words,
+The software needs to be agnostic to all these concerns, which will force compromises in the implementation. In other words,
 it may not always be possible to apply the "coolest" solution if it couples the software to tightly to a particular vendor 
 or feature.
 
@@ -120,7 +137,9 @@ Kafka
 Spring Boot/Cloud Stream
 Kubernetes
 Voice
+Miragejs
 
+best oss extracts out of solving your own problem
 
 Questions
 how to stop bad pol from turning things off
