@@ -69,6 +69,11 @@ and integrity of the software and therefore in the outcomes of elections.
 Now we will see shortly that it may be necessary to incorporate some commercial solutions that are closed-source, but those should 
 be on the margins. There should be no core functionality that isn't available for all to see.
 
+Another reason to value open source is that a mission as important as this demands diverse experiences and perspectives--
+on voting experiences, past application failures, overcoming [biases](/blog/vidya/technology/black-lives-matter/), 
+architectural patterns, tech stack, potential vulnerabilities, and whatever else we need to understand to build 
+the best online voting platform possible.
+
 ### Zero Trust
 
 I would guess that every state election system in America is perimeter-based. It's all about firewalls. As we've seen time 
@@ -130,6 +135,8 @@ model that automates testing (for functionality, security, performance, accessib
 We need a process that solves for the key metrics for software delivery performance Google describes in their 
 [State of DevOps](https://services.google.com/fh/files/misc/state-of-devops-2019.pdf) report: deployment frequency, 
 lead time for changes, time to restore service, and change failure rate.
+
+## What Might the Stack Look Like?
 
 
 No blockchain
