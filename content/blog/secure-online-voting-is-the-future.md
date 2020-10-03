@@ -164,7 +164,7 @@ Another bit of good news? The UI can be simple. It's just a boring form!
 
 I'm not exactly sure, but I do have some ideas I would like to run by you. 
 
-### The user interface: JAMStack
+### The user interface: JAMStack and PWA
 
 A [JAMStack](https://jamstack.org/) front end provides several advantages:
 
@@ -175,6 +175,10 @@ A [JAMStack](https://jamstack.org/) front end provides several advantages:
 Certainly a front end in Rails or another robust monolithic framework would be effective, but I think using something 
 like [Gatsby](https://www.gatsbyjs.com/), [Next.js](https://nextjs.org/), or [Sapper](https://sapper.svelte.dev/) would 
 be so much simpler and more lightweight. It would basically take a few days to build the forms.
+
+In addition, I think it is important that the front end is deployed as a [Progressive Web App](/blog/vidya/technology/vidya-reloaded/).
+This offers a lot of benefits, but primarily for this purpose, it is critical that the front end is always available 
+and functional as possible regardless of connectivity, which absurdly remains a problem in America.
 
 By the way, it might be interesting down the road to think of voice interfaces allowing people to vote with Google Assistant,
 Alexa, or Siri if privacy concerns can be addressed. One challenge at a time though. 
@@ -192,6 +196,20 @@ advantages:
 The purpose of the API is to authenticate requests from the JAMStack UI--in most cases, votes--and publish asynchronous
 messages to the immutable, append-only stream while responding with, in the happy path scenario, a confirmation
 and a way for voters to track their votes through the process so they can have every confidence their votes count.
+
+### Authentication and Authorization: A blend of proprietary solutions
+
+### Message Consumer: Spring Cloud Stream
+
+### Event Source: Kafka
+
+### Database: Redis
+
+### Deployment: Kubernetes
+
+### Engineering: GitHub, Gradle, Earthly, and plenty of testing
+
+
    
 No blockchain
 
@@ -208,9 +226,9 @@ earthly
 OIDC
 2FA
 Kafka
-Spring Boot/Cloud Stream
+Cloud Stream
 Kubernetes
-Voice
+
 Miragejs
 
 best oss extracts out of solving your own problem
