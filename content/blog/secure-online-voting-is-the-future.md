@@ -11,6 +11,13 @@ tags:
 - Kafka
 - Spring
 - OIDC
+- React
+- Svelte
+- Spring Boot
+- FastAPI
+- Java
+- Kotlin
+- Python
 categories:
 - Big Data
 - Government
@@ -100,7 +107,7 @@ know the health of the system and to know every single thing that happens throug
 This means continuous monitoring throughout the stack, elegant visualizations of the telemetry, and if we can manage it, 
 anomaly detection through analytics. This level of auditability is necessary for Zero Trust.
 
-## Immutable
+## Immutable and Append-Only
 
 I have [written](/blog/vidya/technology/talking-trends-at-tech-talk-dc/) and [spoken](/blog/vidya/technology/talking-trends-at-tech-talk-dc/)
 a great deal about the value of immutability, and I think it is essential to secure online voting. The software
@@ -144,23 +151,60 @@ We need a process that solves for the key metrics for software delivery performa
 [State of DevOps](https://services.google.com/fh/files/misc/state-of-devops-2019.pdf) report: deployment frequency, 
 lead time for changes, time to restore service, and change failure rate.
 
-## What Might the Stack Look Like?
+The good news is that a secure online voting solution doesn't have steep demands for scalability or performance. It's not 
+like there will be tens of thousands of votes per second; this isn't [The Masked Singer](https://www.fox.com/the-masked-singer/).
+Even if there were one instance of the platform for the entire United States, that's about 150 million voters over the course of weeks.
+That's not a lot. And because in America every state runs its own platform, for better or worse, you'd have at most one 
+instance of the platform for each [state and inhabited territory](https://en.wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States). 
+This makes things a lot easier. We can focus on the integrity of the data and the security of the system.
 
+Another bit of good news? The UI can be simple. It's just a boring form!
 
+## What Might the Tech Stack Look Like?
+
+I'm not exactly sure, but I do have some ideas I would like to run by you. 
+
+### The user interface: JAMStack
+
+A [JAMStack](https://jamstack.org/) front end provides several advantages:
+
+* No need to deploy or scale web servers
+* You can't beat the performance of pre-built assets cached on a CDN and in the browser
+* Works across devices
+
+Certainly a front end in Rails or another robust monolithic framework would be effective, but I think using something 
+like [Gatsby](https://www.gatsbyjs.com/), [Next.js](https://nextjs.org/), or [Sapper](https://sapper.svelte.dev/) would 
+be so much simpler and more lightweight. It would basically take a few days to build the forms.
+
+By the way, it might be interesting down the road to think of voice interfaces allowing people to vote with Google Assistant,
+Alexa, or Siri if privacy concerns can be addressed. One challenge at a time though. 
+
+### API: Spring Boot
+
+There are a *lot* of great API solutions like [FastAPI](https://fastapi.tiangolo.com/), [Go kit](https://gokit.io/), and
+[Lagom](https://www.lagomframework.com/), but [Spring Boot](https://spring.io/projects/spring-boot) offers some compelling 
+advantages:
+ 
+* Available in [Java](/tags/java) and [Kotlin](/tags/kotlin), which are simple, statically typed languages many engineers know
+* Straightforward primitives for writing [reactive](https://spring.io/reactive) APIs
+* It's [good enough for Netflix](https://spring.io/blog/2020/02/24/netflix-built-a-spring-application-generator-to-boost-dev-productivity-here-s-how-you-can-too)
+
+The purpose of the API is to authenticate requests from the JAMStack UI--in most cases, votes--and publish asynchronous
+messages to the immutable, append-only stream while responding with, in the happy path scenario, a confirmation
+and a way for voters to track their votes through the process so they can have every confidence their votes count.
+   
 No blockchain
 
 replayable
 people need to know vote counts
 
-
-device agnostic
 deployment agnostic as much as possible
 automation
 
 
 earthly
-JAM stack
-API 
+
+ 
 OIDC
 2FA
 Kafka
