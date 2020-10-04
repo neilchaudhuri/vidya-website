@@ -6,6 +6,7 @@ description: "It really is possible to achieve secure online voting. Here's exac
 banner: "img/banners/vote.jpeg"
 tags: 
 - JAMStack
+- PWA
 - Kubernetes
 - Java
 - Kafka
@@ -18,9 +19,10 @@ tags:
 - Java
 - Kotlin
 - Python
+- SQL
 categories:
-- Big Data
 - Government
+- Big Data
 - Programming
 - Testing
 - Security
@@ -197,15 +199,43 @@ The purpose of the API is to authenticate requests from the JAMStack UI--in most
 messages to the immutable, append-only stream while responding with, in the happy path scenario, a confirmation
 and a way for voters to track their votes through the process so they can have every confidence their votes count.
 
-### Authentication and Authorization: A blend of proprietary solutions
+### Database: Kafka and Redis? Or not
+
+The backbone of this architecture is the immutable, append-only data store of every single mutation to the data on the platform
+in order to ensure full auditability and traceability? That's exactly what Kafka is built for.
+
+Kafka is immutable out of the box. It's deployment-agnostic; it can work on premise or in any cloud. You can query topics
+with [kSQL](https://www.confluent.io/blog/ksql-streaming-sql-for-apache-kafka/) and consume messages to 
+[materialize views](https://docs.microsoft.com/en-us/azure/architecture/patterns/materialized-view) in 
+[Redis](https://redis.io/) as needed. And there are Kafka abstractions for basically every programming language.
+
+On the other hand, Kafka can be overkill given the relatively low scale--particularly 
+if someone deploys the online voting platform for a small election below the state level with just a few thousand or even a few hundred voters.  
+We could punt here and say a small election renders a secure online voting platform unnecessary, but I would disagree.
+Local elections are extremely important. They impact people's lives the most, and voters are entitled to the same guarantees
+here we want to give them for the "big" elections. 
+
+So maybe we replace with an immutable database like [Datomic](https://www.datomic.com/). It's ACID-compliant and very powerful.
+But it isn't quite deployment agnostic, and most developers would balk at the 
+[Clojure](https://clojure.org/)-centric programming model. 
+
+And of course there's always simple, tried-and-true PostgreSQL database with UPDATE and DELETE privileges revoked. 
+
+In the end, I think it makes sense to use Kafka with materialized views in Redis even if it is overkill from the 
+perspective of scale because immutability is first-class and we could utilize a streamlined, universal deployment
+model regardless of where it is deployed.
+ 
+I can see this being a source of a lot of debate, but that's another advantage of open source.
+
 
 ### Message Consumer: Spring Cloud Stream
 
-### Event Source: Kafka
-
-### Database: Redis
 
 ### Deployment: Kubernetes
+
+### Authentication and Authorization: A blend of proprietary solutions
+
+Authentication and authorization
 
 ### Engineering: GitHub, Gradle, Earthly, and plenty of testing
 
