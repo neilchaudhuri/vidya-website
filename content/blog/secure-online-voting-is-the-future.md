@@ -227,11 +227,30 @@ model regardless of where it is deployed.
  
 I can see this being a source of a lot of debate, but that's another advantage of open source.
 
-
 ### Message Consumer: Spring Cloud Stream
 
+If we have streaming data, we need message consumers that can materialize views from the data that represent what we 
+want to know--of course the results of the vote but also other things like votes by precinct or time of day or day of the week 
+(as the concept of "Election Day" thankfully grows more and more quaint) or whatever else. I have written a lot about 
+[why functional programming is valuable](/blog/vidya/technology/the-business-case-for-functional-programming), and what would be ideal here 
+is a cloud function like AWS Lambda or Azure Cloud Functions.
 
-### Deployment: Kubernetes
+But we need to be deployment agnostic, and those are proprietary solutions.
+
+If we assume Spring Boot is the technology of choice for the API, why not use it to run 
+[Spring Cloud Stream](https://spring.io/projects/spring-cloud-stream) too? Spring Cloud Stream decouples the functionality
+from the messaging. In other words, you can use it to abstract the computation into a function with shape like 
+`(Ballot) => Vote` where `Ballot` is a domain object representing voter selections and `Vote` a domain object 
+representing the fully committed result with voter identifier, timestamp, and whatever else necessary for full traceability.
+You would do similar to consume other messages. 
+
+Spring Cloud Stream works out of the box with Kafka and other streaming technologies, and even better, its abstraction
+of the messaging infrastructure so we can focus on the core domain objects and their business logic interactions is 
+extremely valuable.
+ 
+
+
+### Deployment: Docker and Kubernetes
 
 ### Authentication and Authorization: A blend of proprietary solutions
 
