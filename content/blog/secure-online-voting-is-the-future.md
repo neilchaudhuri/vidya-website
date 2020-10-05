@@ -274,22 +274,11 @@ be the perfect fit.
 replayable
 people need to know vote counts
 
-deployment agnostic as much as possible
-automation
-
-
-earthly
-
  
 OIDC
 2FA
-Kafka
-Cloud Stream
-Kubernetes
 
-Miragejs
 
-best oss extracts out of solving your own problem
 
 Questions
 how to stop bad pol from turning things off
