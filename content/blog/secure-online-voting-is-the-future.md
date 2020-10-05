@@ -222,6 +222,8 @@ But it isn't quite deployment agnostic, and most developers would balk at the
 
 And of course there's always simple, tried-and-true PostgreSQL database with UPDATE and DELETE privileges revoked. 
 
+What about Blockchain? [No. Just. No.](/blog/vidya/technology/pop-goes-the-blockchain/)
+
 In the end, I think it makes sense to use Kafka with materialized views in Redis even if it is overkill from the 
 perspective of scale because immutability is first-class and we could utilize a streamlined, universal deployment
 model regardless of where it is deployed.
@@ -265,13 +267,9 @@ be the perfect fit.
 
 ### Authentication and Authorization: A blend of proprietary solutions
 
-Authentication and authorization
-
-### Engineering: GitHub, Gradle, Earthly, and plenty of testing
 
 
    
-No blockchain
 
 replayable
 people need to know vote counts
