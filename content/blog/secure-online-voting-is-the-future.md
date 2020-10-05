@@ -257,6 +257,12 @@ for Docker containers--for microservices, data stores, monitoring software, etc.
 Kubernetes in particular is particularly compelling because it serves as the common denominator for deployments to AWS, Azure, Google Cloud,
 and on premise. In other words, Kubernetes is central to being deployment agnostic.  
 
+This post is already long enough without getting into software engineering tooling like Gradle, GitHub,
+GitHub Actions or whatever CI could be in play, and so on, but I do want to send a shout out to [Earthly](https://docs.earthly.dev/), 
+which has recently emerged as a powerful build automation tool at a layer of abstraction above Docker. We want to make sure
+we maximize reproducibility, determinism, and parallelism to make builds as performant as possible. Earthly could
+be the perfect fit. 
+
 ### Authentication and Authorization: A blend of proprietary solutions
 
 Authentication and authorization
