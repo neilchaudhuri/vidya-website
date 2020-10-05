@@ -7,6 +7,7 @@ banner: "img/banners/vote.jpeg"
 tags: 
 - JAMStack
 - PWA
+- Docker
 - Kubernetes
 - Java
 - Kafka
@@ -248,9 +249,13 @@ Spring Cloud Stream works out of the box with Kafka and other streaming technolo
 of the messaging infrastructure so we can focus on the core domain objects and their business logic interactions is 
 extremely valuable.
  
-
-
 ### Deployment: Docker and Kubernetes
+
+This hypothetical architecture has several moving parts; the real manifestation of a secure online voting platform may have
+fewer. Either way, we need deployment to be seamless and predictable across any environment. This is exactly the use case 
+for Docker containers--for microservices, data stores, monitoring software, etc.--and Kubernetes to orchestrate them. 
+Kubernetes in particular is particularly compelling because it serves as the common denominator for deployments to AWS, Azure, Google Cloud,
+and on premise. In other words, Kubernetes is central to being deployment agnostic.  
 
 ### Authentication and Authorization: A blend of proprietary solutions
 
