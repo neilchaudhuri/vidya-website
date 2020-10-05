@@ -265,9 +265,23 @@ which has recently emerged as a powerful build automation tool at a layer of abs
 we maximize reproducibility, determinism, and parallelism to make builds as performant as possible. Earthly could
 be the perfect fit. 
 
+### Monitoring: EFK or Splunk?
+
+I'll be honest about a couple of things. I am not an expert on monitoring, and I don't really want to have to worry too
+much about it when it comes to secure online voting. Don't get me wrong. Robust monitoring is critical to the auditability and 
+traceability fundamental to the value of the platform, but it's not core functionality I care to spend a lot of time on when
+there are so many other challenges.  
+
+The preference is always open-source. It seems to me deploying an [EFK stack on Kubernetes](https://dzone.com/articles/efk-stack-on-kubernetes-part-1)
+would be sufficient, but that requires the skill and time to configure everything as needed. On the other hand, Splunk, the industry 
+leader in monitoring, is proprietary and probably overkill for the same reasons Kafka could be, but the platform would
+benefit from paid Splunk support.
+
+Again, this is where the exchange of ideas that open source offers would come in handy.
+
 ### Authentication and Authorization: A blend of proprietary solutions
 
-
+It goes without saying that the most important 
 
    
 
