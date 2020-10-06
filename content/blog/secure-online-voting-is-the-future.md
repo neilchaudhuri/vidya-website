@@ -269,7 +269,8 @@ the PKCE flow with [JWT](https://jwt.io/), to authenticate the user to the API. 
 into novel forms of authentication like UnifyID, which replaces passwords with machine learning to analyze unique 
 user behavior like gait and keypress habits to verify identity.
 
-The API server can authenticate to the database server via mutual TLS and username and password stored in the identity provider.
+The API server can authenticate to the database server via mutual TLS where certificates are rotated periodically with 
+credentials stored in the identity provider.
   
    
 
