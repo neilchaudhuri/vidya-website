@@ -218,7 +218,7 @@ online voting platform unnecessary, but I would disagree. Local elections are ex
 lives the most, and voters are entitled to the same guarantees here we want to give them for the "big" elections. 
 
 All we need to do is to store voting data in a single table where a simple GROUP BY will aggregate election results. 
-That's easy. We can also store temporal and location data so we can do some basic analytics like measuring voter activity
+That's easy. We can also store temporal and location data so we can run some basic secondary queries like measuring voter activity
 by precinct or time of day or day of week or whatever else you want to know.
 
 So immutable PostgreSQL it is.
