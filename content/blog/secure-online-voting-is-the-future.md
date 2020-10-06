@@ -159,7 +159,11 @@ like there will be tens of thousands of votes per second; this isn't [The Masked
 Even if there were one instance of the platform for the entire United States, that's about 150 million voters over the course of weeks.
 That's not a lot. And because in America every state runs its own platform, for better or worse, you'd have at most one 
 instance of the platform for each [state and inhabited territory](https://en.wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States). 
-This makes things a lot easier. We can focus on the integrity of the data and the security of the system.
+California is the largest state by population, and a statewide election will have around 30 million voters. That feels like 
+a large number, but as software scale goes, 30 million entities over the course of several weeks 
+(as the concept of "Election Day" thankfully grows more and more quaint) really isn't that much.
+Now maybe great voting software will raise those numbers, but as it stands now, this makes things a lot easier. We can 
+focus on the user experience, integrity of the data, and security of the system and worry a bit less about performance and scale.
 
 Another bit of good news? The UI can be simple. It's just a boring form!
 
@@ -200,7 +204,7 @@ The purpose of the API is to authenticate requests from the JAMStack UI--in most
 messages to the immutable, append-only stream while responding with, in the happy path scenario, a confirmation
 and a way for voters to track their votes through the process so they can have every confidence their votes count.
 
-### Database: Kafka and Redis? Or not
+### Database: Kafka and Redis? Or not...
 
 The backbone of this architecture is the immutable, append-only data store of every single mutation to the data on the platform
 in order to ensure full auditability and traceability? That's exactly what Kafka is built for.
@@ -234,7 +238,7 @@ I can see this being a source of a lot of debate, but that's another advantage o
 
 If we have streaming data, we need message consumers that can materialize views from the data that represent what we 
 want to know--of course the results of the vote but also other things like votes by precinct or time of day or day of the week 
-(as the concept of "Election Day" thankfully grows more and more quaint) or whatever else. I have written a lot about 
+or whatever else. I have written a lot about 
 [why functional programming is valuable](/blog/vidya/technology/the-business-case-for-functional-programming), and what would be ideal here 
 is a cloud function like AWS Lambda or Azure Cloud Functions.
 
