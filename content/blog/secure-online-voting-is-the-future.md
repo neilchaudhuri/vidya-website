@@ -10,8 +10,6 @@ tags:
 - Docker
 - Kubernetes
 - Java
-- Kafka
-- Spring
 - OIDC
 - React
 - Svelte
@@ -21,6 +19,7 @@ tags:
 - Kotlin
 - Python
 - SQL
+- PostgreSQL
 categories:
 - Government
 - Big Data
@@ -204,7 +203,7 @@ The purpose of the API is to authenticate requests from the JAMStack UI--in most
 messages to the immutable, append-only stream while responding with, in the happy path scenario, a confirmation
 and a way for voters to track their votes through the process so they can have every confidence their votes count.
 
-### Database: PostgreSQL with a twist
+### Database: PostgreSQL. With a twist
 
 The backbone of this architecture is the immutable, append-only data store of every single mutation to the data on the platform
 in order to ensure full auditability and traceability. How can we do this with PostgreSQL?
@@ -255,7 +254,15 @@ Again, this is where the exchange of ideas that open source offers would come in
 
 ### Authentication and Authorization: A blend of proprietary solutions
 
-It goes without saying that the most important 
+It goes without saying that the most important piece of online voting is security. In order to honor Zero Trust,
+every interface demands authentication:
+
+* A voter casting a ballot and initiating an HTTP request
+* An HTTP request hitting the API
+* The API inserting a record into the database
+* Any request for monitoring data
+* The entire continuous delivery pipeline integrating version control, continuous integration, containerization, and deployment
+
 
    
 
