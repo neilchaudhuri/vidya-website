@@ -114,7 +114,7 @@ anomaly detection through analytics. This level of auditability is necessary for
 I have [written](/blog/vidya/technology/talking-trends-at-tech-talk-dc/) and [spoken](/blog/vidya/technology/talking-trends-at-tech-talk-dc/)
 a great deal about the value of immutability, and I think it is essential to secure online voting. The software
 should not permit updates or deletes. Rather, any change to the data--a new candidate, a newly registered voter, a new address for an existing voter,
-and certainly every vote--should be represented as an immutable, append-only stream of events. As part of the 
+and certainly every vote--should be represented in immutable, append-only fashion. As part of the 
 auditability of the software, we should be able to replay every event that's occurred to recreate state at any point
 in the process.
 
@@ -263,16 +263,20 @@ every interface demands authentication:
 * Any request for monitoring data
 * The entire continuous delivery pipeline integrating version control, continuous integration, containerization, and deployment
 
+This will require a blend of solutions, and I think it makes sense to leverage proprietary implementations that have mastered
+these challenges. For example, an identity provider Auth0 or Okta could provide multifactor authentication and OpenID Connect, particularly
+the PKCE flow with [JWT](https://jwt.io/), to authenticate the user to the API. For mobile users, we could also look 
+into novel forms of authentication like UnifyID, which replaces passwords with machine learning to analyze unique 
+user behavior like gait and keypress habits to verify identity.
 
+The API server can authenticate to the database server via mutual TLS and username and password stored in the identity provider.
+  
    
 
 replayable
 people need to know vote counts
 
  
-OIDC
-2FA
-UnifyId
 
 
 
@@ -280,3 +284,4 @@ Questions
 how to stop bad pol from turning things off
 getting info out of existing systems
 what to do when system down
+retire data to data lake
