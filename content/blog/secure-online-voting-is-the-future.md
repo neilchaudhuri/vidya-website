@@ -224,6 +224,9 @@ So maybe we replace with an immutable database like [Datomic](https://www.datomi
 But it isn't quite deployment agnostic, and most developers would balk at the 
 [Clojure](https://clojure.org/)-centric programming model. 
 
+There are also emerging, potentially simpler alternatives to Kafka like [Redpanda](https://vectorized.io/redpanda) that 
+could one day be compelling when they mature.
+
 And of course there's always simple, tried-and-true PostgreSQL database with UPDATE and DELETE privileges revoked. 
 
 What about Blockchain? [No. Just. No.](/blog/vidya/technology/pop-goes-the-blockchain/)
