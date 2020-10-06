@@ -212,7 +212,8 @@ in order to ensure full auditability and traceability? That's exactly what Kafka
 Kafka is immutable out of the box. It's deployment-agnostic; it can work on premise or in any cloud. You can query topics
 with [kSQL](https://www.confluent.io/blog/ksql-streaming-sql-for-apache-kafka/) and consume messages to 
 [materialize views](https://docs.microsoft.com/en-us/azure/architecture/patterns/materialized-view) in 
-[Redis](https://redis.io/) as needed. And there are Kafka abstractions for basically every programming language.
+[Redis](https://redis.io/) as needed to provide fast responses to a wide range of queries. And there are Kafka 
+abstractions for basically every programming language.
 
 On the other hand, Kafka can be overkill given the relatively low scale--particularly 
 if someone deploys the online voting platform for a small election below the state level with just a few thousand or even a few hundred voters.  
