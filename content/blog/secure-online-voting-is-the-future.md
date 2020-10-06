@@ -204,60 +204,26 @@ The purpose of the API is to authenticate requests from the JAMStack UI--in most
 messages to the immutable, append-only stream while responding with, in the happy path scenario, a confirmation
 and a way for voters to track their votes through the process so they can have every confidence their votes count.
 
-### Database: Kafka and Redis? Or not...
+### Database: PostgreSQL with a twist
 
 The backbone of this architecture is the immutable, append-only data store of every single mutation to the data on the platform
-in order to ensure full auditability and traceability? That's exactly what Kafka is built for.
+in order to ensure full auditability and traceability. How can we do this with PostgreSQL?
 
-Kafka is immutable out of the box. It's deployment-agnostic; it can work on premise or in any cloud. You can query topics
-with [kSQL](https://www.confluent.io/blog/ksql-streaming-sql-for-apache-kafka/) and consume messages to 
-[materialize views](https://docs.microsoft.com/en-us/azure/architecture/patterns/materialized-view) in 
-[Redis](https://redis.io/) as needed to provide fast responses to a wide range of queries. And there are Kafka 
-abstractions for basically every programming language.
+Easy. Revoke UPDATE and DELETE privileges!
 
-On the other hand, Kafka can be overkill given the relatively low scale--particularly 
+Anything more than PostgreSQL, which is straightforward to deploy and agnostic of environment, would be overkill given the relatively low scale--particularly 
 if someone deploys the online voting platform for a small election below the state level with just a few thousand or even a few hundred voters.  
-We could punt here and say a small election renders a secure online voting platform unnecessary, but I would disagree.
-Local elections are extremely important. They impact people's lives the most, and voters are entitled to the same guarantees
-here we want to give them for the "big" elections. 
+We could punt here and decide on something more elaborate like MongoDB or Kafka because a small election renders a secure
+online voting platform unnecessary, but I would disagree. Local elections are extremely important. They impact people's 
+lives the most, and voters are entitled to the same guarantees here we want to give them for the "big" elections. 
 
-So maybe we replace with an immutable database like [Datomic](https://www.datomic.com/). It's ACID-compliant and very powerful.
-But it isn't quite deployment agnostic, and most developers would balk at the 
-[Clojure](https://clojure.org/)-centric programming model. 
+All we need to do is to store voting data in a single table where a simple GROUP BY will aggregate election results. 
+That's easy. We can also store temporal and location data so we can do some basic analytics like measuring voter activity
+by precinct or time of day or day of week or whatever else you want to know.
 
-There are also emerging, potentially simpler alternatives to Kafka like [Redpanda](https://vectorized.io/redpanda) that 
-could one day be compelling when they mature.
+So immutable PostgreSQL it is.
 
-And of course there's always simple, tried-and-true PostgreSQL database with UPDATE and DELETE privileges revoked. 
-
-What about Blockchain? [No. Just. No.](/blog/vidya/technology/pop-goes-the-blockchain/)
-
-In the end, I think it makes sense to use Kafka with materialized views in Redis even if it is overkill from the 
-perspective of scale because immutability is first-class and we could utilize a streamlined, universal deployment
-model regardless of where it is deployed.
- 
-I can see this being a source of a lot of debate, but that's another advantage of open source.
-
-### Message Consumer: Spring Cloud Stream
-
-If we have streaming data, we need message consumers that can materialize views from the data that represent what we 
-want to know--of course the results of the vote but also other things like votes by precinct or time of day or day of the week 
-or whatever else. I have written a lot about 
-[why functional programming is valuable](/blog/vidya/technology/the-business-case-for-functional-programming), and what would be ideal here 
-is a cloud function like AWS Lambda or Azure Cloud Functions.
-
-But we need to be deployment agnostic, and those are proprietary solutions.
-
-If we assume Spring Boot is the technology of choice for the API, why not use it to run 
-[Spring Cloud Stream](https://spring.io/projects/spring-cloud-stream) too? Spring Cloud Stream decouples the functionality
-from the messaging. In other words, you can use it to abstract the computation into a function with shape like 
-`(Ballot) => Vote` where `Ballot` is a domain object representing voter selections and `Vote` a domain object 
-representing the fully committed result with voter identifier, timestamp, and whatever else necessary for full traceability.
-You would do similar to consume other messages. 
-
-Spring Cloud Stream works out of the box with Kafka and other streaming technologies, and even better, its abstraction
-of the messaging infrastructure so we can focus on the core domain objects and their business logic interactions is 
-extremely valuable.
+By the way, what about Blockchain? [No. Just. No.](/blog/vidya/technology/pop-goes-the-blockchain/)
  
 ### Deployment: Docker and Kubernetes
 
