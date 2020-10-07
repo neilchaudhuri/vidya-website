@@ -269,10 +269,20 @@ the PKCE flow with [JWT](https://jwt.io/), to authenticate the user to the API. 
 into novel forms of authentication like UnifyID, which replaces passwords with machine learning to analyze unique 
 user behavior like gait and keypress habits to verify identity.
 
-The API server can authenticate to the database server via mutual TLS where certificates are rotated periodically with 
-credentials stored in the identity provider.
+The API server can authenticate to the database server via mutual TLS, where certificates are rotated periodically, with 
+credentials configured as Kubernetes [Secrets](https://kubernetes.io/docs/concepts/configuration/secret/) mapped to
+credentials in the identity provider.
   
-   
+Splunk offers multiple ways to authenticate. We can figure that out later. That's why we are paying them.
+
+Finally, securing the entire DevSecOps pipeline means implenting a host of measures like limiting permissions between 
+
+
+
+
+Oh..and of course there are automated security tests in CI and full reviews by security professionals to vet the entire 
+architecture.
+
 
 replayable
 people need to know vote counts
