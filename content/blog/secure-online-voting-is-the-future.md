@@ -280,15 +280,16 @@ managing access control and limiting permissions throughout the pipeline, signin
 [Docker Content Trust](https://docs.docker.com/engine/security/trust/), using key management mechanisms appropriate for the deployment platform,
 and much more.
 
-
-
-
-Oh..and of course there are automated security tests in CI and full reviews by security professionals to vet the entire 
+Oh...and of course there are automated security tests in CI and full reviews by security professionals to vet the entire 
 architecture.
 
+---
 
-replayable
-people need to know vote counts
+Of course this entire stack, and really the whole architecture, is just an idea. It is all subject to change, and the beauty 
+of open source is the diversity of thought and creative energy that converges to solve interesting, hard problems. One way
+or another, let's work together to build a secure online voting platform that allows all registered voters to make their voices
+heard and gives them the confidence that their votes count.
+
 
  
 
