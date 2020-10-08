@@ -1,9 +1,9 @@
 ---
 author: "Neil Chaudhuri"
 title: "Secure Online Voting is the Future"
-date: 2020-09-24T13:31:40-04:00
-description: "It really is possible to achieve secure online voting. Here's exactly how."
-banner: "img/banners/vote.jpeg"
+date: 2020-10-12T13:31:40-04:00
+description: "It really is possible to achieve secure online voting. Here's how."
+banner: "img/banners/vote.png"
 tags: 
 - JAMStack
 - PWA
@@ -285,18 +285,25 @@ architecture.
 
 ---
 
-Of course this entire stack, and really the whole architecture, is just an idea. It is all subject to change, and the beauty 
-of open source is the diversity of thought and creative energy that converges to solve interesting, hard problems. One way
-or another, let's work together to build a secure online voting platform that allows all registered voters to make their voices
+Of course this entire stack, and really the whole architecture, is just an idea. It is all subject to change.
+
+## Outstanding Questions
+
+Even if the architecture and technology stack are perfect, there are still some difficult questions that remain outstanding:
+
+* Every state has its own election laws, technology infrastructure, and budget. What kinds of legal and technical challenges
+are there to migrating voter registration data to a new system? Would officials even consider it even if they are acting
+in good faith?
+* What's to stop those same officials acting in *bad* faith from compromising the platform in some way?
+* While the platform would be built for resilience, what kinds of contingency plans would be in place just in case the platform 
+went down?
+* If we use PostgreSQL as an immutable, append-only store to provide a replayable log of all data mutations, we will eventually
+hit its limits. What's the retention period for the data? If it is even necessary to retire the data to some kind of data lake
+after the retention period, where would that be?
+
+The beauty of open source is the diversity of thought and creative energy that converges to solve interesting, hard problems. 
+
+---
+
+One way or another, let's work together to build a secure online voting platform that allows all registered voters to make their voices
 heard and gives them the confidence that their votes count.
-
-
- 
-
-
-
-Questions
-how to stop bad pol from turning things off
-getting info out of existing systems
-what to do when system down
-retire data to data lake
