@@ -261,7 +261,7 @@ every interface demands authentication:
 * An HTTP request hitting the API
 * The API inserting a record into the database
 * Any request for monitoring data
-* The entire continuous delivery pipeline integrating version control, continuous integration, containerization, and deployment
+* The entire continuous delivery pipeline integrating version control, continuous integration (CI), containerization, and deployment
 
 This will require a blend of solutions, and I think it makes sense to leverage proprietary implementations that have mastered
 these challenges. For example, an identity provider Auth0 or Okta could provide multifactor authentication and OpenID Connect, particularly
@@ -269,13 +269,16 @@ the PKCE flow with [JWT](https://jwt.io/), to authenticate the user to the API. 
 into novel forms of authentication like UnifyID, which replaces passwords with machine learning to analyze unique 
 user behavior like gait and keypress habits to verify identity.
 
-The API server can authenticate to the database server via mutual TLS, where certificates are rotated periodically, with 
+The API server can authenticate to the database server, where data are encrypted, via mutual TLS, where certificates are rotated periodically, with 
 credentials configured as Kubernetes [Secrets](https://kubernetes.io/docs/concepts/configuration/secret/) mapped to
-credentials in the identity provider.
+credentials in the identity provider. 
   
 Splunk offers multiple ways to authenticate. We can figure that out later. That's why we are paying them.
 
-Finally, securing the entire DevSecOps pipeline means implenting a host of measures like limiting permissions between 
+Finally, securing the entire DevSecOps pipeline means implementing a host of measures like keeping secrets out of code and configuration,
+managing access control and limiting permissions throughout the pipeline, signing changes to version control with PGP and Docker images pushed to DockerHub with 
+[Docker Content Trust](https://docs.docker.com/engine/security/trust/), using key management mechanisms appropriate for the deployment platform,
+and much more.
 
 
 
