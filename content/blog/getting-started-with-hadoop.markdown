@@ -29,12 +29,11 @@ Please take a look at [my latest column for Government Computing News](http://gc
 where I gently introduce you to the basics of Hadoop and describe cool technologies that build on it. Just to give you an idea,
 here is the unedited introduction.
 
-<blockquote>
-It’s a funny word. You have only a vague notion of what it is. You’ve heard that it takes a lot of work but is potentially really beneficial. Maybe if you learned more about it you too could enjoy its benefits. But even if you wanted to try it, you wouldn’t even know where to start.
+> It’s a funny word. You have only a vague notion of what it is. You’ve heard that it takes a lot of work but is potentially really beneficial. Maybe if you learned more about it you too could enjoy its benefits. But even if you wanted to try it, you wouldn’t even know where to start.
 
 If it isn’t obvious, I’m talking about Hadoop. Not Zumba.
 
 Google wrote the Hadoop paper ten years ago--an eternity in technology--but it is only recently that the rest of us have begun to explore its potential. Even as some businesses and some government agencies have built Hadoop solutions, it remains a source of confusion. You have to understand what Hadoop is to assess its potential for your enterprise.
-</blockquote>
+
 
 You can read the rest of the column [here](http://gcn.com/articles/2014/05/01/hadoop-basics.aspx).

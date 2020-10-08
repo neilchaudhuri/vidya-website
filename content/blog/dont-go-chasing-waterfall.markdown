@@ -42,9 +42,8 @@ inaccurate.
 
 Let’s explore Mr. Daconta’s reasoning in detail.
 
-<blockquote>
-I have seen some of the developer documentation, and it clearly discusses sprints, user stories and incremental testing — all of which are hallmarks of an agile process....The reality is that the developers did use agile, and the project failed miserably.
-</blockquote>
+> I have seen some of the developer documentation, and it clearly discusses sprints, user stories and incremental testing — all of which are hallmarks of an agile process....The reality is that the developers did use agile, and the project failed miserably.
+
 
 Maybe the developers actually had a to-do list comprised of what they called “user stories” that were addressed during
 "sprints," and maybe some kind of testing happened. Calling this agile is like calling me a [CrossFit](http://www.crossfit.com/)
@@ -100,9 +99,9 @@ All of these must be true, or really close to it, for development to be truly ag
 one year of insurance premiums for a gold plan on the federal health care exchange that almost none of these happened
 with the development on HealthCare.gov.
 
-<blockquote>
+> 
 I am currently involved in a Defense-related big data project where we are analyzing and decomposing customer requirements into system requirements....This will take a few months, but when it is done we will know exactly what we have to build….A complex back-end data services hub — a piece of software with zero actual, living, breathing end-users — has to be described in terms of “user” stories. Does something sound off-key to you?....Yes, I’m sure you can bend and twist user stories to address non-user based functionality, but should you?
-</blockquote>
+
 
 I cannot believe that someone in 2013 would be proud of taking “a few months” to create a PDF and not write
 one line of code a client can use. Worse yet is Mr. Daconta’s naive understanding of how user stories work.
@@ -137,9 +136,9 @@ In our case, the feature would simply become
 
 Now was that so hard?
 
-<blockquote>
+> 
 For the state of Florida, I led a team in designing and developing a data integration hub that recently successfully passed its first milestone. The software design document was reviewed by the customer, Gartner, and the key software infrastructure vendor….In contrast...we see a site that failed a test of 200 to 300 people  when it was supposedly designed for 50,000 simultaneous users...Where are the design and architecture documents that show how the system was built to be scalable? Oh, agile processes don’t like design documents
-</blockquote>
+
 
 Personally, I find nothing to brag about until working software
 goes live and clients are happy using it. But Mr. Daconta’s [argument from authority](http://en.wikipedia.org/wiki/Argument_from_authority)
@@ -177,9 +176,9 @@ Besides, Mr. Daconta should be aware that agile methodologies came along precise
 day about why so many projects fail when they are documented so thoroughly. To suggest absence of documentation led to
 the problems with HealthCare.gov is to cling to an ideology and ignore a history of data to the contrary.
 
-<blockquote>
+> 
 In examining some of the Business Service Description (BSD) documents, we see that key interfaces (like verify income and verify citizenship) were designed as synchronous instead of asynchronous interfaces….Frankly, for a site like this that requires high levels of reliability and scalability, a synchronous API design for the data hub is inexcusable.
-</blockquote>
+
 
 [Huh?](http://www.youtube.com/watch?v=tpsEdM74maA) I thought there were no design documents. Now Mr. Daconta uses some to
 cite another problem.

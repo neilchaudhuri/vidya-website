@@ -25,11 +25,10 @@ struck me that evening was a question from the audience.
 The question came from a fellow software engineer, who began by noting that ALN events typically 
 engage executives and managers rather than engineers, and can be paraphrased this way:
 
-<blockquote>
-In our retrospectives the ScrumMaster and Product Owner always elevate themselves above the 
+> In our retrospectives the ScrumMaster and Product Owner always elevate themselves above the 
 rest of the team and demand from the developers that we account for why we were unable
 to deliver as much and as quickly as they wanted. How can we change this? 
-</blockquote>
+
 
 The speaker and the audience had sympathy. Their comments more or less could be boiled down to
 the assertions that this ScrumMaster is no [servant leader](https://www.scrumalliance.org/community/articles/2014/august/the-art-and-science-of-servant-leader)

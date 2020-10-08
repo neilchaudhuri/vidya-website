@@ -32,18 +32,18 @@ categories:
 - Microservices
 ---
 
-The right to vote is sacred. It's essential for a free society and to pick a winner on [The Voice](https://www.nbc.com/the-voice).
+The right to vote is sacred. It's essential to live in a free society and to pick a winner on [The Voice](https://www.nbc.com/the-voice).
 Unfortunately, the right to vote is under attack worldwide, and bad actors 
 have used tech to do it. Russia interfered with the Brexit referendum in the UK and elections there, in Ukraine, France, 
-and famously in America by hacking voting machines and voter registration databases and manipulating social media. Also
-in America, the state legislature in North Carolina used data science with 
+and famously in the United States by hacking voting machines and voter registration databases and manipulating social media. Also
+here in America, the state legislature in North Carolina used data science with 
 "[surgical precision](https://www.nbcnews.com/politics/politics-news/north-carolina-judges-toss-maps-slam-gerrymandering-stinging-ruling-n1049411)"
 to rig state elections at the expense of voters' constitutional rights.
 
 It's all shameful, and it's made possible by a host of systemic flaws: 
 
 * Lack of transparency as manufacturers with troubling conflicts of interest produce closed, proprietary voting machines 
-* Lack of knowledge of modern software architecture patterns, engineering best practices, UX strategies, technology options, accessibility, and good security hygiene
+* Lack of knowledge about or interest in modern software architecture patterns, engineering best practices, UX strategies, technology options, accessibility, and good security hygiene
 * Lack of training for staff in using and maintaining the available voting technology
 * Lack of funding for officials acting in good faith to build robust voting infrastructure
 * Lack of access controls to prevent officials acting in *bad* faith from exercising control of the infrastructure for nefarious purposes
@@ -90,12 +90,11 @@ and time again, perimeter-based security is flawed. Instead, we need a Zero Trus
 [Chris Gerritz](https://www.scmagazine.com/home/opinion/executive-insight/what-is-the-zero-trust-framework-in-cybersecurity-and-5-considerations-for-building-a-zero-trust-it-environment/) 
 explain what this means:
 
-<blockquote>
-Rather than defending only a single, enterprise-wide perimeter, the Zero Trust approach moves this perimeter to every 
+> Rather than defending only a single, enterprise-wide perimeter, the Zero Trust approach moves this perimeter to every 
 network, system, user, and devices within and outside the organization. This movement is enabled by strong identities, 
 multi-factor authentication, trusted endpoints, network segmentation, access controls, and user attribution to 
 compartmentalize and regulate access to sensitive data and systems.
-</blockquote>
+
 
 Advancements in technology make Zero Trust possible, and a modern voting solution will enforce Zero Trust to ensure
 that every interaction with every component of the architecture demands authentication and a thorough vetting of 

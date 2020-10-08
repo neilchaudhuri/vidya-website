@@ -27,10 +27,9 @@ where I drop references to [Brangelina](http://juggmentworld.net/wp-content/uplo
 [Kimye](http://sites.psu.edu/bradenshepler/wp-content/uploads/sites/6254/2013/10/kimye.jpg) to explain why DevOps
 has become so popular in business and why it needs to be a thing in government as well. Just to give you an idea, here is the unedited introduction.
 
-<blockquote>
-Terms like service-oriented architecture and big data have long been part of the pantheon of buzzwords that have captivated us while eluding any kind of real understanding. Recently joining them is DevOps. In one form or another, DevOps is a growing force in the commercial space, so it is important to understand the underlying principles of DevOps to see what role it might have in the the government space.
+> Terms like service-oriented architecture and big data have long been part of the pantheon of buzzwords that have captivated us while eluding any kind of real understanding. Recently joining them is DevOps. In one form or another, DevOps is a growing force in the commercial space, so it is important to understand the underlying principles of DevOps to see what role it might have in the the government space.
 
-</blockquote>
+
 
 You can read the rest of the column [here](http://gcn.com/articles/2015/02/12/devops-defined.aspx)
 and offer your own thoughts [here](/contact).

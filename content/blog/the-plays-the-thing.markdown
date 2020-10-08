@@ -32,9 +32,8 @@ where I explain how to apply the guidance found in the White House's new [U.S. D
 embraces [agile](/categories/agile) software development and open-source for building better government applications. 
 Just to give you an idea, here is the unedited introduction.
 
-<blockquote>
-Software engineering is my passion--not just the technologies but the art of building software the right way. As a passionate advocate for agile development and open-source, it is gratifying to see the White House embrace both in its U.S. Digital Services Playbook. It outlines thirteen “plays,” high-level practices for effective applications. The Playbook is a great start but is rather abstract, so I will build on some of the plays to provide more specific guidance for government IT managers. 
-</blockquote>
+> Software engineering is my passion--not just the technologies but the art of building software the right way. As a passionate advocate for agile development and open-source, it is gratifying to see the White House embrace both in its U.S. Digital Services Playbook. It outlines thirteen “plays,” high-level practices for effective applications. The Playbook is a great start but is rather abstract, so I will build on some of the plays to provide more specific guidance for government IT managers. 
+
 
 You can read the rest of the column [here](http://gcn.com/articles/2014/09/10/digital-services-playbook-tactics.aspx) 
 and offer your own thoughts [here](/contact).

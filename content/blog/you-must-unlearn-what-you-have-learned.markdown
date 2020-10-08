@@ -41,9 +41,8 @@ The iconic line from this scene in [The Empire Strikes Back](http://www.imdb.com
 That’s an awesome line worthy of every t-shirt and [Big Bang Theory reference](http://www.youtube.com/watch?v=J_iH5H_jFco).
 But I think Yoda’s line before that is just as awesome and maybe even more pertinent to someone like me.
 
-<blockquote>
-You must unlearn what you have learned.
-</blockquote>
+> You must unlearn what you have learned.
+
 
 If you want to grow and succeed as a technology professional, embrace this fundamental truth you must. I’ve found this to
 be true several times in my career.

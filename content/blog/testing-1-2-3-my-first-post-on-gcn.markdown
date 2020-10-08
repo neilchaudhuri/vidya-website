@@ -31,8 +31,7 @@ the leading online publication in federal IT.
 
 The topic?
 
-<blockquote>
-Testing is much more nuanced than has been suggested by recent commentary. Developers, testers, and domain experts can work together to leverage a combination of open-source tools, automation and discipline in order to build quality into their applications from the start.
-</blockquote>
+> Testing is much more nuanced than has been suggested by recent commentary. Developers, testers, and domain experts can work together to leverage a combination of open-source tools, automation and discipline in order to build quality into their applications from the start.
+
 
 Please take a [look](http://gcn.com/Articles/2013/12/10/software-testing.aspx?Page=1), and [let us know what you think!](/contact)

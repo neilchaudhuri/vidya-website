@@ -29,10 +29,9 @@ Senator Franken, who has not lost the sarcasm and timing that made him a great s
 Mr. Stretch for his refusal to accept the proposition that payment in foreign currency for ads pertaining to American elections
 is a clear indicator of something nefarious. The reason? As Mr. Stretch put it:
 
-<blockquote>
-The currency signal...it's very easy to manipulate.....The reason I am hesitating on foreign currency is that it is 
+> The currency signal...it's very easy to manipulate.....The reason I am hesitating on foreign currency is that it is 
 relatively easy for bad actors to switch currencies. So it's a signal, but it's not enough.
-</blockquote>
+
 
 It's interesting that Mr. Stretch (and his fellow witnesses) would use data science jargon like *signal* before
 the committee. A signal is a dimension of your data set that offers predictive value for the outcome you're tracking. 

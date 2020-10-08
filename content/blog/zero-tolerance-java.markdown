@@ -42,9 +42,8 @@ It turns out zero isn’t always zero. At least not when it comes to `BigDecimal
 The answer is in `BigDecimal`’s implementation of the [equals](http://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html#equals-java.lang.Object-)
 method. 
 
-<blockquote>
-Unlike compareTo, this method considers two BigDecimal objects equal only if they are equal in value and scale (thus 2.0 is not equal to 2.00 when compared by this method).
-</blockquote>
+> Unlike compareTo, this method considers two BigDecimal objects equal only if they are equal in value and scale (thus 2.0 is not equal to 2.00 when compared by this method).
+
 
 I assumed `equals` just compared values, but scale matters. `BigDecimal.ZERO` has scale of 0, but the zero value in `price` in my test did not. 
 That’s why things went wrong.

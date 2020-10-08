@@ -23,8 +23,7 @@ Please take a look at [my latest column for Government Computing News](http://gc
 where I discuss why Kanban might be an easier agile alternative for government IT projects having trouble with
 the rigor of Scrum. Just to give you an idea, here is the unedited introduction.
 
-<blockquote>
-Over the last decade, many have written about what agile software development offers to government IT. Their success has led to a GAO report, for which I was a contributor, on making agile work in the federal government and the U.S. Digital Services Playbook, which I wrote about for GCN.
+> Over the last decade, many have written about what agile software development offers to government IT. Their success has led to a GAO report, for which I was a contributor, on making agile work in the federal government and the U.S. Digital Services Playbook, which I wrote about for GCN.
 
 
 Yet while government IT has improved, it has a long way to go. We witnessed the spectacular failure of the initial rollout of HealthCare.gov, and many far less visible failures happen all the time. One reason is that not enough government IT projects are agile. Another is that Scrum, the most popular agile framework, is hard.
@@ -37,7 +36,7 @@ Although I am certified in Scrum and teach a Scrum course, I am not so dogmatic 
 
 
 Let’s examine why Kanban may in many cases be the better choice for government IT projects than Scrum.
-</blockquote>
+
 
 You can read the rest of the column [here](http://gcn.com/articles/2015/03/11/kanban-basics.aspx)
 and offer your own thoughts [here](/contact).

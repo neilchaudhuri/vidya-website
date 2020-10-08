@@ -26,8 +26,7 @@ aliases:
 Please take a look at [my latest column for Government Computing News](http://www1.gcn.com/articles/2014/01/29/integration-tips.aspx) where I address chronic integration problems in
 government IT. Just to give you an idea, here is the unedited introduction.
 
-<blockquote>
-Government decision makers have always had to make do with budgets that fall short of mission demands. Worse yet, the modern political landscape is hardly predisposed to budget increases. The situation is especially difficult for IT decision makers, who are forced to strike a balance between a rapidly evolving technology landscape and the imperative to wring every last drop of value from previous investments.
+> Government decision makers have always had to make do with budgets that fall short of mission demands. Worse yet, the modern political landscape is hardly predisposed to budget increases. The situation is especially difficult for IT decision makers, who are forced to strike a balance between a rapidly evolving technology landscape and the imperative to wring every last drop of value from previous investments.
 
 
 Making otherwise incompatible technologies play nice isn’t easy. Even if you succeed, the solution may have all the stability of a game of Jenga. The slightest change--e.g. introduction of a new application, migration to a new operating system, etc.--could upset everything. That doesn’t exactly motivate change.
@@ -37,7 +36,7 @@ Or there’s that one person, and only one, who knows how everything works. When
 
 
 What can you do to solve integration challenges or mitigate their consequences?
-</blockquote>
+
 
 You can read the rest of the column [here](http://www1.gcn.com/articles/2014/01/29/integration-tips.aspx).
 
