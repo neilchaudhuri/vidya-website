@@ -1,7 +1,7 @@
 ---
 author: "Neil Chaudhuri"
 title: "Secure Online Voting is the Future"
-date: 2020-10-12T13:31:40-04:00
+date: 2020-10-07T13:31:40-04:00
 description: "It really is possible to achieve secure online voting. Here's how."
 banner: "img/banners/vote.png"
 tags: 
