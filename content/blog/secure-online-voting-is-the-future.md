@@ -307,5 +307,7 @@ The beauty of open source is the diversity of thought and creative energy that c
 
 ---
 
-One way or another, let's work together to build a secure online voting platform that allows all registered voters to make their voices
-heard and gives them the confidence that their votes count.
+It will take a historical effort to build a secure online voting platform that allows all registered voters to make their voices
+heard and gives them the confidence that their votes count. If you find improving access to voting, guaranteeing the integrity
+of elections, and solving interesting problems as important and as compelling as I do, please 
+[get in touch](/contact) so we can collaborate on something that could transform society for the better.
