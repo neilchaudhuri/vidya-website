@@ -17,6 +17,7 @@ tags:
 - FastAPI
 - Java
 - Kotlin
+- Go
 - Python
 - SQL
 - PostgreSQL
