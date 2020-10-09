@@ -85,8 +85,9 @@ the best online voting platform possible.
 
 ### Zero Trust
 
-I would guess that every state election system in America is perimeter-based. It's all about firewalls. As we've seen time 
-and time again, perimeter-based security is flawed. Instead, we need a Zero Trust approach to security. I will let 
+Every state election system in America is perimeter-based. It's all about firewalls. Perimeter-based security is flawed 
+because once intruders get in, which as we've seen time and time again isn't exactly impossible, there is no stopping them. 
+Instead, we need a Zero Trust approach to security. I will let 
 [Chris Gerritz](https://www.scmagazine.com/home/opinion/executive-insight/what-is-the-zero-trust-framework-in-cybersecurity-and-5-considerations-for-building-a-zero-trust-it-environment/) 
 explain what this means:
 
@@ -94,7 +95,6 @@ explain what this means:
 network, system, user, and devices within and outside the organization. This movement is enabled by strong identities, 
 multi-factor authentication, trusted endpoints, network segmentation, access controls, and user attribution to 
 compartmentalize and regulate access to sensitive data and systems.
-
 
 Advancements in technology make Zero Trust possible, and a modern voting solution will enforce Zero Trust to ensure
 that every interaction with every component of the architecture demands authentication and a thorough vetting of 
@@ -108,9 +108,9 @@ know the health of the system and to know every single thing that happens throug
 This means continuous monitoring throughout the stack, elegant visualizations of the telemetry, and if we can manage it, 
 anomaly detection through analytics. This level of auditability is necessary for Zero Trust.
 
-## Immutable and Append-Only
+### Immutable and Append-Only
 
-I have [written](/blog/vidya/technology/talking-trends-at-tech-talk-dc/) and [spoken](/blog/vidya/technology/talking-trends-at-tech-talk-dc/)
+I have [written](/blog/vidya/technology/business-case-for-functional-programming/) and [spoken](/blog/vidya/technology/talking-trends-at-tech-talk-dc/)
 a great deal about the value of immutability, and I think it is essential to secure online voting. The software
 should not permit updates or deletes. Rather, any change to the data--a new candidate, a newly registered voter, a new address for an existing voter,
 and certainly every vote--should be represented in immutable, append-only fashion. As part of the 
@@ -121,10 +121,10 @@ In fact, I would say immutability might be the single best defense against bad a
 
 ### Client Device and Application Deployment Agnostic
 
-A modern voting solution needs to serve a wide array of stakeholders--voters who need the freedom to access their ballots 
-on a wide array of devices, state governments with legacy on premise architectures unknown budgets for cloud deployments.
-The software needs to be agnostic to all these concerns, which will force compromises in the implementation. In other words,
-it may not always be possible to apply the "coolest" solution if it couples the software to tightly to a particular vendor 
+A modern voting solution needs to give voters the freedom to access their ballots 
+on a wide array of devices and to give state government officials the freedom to deploy on premise or in the cloud.
+The software needs to be agnostic to these possibilities, and this will force compromises in the implementation. It may 
+not always be possible to apply the "coolest" solution if it couples the software too tightly to a particular vendor 
 or feature.
 
 ### Usable
@@ -148,7 +148,7 @@ us right back to the status quo of a voting platform that diminshes the confiden
 
 This is a lot, and in order to achieve it, a secure voting platform needs to be engineered with a continuous deployment 
 model that automates testing (for functionality, security, performance, accessibility), static analysis, and deployment.
-We need a process that solves for the key metrics for software delivery performance Google describes in their 
+We need a process that solves for the key metrics for software delivery performance that Google describes in their 
 [State of DevOps](https://services.google.com/fh/files/misc/state-of-devops-2019.pdf) report: deployment frequency, 
 lead time for changes, time to restore service, and change failure rate.
 
@@ -161,9 +161,9 @@ California is the largest state by population, and a statewide election will hav
 a large number, but as software scale goes, 30 million entities over the course of several weeks 
 (as the concept of "Election Day" thankfully grows more and more quaint) really isn't that much.
 Now maybe great voting software will raise those numbers, but as it stands now, this makes things a lot easier. We can 
-focus on the user experience, integrity of the data, and security of the system and worry a bit less about performance and scale.
+focus on the user experience, integrity of the data, and security of the system and worry a bit less about performance at scale.
 
-Another bit of good news? The UI can be simple. It's just a boring form!
+Another bit of good news? The UI can be simple. It's just boring forms!
 
 ## What Might the Tech Stack Look Like?
 
@@ -174,12 +174,13 @@ I'm not exactly sure, but I do have some ideas I would like to run by you.
 A [JAMStack](https://jamstack.org/) front end provides several advantages:
 
 * No need to deploy or scale web servers
-* You can't beat the performance of pre-built assets cached on a CDN and in the browser
-* Works across devices
+* The unbeatable performance of pre-built assets cached on a CDN and in the browser
+* Device agnostic
 
 Certainly a front end in Rails or another robust monolithic framework would be effective, but I think using something 
 like [Gatsby](https://www.gatsbyjs.com/), [Next.js](https://nextjs.org/), or [Sapper](https://sapper.svelte.dev/) would 
-be so much simpler and more lightweight. It would basically take a few days to build the forms.
+be so much simpler and more lightweight. It would basically take a few days to build the forms and push them to a CDN like 
+Cloudflare or Fastly.
 
 In addition, I think it is important that the front end is deployed as a [Progressive Web App](/blog/vidya/technology/vidya-reloaded/).
 This offers a lot of benefits, but primarily for this purpose, it is critical that the front end is always available 
@@ -190,30 +191,33 @@ Alexa, or Siri if privacy concerns can be addressed. One challenge at a time tho
 
 ### API: Spring Boot
 
+The purpose of the API is to authenticate requests from the JAMStack UI--in most cases, votes--and publish asynchronous
+messages to the immutable, append-only data store while responding with, in the happy path scenario, a confirmation
+and a way for voters to track their votes through the process so they can have every confidence their votes count.
+
 There are a *lot* of great API solutions like [FastAPI](https://fastapi.tiangolo.com/), [Go kit](https://gokit.io/), and
 [Lagom](https://www.lagomframework.com/), but [Spring Boot](https://spring.io/projects/spring-boot) offers some compelling 
 advantages:
  
 * Available in [Java](/tags/java) and [Kotlin](/tags/kotlin), which are simple, statically typed languages many engineers know
 * Straightforward primitives for writing [reactive](https://spring.io/reactive) APIs
-* It's [good enough for Netflix](https://spring.io/blog/2020/02/24/netflix-built-a-spring-application-generator-to-boost-dev-productivity-here-s-how-you-can-too)
+* [Good enough for Netflix](https://spring.io/blog/2020/02/24/netflix-built-a-spring-application-generator-to-boost-dev-productivity-here-s-how-you-can-too)
 
-The purpose of the API is to authenticate requests from the JAMStack UI--in most cases, votes--and publish asynchronous
-messages to the immutable, append-only stream while responding with, in the happy path scenario, a confirmation
-and a way for voters to track their votes through the process so they can have every confidence their votes count.
+All of these options would be great though.
 
 ### Database: PostgreSQL. With a twist
 
-The backbone of this architecture is the immutable, append-only data store of every single mutation to the data on the platform
-in order to ensure full auditability and traceability. How can we do this with PostgreSQL?
+The backbone of this architecture is the immutable, append-only data store representing every single mutation to the data on the platform
+in order to ensure full replayability and traceability. How can we do this with PostgreSQL?
 
 Easy. Revoke UPDATE and DELETE privileges!
 
 Anything more than PostgreSQL, which is straightforward to deploy and agnostic of environment, would be overkill given the relatively low scale--particularly 
 if someone deploys the online voting platform for a small election below the state level with just a few thousand or even a few hundred voters.  
-We could punt here and decide on something more elaborate like MongoDB or Kafka because a small election renders a secure
+
+We could punt here and decide on something more elaborate like MongoDB or Kafka because we decide a small election renders a secure
 online voting platform unnecessary, but I would disagree. Local elections are extremely important. They impact people's 
-lives the most, and voters are entitled to the same guarantees here we want to give them for the "big" elections. 
+lives the most, and voters are entitled to the same guarantees here that they are entitled to for the "big" elections. 
 
 All we need to do is to store voting data in a single table where a simple GROUP BY will aggregate election results. 
 That's easy. We can also store temporal and location data so we can run some basic secondary queries like measuring voter activity
@@ -221,7 +225,7 @@ by precinct or time of day or day of week or whatever else you want to know.
 
 So immutable PostgreSQL it is.
 
-By the way, what about Blockchain? [No. Just. No.](/blog/vidya/technology/pop-goes-the-blockchain/)
+By the way, what about blockchain? [No. Just. No.](/blog/vidya/technology/pop-goes-the-blockchain/)
  
 ### Deployment: Docker and Kubernetes
 
@@ -231,8 +235,8 @@ for Docker containers--for microservices, data stores, monitoring software, etc.
 Kubernetes in particular is particularly compelling because it serves as the common denominator for deployments to AWS, Azure, Google Cloud,
 and on premise. In other words, Kubernetes is central to being deployment agnostic.  
 
-This post is already long enough without getting into software engineering tooling like Gradle, GitHub,
-GitHub Actions or whatever CI could be in play, and so on, but I do want to send a shout out to [Earthly](https://docs.earthly.dev/), 
+This post is already long enough without getting into software engineering tooling like Gradle, GitHub, 
+whatever continuous integration (CI) could be in play, and so on, but I do want to send a shout out to [Earthly](https://docs.earthly.dev/), 
 which has recently emerged as a powerful build automation tool at a layer of abstraction above Docker. We want to make sure
 we maximize reproducibility, determinism, and parallelism to make builds as performant as possible. Earthly could
 be the perfect fit. 
@@ -246,10 +250,8 @@ there are so many other challenges.
 
 The preference is always open-source. It seems to me deploying an [EFK stack on Kubernetes](https://dzone.com/articles/efk-stack-on-kubernetes-part-1)
 would be sufficient, but that requires the skill and time to configure everything as needed. On the other hand, Splunk, the industry 
-leader in monitoring, is proprietary and probably overkill for the same reasons Kafka could be, but the platform would
+leader in monitoring, is proprietary and probably overkill for the same reasons a data store like Kafka would be, but the platform would
 benefit from paid Splunk support.
-
-Again, this is where the exchange of ideas that open source offers would come in handy.
 
 ### Authentication and Authorization: A blend of proprietary solutions
 
@@ -260,10 +262,10 @@ every interface demands authentication:
 * An HTTP request hitting the API
 * The API inserting a record into the database
 * Any request for monitoring data
-* The entire continuous delivery pipeline integrating version control, continuous integration (CI), containerization, and deployment
+* The entire continuous delivery pipeline integrating version control, CI, containerization, and deployment
 
 This will require a blend of solutions, and I think it makes sense to leverage proprietary implementations that have mastered
-these challenges. For example, an identity provider Auth0 or Okta could provide multifactor authentication and OpenID Connect, particularly
+these challenges. For example, an identity provider like Auth0 or Okta could provide multifactor authentication and OpenID Connect, particularly
 the PKCE flow with [JWT](https://jwt.io/), to authenticate the user to the API. For mobile users, we could also look 
 into novel forms of authentication like UnifyID, which replaces passwords with machine learning to analyze unique 
 user behavior like gait and keypress habits to verify identity.
@@ -272,7 +274,8 @@ The API server can authenticate to the database server, where data are encrypted
 credentials configured as Kubernetes [Secrets](https://kubernetes.io/docs/concepts/configuration/secret/) mapped to
 credentials in the identity provider. 
   
-Splunk offers multiple ways to authenticate. We can figure that out later. That's why we are paying them.
+EFK and Splunk both offer multiple ways to authenticate. We can figure that out later. If it's Splunk, paying *them* to figure it out
+makes sense.
 
 Finally, securing the entire DevSecOps pipeline means implementing a host of measures like keeping secrets out of code and configuration,
 managing access control and limiting permissions throughout the pipeline, signing changes to version control with PGP and Docker images pushed to DockerHub with 
@@ -288,14 +291,14 @@ Of course this entire stack, and really the whole architecture, is just an idea.
 
 ## Outstanding Questions
 
-Even if the architecture and technology stack are perfect, there are still some difficult questions that remain outstanding:
+Even if the architecture and technology stack are perfect, there are still some difficult questions that remain:
 
 * Every state has its own election laws, technology infrastructure, and budget. What kinds of legal and technical challenges
-are there to migrating voter registration data to a new system? Would officials even consider it even if they are acting
-in good faith?
-* What's to stop those same officials acting in *bad* faith from compromising the platform in some way?
+are there to migrating voter registration data to a new system? Officials acting in bad faith do not want anything that will
+make voting easier, but would even officials acting in *good* faith consider it?
+* What's to stop other officials who are authorized users acting in bad faith from compromising the running platform in some way?
 * While the platform would be built for resilience, what kinds of contingency plans would be in place just in case the platform 
-went down?
+went down for an extended period?
 * If we use PostgreSQL as an immutable, append-only store to provide a replayable log of all data mutations, we will eventually
 hit its limits. What's the retention period for the data? If it is even necessary to retire the data to some kind of data lake
 after the retention period, where would that be?
