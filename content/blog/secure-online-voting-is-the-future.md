@@ -35,13 +35,13 @@ categories:
 
 The right to vote is sacred. It's essential to live in a free society and to pick a winner on [The Voice](https://www.nbc.com/the-voice).
 Unfortunately, the right to vote is under attack worldwide, and bad actors 
-have used tech to do it. Russia interfered with the Brexit referendum in the UK and elections there, in Ukraine, France, 
-and famously in the United States by hacking voting machines and voter registration databases and manipulating social media. Also
+have used tech to do it. Russia interfered with the Brexit referendum in the UK and with elections there, Ukraine, France, 
+and famously the United States by hacking voting machines and voter registration databases and manipulating social media. Also
 here in America, the state legislature in North Carolina used data science with 
 "[surgical precision](https://www.nbcnews.com/politics/politics-news/north-carolina-judges-toss-maps-slam-gerrymandering-stinging-ruling-n1049411)"
 to rig state elections at the expense of voters' constitutional rights.
 
-It's all shameful, and it's made possible by a host of systemic flaws: 
+It's all shameful, and systemic flaws make it possible: 
 
 * Lack of transparency as manufacturers with troubling conflicts of interest produce closed, proprietary voting machines 
 * Lack of knowledge about or interest in modern software architecture patterns, engineering best practices, UX strategies, technology options, accessibility, and good security hygiene
@@ -52,11 +52,11 @@ It's all shameful, and it's made possible by a host of systemic flaws:
 And many others.
 
 Because of these systemic problems, the high stakes involved in electing officials who will be making life and death decisions in the era of COVID,
-the embarrassing failures of incompetent attempts at modern voting apps
+the breathtaking incompetence and embarrassing failure of "modern" voting apps
 like the [IowaReporterApp](https://www.vox.com/recode/2020/2/7/21125078/iowa-caucus-2016-mobile-app-2020), and the fear of relentless
 attacks from around the nation and the world, we are in a place now where the consensus is that the only secure way to vote 
-is with paper ballots. To say nothing of the matter of voter access to those paper ballots, which itself is a matter fraught with
-bad faith arguments and [racism](/blog/vidya/technology/black-lives-matter/).
+is with paper ballots. To say nothing of the vulnerabilities associated with paper ballots and the matter of voter access 
+to those paper ballots, which itself is a matter fraught with bad faith arguments and [racism](/blog/vidya/technology/black-lives-matter/).
 
 It's easy, if profoundly disappointing, to see how we got here, but it really doesn't have to be this way.
 
@@ -140,9 +140,10 @@ also undermine confidence in the integrity of the vote.
 
 ### Simple
 
-To achieve all of this there will be a lot going on in a secure online voting platform--user interfaces, APIs, encryption,
+To achieve all of this, there will be a lot going on in a secure online voting platform--user interfaces, APIs, encryption,
 databases, multifactor authentication, monitoring. It will be tempting to add complexity to integrate it all, and we 
-need to resist that temptation. Otherwise, the application will become unusable for its stakeholders, which will bring
+need to resist that temptation to overengineer. Otherwise, the application will become unsustainable for the mainainers
+and, much worse, unusable for its stakeholders, which will bring
 us right back to the status quo of a voting platform that diminshes the confidence we have in the integrity of our elections.
 
 ---
