@@ -4341,7 +4341,7 @@ fieldset[disabled] .btn-template-primary.active {
 .panel.sidebar-menu ul.tag-cloud li a {
     display: inline-block;
     padding: 5px;
-    border: solid 1px #000000;
+    border: solid 1px #fff;
     border-radius: 10px;
     color: #5a82b4;
     margin: 5px 5px 5px 0;
@@ -6185,7 +6185,7 @@ fieldset[disabled] .btn-template-primary.active {
 #footer {
     background: #808285;
     padding: 50px 0;
-    color: black;
+    color: white;
 }
 
 #footer .sidebar-menu {
@@ -6206,7 +6206,7 @@ fieldset[disabled] .btn-template-primary.active {
 #footer .panel.sidebar-menu .panel-heading h3,
 #footer .panel.sidebar-menu .panel-heading h4,
 #footer .panel.sidebar-menu .panel-heading h5 {
-    border-color: #000000;
+    border-color: #fff;
 }
 
 #footer h1,
@@ -6215,7 +6215,7 @@ fieldset[disabled] .btn-template-primary.active {
 #footer h4,
 #footer h5,
 #footer h6 {
-    color: #000000;
+    color: white;
 }
 
 #footer h1 {
@@ -6235,7 +6235,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 
 #footer ul a {
-    color: #000000;
+    color: #fff;
 }
 
 #footer ul a:hover {
@@ -6248,7 +6248,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 
 #footer .license a {
-    color: #000000;
+    color: #fff;
     font-size: 14px;
 }
 
