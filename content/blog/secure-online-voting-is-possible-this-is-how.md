@@ -42,7 +42,7 @@ and famously here in the United States by hacking voting machines and voter regi
 here in America, the state legislature in North Carolina used data science with 
 "[surgical precision](https://www.nbcnews.com/politics/politics-news/north-carolina-judges-toss-maps-slam-gerrymandering-stinging-ruling-n1049411)"
 to rig state elections at the expense of voters' constitutional rights. North Carolina did it best, but it's a tactic exploited
-throughout the country by politicians who fear accountability for their records. If that bothers them so much, they should
+throughout the country by politicians who fear accountability for their records. If accountability bothers them so much, they should
 work in meteorology or sports talk radio.
 
 It's shameful, and systemic flaws make it possible: 
