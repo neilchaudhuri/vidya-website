@@ -1,7 +1,7 @@
 ---
 author: "Neil Chaudhuri"
 title: "Secure Online Voting is the Future"
-date: 2020-10-07T13:31:40-04:00
+date: 2020-10-09T13:31:40-04:00
 description: "It really is possible to achieve secure online voting. Here's how."
 banner: "img/banners/vote.png"
 tags: 
@@ -21,6 +21,8 @@ tags:
 - Python
 - SQL
 - PostgreSQL
+- EFK
+- Splunk
 categories:
 - Government
 - Big Data
@@ -39,15 +41,16 @@ have used tech to do it. Russia interfered with the Brexit referendum in the UK 
 and famously the United States by hacking voting machines and voter registration databases and manipulating social media. Also
 here in America, the state legislature in North Carolina used data science with 
 "[surgical precision](https://www.nbcnews.com/politics/politics-news/north-carolina-judges-toss-maps-slam-gerrymandering-stinging-ruling-n1049411)"
-to rig state elections at the expense of voters' constitutional rights.
+to rig state elections at the expense of voters' constitutional rights. North Carolina did it best, but it's a tactic exploited
+throughout the country by politicians who fear accountability for their records.
 
-It's all shameful, and systemic flaws make it possible: 
+It's shameful, and systemic flaws make it possible: 
 
 * Lack of transparency as manufacturers with troubling conflicts of interest produce closed, proprietary voting machines 
-* Lack of knowledge about or interest in modern software architecture patterns, engineering best practices, UX strategies, technology options, accessibility, and good security hygiene
+* Lack of knowledge about or interest in modern software architecture patterns, engineering best practices, UX strategies, modern technologies, accessibility, and good security hygiene
 * Lack of training for staff in using and maintaining the available voting technology
 * Lack of funding for officials acting in good faith to build robust voting infrastructure
-* Lack of access controls to prevent officials acting in *bad* faith from exercising control of the infrastructure for nefarious purposes
+* Lack of access controls to prevent officials acting in *bad* faith from exercising undue influence over the infrastructure for nefarious purposes
 
 And many others.
 
@@ -55,8 +58,8 @@ Because of these systemic problems, the high stakes involved in electing officia
 the breathtaking incompetence and embarrassing failure of "modern" voting apps
 like the [IowaReporterApp](https://www.vox.com/recode/2020/2/7/21125078/iowa-caucus-2016-mobile-app-2020), and the fear of relentless
 attacks from around the nation and the world, we are in a place now where the consensus is that the only secure way to vote 
-is with paper ballots. To say nothing of the vulnerabilities associated with paper ballots and the matter of voter access 
-to those paper ballots, which itself is a matter fraught with bad faith arguments and [racism](/blog/vidya/technology/black-lives-matter/).
+is with paper ballots. To say nothing of the vulnerabilities associated with paper ballots. Or the matter of voter access 
+to those paper ballots, which itself is fraught with bad faith arguments and [racism](/blog/vidya/technology/black-lives-matter/).
 
 It's easy, if profoundly disappointing, to see how we got here, but it really doesn't have to be this way.
 
@@ -71,7 +74,7 @@ I believe secure online voting must have several critical features.
 
 ### Open Source
 
-This is absolutely fundamental and non-negotiable. The core of the solution must be open-source. Period. 
+This is absolutely crucial. The core of the solution must be open-source. Period. 
 Every line of code needs to be available for all stakeholders--media, 
 elected officials, election attorneys, security analysts, and most importantly voters--to have confidence in the security 
 and integrity of the software and therefore in the outcomes of elections. 
@@ -79,9 +82,9 @@ and integrity of the software and therefore in the outcomes of elections.
 Now we will see shortly that it may be necessary to incorporate some commercial solutions that are closed-source, but those should 
 be on the margins. There should be no core functionality that isn't available for all to see.
 
-Another reason to value open source is that a mission as important as this demands diverse experiences and perspectives--
-on voting experiences, past application failures, overcoming [biases](/blog/vidya/technology/black-lives-matter/), 
-architectural patterns, tech stack, potential vulnerabilities, and whatever else we need to understand to build 
+Another reason to value open source is that a mission as important as this demands diverse experiences and perspectives--on
+voting experiences, past software failures, overcoming [biases](/blog/vidya/technology/black-lives-matter/), 
+architectural patterns, tech stacks, potential vulnerabilities, and whatever else we need to understand to build 
 the best online voting platform possible.
 
 ### Zero Trust
@@ -96,6 +99,10 @@ explain what this means:
 network, system, user, and devices within and outside the organization. This movement is enabled by strong identities, 
 multi-factor authentication, trusted endpoints, network segmentation, access controls, and user attribution to 
 compartmentalize and regulate access to sensitive data and systems.
+
+Think of Zero Trust like a secure hotel. You need your key to get in the building, to get through front desk security, 
+to take the elevator to your floor and only your floor, and finally to enter your room or the gym or the pool. Even inside 
+your room, you need to be authenticated to access WiFi or use the safe.
 
 Advancements in technology make Zero Trust possible, and a modern voting solution will enforce Zero Trust to ensure
 that every interaction with every component of the architecture demands authentication and a thorough vetting of 
@@ -112,13 +119,13 @@ anomaly detection through analytics. This level of auditability is necessary for
 ### Immutable and Append-Only
 
 I have [written](/blog/vidya/technology/business-case-for-functional-programming/) and [spoken](/blog/vidya/technology/talking-trends-at-tech-talk-dc/)
-a great deal about the value of immutability, and I think it is essential to secure online voting. The software
+a great deal about the value of immutable data, and I think it is essential to secure online voting. The software
 should not permit updates or deletes. Rather, any change to the data--a new candidate, a newly registered voter, a new address for an existing voter,
 and certainly every vote--should be represented in immutable, append-only fashion. As part of the 
 auditability of the software, we should be able to replay every event that's occurred to recreate state at any point
 in the process.
 
-In fact, I would say immutability might be the single best defense against bad actors.
+In fact, immutability might be the single best defense against bad actors.
 
 ### Client Device and Application Deployment Agnostic
 
@@ -143,7 +150,7 @@ also undermine confidence in the integrity of the vote.
 To achieve all of this, there will be a lot going on in a secure online voting platform--user interfaces, APIs, encryption,
 databases, multifactor authentication, monitoring. It will be tempting to add complexity to integrate it all, and we 
 need to resist that temptation to overengineer. Otherwise, the application will become unsustainable for the mainainers
-and, much worse, unusable for its stakeholders, which will bring
+and, much worse, unusable for voters and others, which will bring
 us right back to the status quo of a voting platform that diminshes the confidence we have in the integrity of our elections.
 
 ---
@@ -156,13 +163,13 @@ lead time for changes, time to restore service, and change failure rate.
 
 The good news is that a secure online voting solution doesn't have steep demands for scalability or performance. It's not 
 like there will be tens of thousands of votes per second; this isn't [The Masked Singer](https://www.fox.com/the-masked-singer/).
-Even if there were one instance of the platform for the entire United States, that's about 150 million voters over the course of weeks.
+Even if there were one instance of the platform for the entire United States, that's about 150 million voters.
 That's not a lot. And because in America every state runs its own platform, for better or worse, you'd have at most one 
 instance of the platform for each [state and inhabited territory](https://en.wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States). 
-California is the largest state by population, and a statewide election will have around 30 million voters. That feels like 
-a large number, but as software scale goes, 30 million entities over the course of several weeks 
+California is the largest state by population, and a statewide election there will have around 30 million voters. That feels like 
+a large number, but as software scale goes, 30 million over the course of several weeks 
 (as the concept of "Election Day" thankfully grows more and more quaint) really isn't that much.
-Now maybe great voting software will raise those numbers, but as it stands now, this makes things a lot easier. We can 
+Now maybe, hopefully even, great voting software will raise those numbers, but as it stands now, this makes things a lot easier. We can 
 focus on the user experience, integrity of the data, and security of the system and worry a bit less about performance at scale.
 
 Another bit of good news? The UI can be simple. It's just boring forms!
@@ -186,7 +193,7 @@ Cloudflare or Fastly.
 
 In addition, I think it is important that the front end is deployed as a [Progressive Web App](/blog/vidya/technology/vidya-reloaded/).
 This offers a lot of benefits, but primarily for this purpose, it is critical that the front end is always available 
-and functional as possible regardless of connectivity, which absurdly remains a problem in America.
+and as functional as possible regardless of connectivity, which absurdly remains a problem in the United States.
 
 By the way, it might be interesting down the road to think of voice interfaces allowing people to vote with Google Assistant,
 Alexa, or Siri if privacy concerns can be addressed. One challenge at a time though. 
@@ -221,7 +228,7 @@ We could punt here and decide on something more elaborate like MongoDB or Kafka 
 online voting platform unnecessary, but I would disagree. Local elections are extremely important. They impact people's 
 lives the most, and voters are entitled to the same guarantees here that they are entitled to for the "big" elections. 
 
-All we need to do is to store voting data in a single table where a simple GROUP BY will aggregate election results. 
+All we need to do is to store votes in a single table where a simple GROUP BY will aggregate election results. 
 That's easy. We can also store temporal and location data so we can run some basic secondary queries like measuring voter activity
 by precinct or time of day or day of week or whatever else you want to know.
 
@@ -235,12 +242,12 @@ This hypothetical architecture has several moving parts; the real manifestation 
 fewer. Either way, we need deployment to be seamless and predictable across any environment. This is exactly the use case 
 for Docker containers--for microservices, data stores, monitoring software, etc.--and Kubernetes to orchestrate them. 
 Kubernetes in particular is particularly compelling because it serves as the common denominator for deployments to AWS, Azure, Google Cloud,
-and on premise. In other words, Kubernetes is central to being deployment agnostic.  
+and on premise. In other words, Kubernetes is central to being deployment agnostic on the back end.  
 
 This post is already long enough without getting into software engineering tooling like Gradle, GitHub, 
 whatever continuous integration (CI) could be in play, and so on, but I do want to send a shout out to [Earthly](https://docs.earthly.dev/), 
 which has recently emerged as a powerful build automation tool at a layer of abstraction above Docker. We want to make sure
-we maximize reproducibility, determinism, and parallelism to make builds as performant as possible. Earthly could
+we maximize reproducibility, determinism, and parallelism to make builds as simple, reliable, and performant as possible. Earthly could
 be the perfect fit. 
 
 ### Monitoring: EFK or Splunk?
@@ -280,11 +287,12 @@ EFK and Splunk both offer multiple ways to authenticate. We can figure that out 
 makes sense.
 
 Finally, securing the entire DevSecOps pipeline means implementing a host of measures like keeping secrets out of code and configuration,
-managing access control and limiting permissions throughout the pipeline, signing changes to version control with PGP and Docker images pushed to DockerHub with 
-[Docker Content Trust](https://docs.docker.com/engine/security/trust/), using key management mechanisms appropriate for the deployment platform,
+managing access control and limiting permissions throughout the pipeline, signing changes to version control with PGP, 
+signing Docker images pushed to DockerHub with [Docker Content Trust](https://docs.docker.com/engine/security/trust/),
+using key management mechanisms appropriate for the deployment platform,
 and much more.
 
-Oh...and of course there are automated security tests in CI and full reviews by security professionals to vet the entire 
+And of course there are automated security tests in CI and full reviews by security professionals to vet the entire 
 architecture.
 
 ---
@@ -293,19 +301,21 @@ Of course this entire stack, and really the whole architecture, is just an idea.
 
 ## Outstanding Questions
 
-Even if the architecture and technology stack are perfect, there are still some difficult questions that remain:
+Even if the architecture and technology stack are perfect, there are difficult questions that remain. Here are some of them:
 
-* Every state has its own election laws, technology infrastructure, and budget. What kinds of legal and technical challenges
-are there to migrating voter registration data to a new system? Officials acting in bad faith do not want anything that will
-make voting easier, but would even officials acting in *good* faith consider it?
-* What's to stop other officials who are authorized users acting in bad faith from compromising the running platform in some way?
+* Every state has its own election laws, technology infrastructure, and budget. What kinds of legal, privacy, and technical challenges
+are there to migrating voter registration data to a new system? Is there even a need if the application can
+represent registered voters some other way? 
+* Officials acting in bad faith do not want anything that will make voting easier, but would even officials acting in *good* faith consider it? 
+* What's to stop corrupt government officials who are authorized users from compromising the platform in some way?
 * While the platform would be built for resilience, what kinds of contingency plans would be in place just in case the platform 
 went down for an extended period?
 * If we use PostgreSQL as an immutable, append-only store to provide a replayable log of all data mutations, we will eventually
 hit its limits. What's the retention period for the data? If it is even necessary to retire the data to some kind of data lake
-after the retention period, where would that be?
+after the retention period, where would that be? How would that work?
 
-The beauty of open source is the diversity of thought and creative energy that converges to solve interesting, hard problems. 
+The beauty of open source is the diversity of thought and creative energy that converges to solve interesting, hard problems
+like these. 
 
 ---
 
