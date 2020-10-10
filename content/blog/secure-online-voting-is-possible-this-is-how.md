@@ -1,8 +1,8 @@
 ---
 author: "Neil Chaudhuri"
-title: "Secure Online Voting is the Future"
+title: "Secure Online Voting is Possible. This is How"
 date: 2020-10-09T13:31:40-04:00
-description: "It really is possible to achieve secure online voting. Here's how."
+description: "If we overcome past mistakes and bad faith, we can absolutely achieve secure online voting."
 banner: "img/banners/vote.png"
 tags: 
 - JAMStack
@@ -38,11 +38,12 @@ categories:
 The right to vote is sacred. It's essential to live in a free society and to pick a winner on [The Voice](https://www.nbc.com/the-voice).
 Unfortunately, the right to vote is under attack worldwide, and bad actors 
 have used tech to do it. Russia interfered with the Brexit referendum in the UK and with elections there, Ukraine, France, 
-and famously the United States by hacking voting machines and voter registration databases and manipulating social media. Also
+and famously here in the United States by hacking voting machines and voter registration databases and manipulating social media. Also
 here in America, the state legislature in North Carolina used data science with 
 "[surgical precision](https://www.nbcnews.com/politics/politics-news/north-carolina-judges-toss-maps-slam-gerrymandering-stinging-ruling-n1049411)"
 to rig state elections at the expense of voters' constitutional rights. North Carolina did it best, but it's a tactic exploited
-throughout the country by politicians who fear accountability for their records.
+throughout the country by politicians who fear accountability for their records. If that bothers them so much, they should
+work in meteorology or sports talk radio.
 
 It's shameful, and systemic flaws make it possible: 
 
@@ -166,13 +167,13 @@ like there will be tens of thousands of votes per second; this isn't [The Masked
 Even if there were one instance of the platform for the entire United States, that's about 150 million voters.
 That's not a lot. And because in America every state runs its own platform, for better or worse, you'd have at most one 
 instance of the platform for each [state and inhabited territory](https://en.wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States). 
-California is the largest state by population, and a statewide election there will have around 30 million voters. That feels like 
-a large number, but as software scale goes, 30 million over the course of several weeks 
+California is the largest state by population, and a statewide election there will have around 30 million voters.
+As software scale goes, 30 million over the course of several weeks 
 (as the concept of "Election Day" thankfully grows more and more quaint) really isn't that much.
 Now maybe, hopefully even, great voting software will raise those numbers, but as it stands now, this makes things a lot easier. We can 
 focus on the user experience, integrity of the data, and security of the system and worry a bit less about performance at scale.
 
-Another bit of good news? The UI can be simple. It's just boring forms!
+Another bit of good news? The UI is simple. It's just boring forms!
 
 ## What Might the Tech Stack Look Like?
 
@@ -258,11 +259,11 @@ traceability fundamental to the value of the platform, but it's not core functio
 there are so many other challenges.  
 
 The preference is always open-source. It seems to me deploying an [EFK stack on Kubernetes](https://dzone.com/articles/efk-stack-on-kubernetes-part-1)
-would be sufficient, but that requires the skill and time to configure everything as needed. On the other hand, Splunk, the industry 
+would be sufficient, but that requires the skill and time to configure everything as needed. Meanwhile, Splunk, the industry 
 leader in monitoring, is proprietary and probably overkill for the same reasons a data store like Kafka would be, but the platform would
 benefit from paid Splunk support.
 
-### Authentication and Authorization: A blend of proprietary solutions
+### Authentication and Authorization: A blend of open-source and proprietary solutions
 
 It goes without saying that the most important piece of online voting is security. In order to honor Zero Trust,
 every interface demands authentication:
@@ -275,7 +276,7 @@ every interface demands authentication:
 
 This will require a blend of solutions, and I think it makes sense to leverage proprietary implementations that have mastered
 these challenges. For example, an identity provider like Auth0 or Okta could provide multifactor authentication and OpenID Connect, particularly
-the PKCE flow with [JWT](https://jwt.io/), to authenticate the user to the API. For mobile users, we could also look 
+the [PKCE flow](https://dzone.com/articles/what-is-pkce) with [JWT](https://jwt.io/), to authenticate the user to the API. For mobile users, we could also look 
 into novel forms of authentication like UnifyID, which replaces passwords with machine learning to analyze unique 
 user behavior like gait and keypress habits to verify identity.
 
@@ -297,11 +298,12 @@ architecture.
 
 ---
 
-Of course this entire stack, and really the whole architecture, is just an idea. It is all subject to change.
+This entire stack, and really the whole architecture, is just an idea. It is all subject to change.
 
 ## Outstanding Questions
 
-Even if the architecture and technology stack are perfect, there are difficult questions that remain. Here are some of them:
+Even if the architecture and technology stack are perfect, there are difficult questions that remain across not only 
+technology but also law, finance, and even philosophy. Here are some of them:
 
 * Every state has its own election laws, technology infrastructure, and budget. What kinds of legal, privacy, and technical challenges
 are there to migrating voter registration data to a new system? Is there even a need if the application can
@@ -313,6 +315,10 @@ went down for an extended period?
 * If we use PostgreSQL as an immutable, append-only store to provide a replayable log of all data mutations, we will eventually
 hit its limits. What's the retention period for the data? If it is even necessary to retire the data to some kind of data lake
 after the retention period, where would that be? How would that work?
+* To what extent can we preserve the notion of a "secret ballot" where only voters themselves know their selections? 
+Or should a modern voting platform recognize the very concept of a secret ballot as an 
+[anachronism that is pointless at best and harmful at worst](https://www.washingtonpost.com/posteverything/wp/2017/01/06/want-to-improve-democracy-abolish-the-secret-ballot/) 
+and function accordingly?
 
 The beauty of open source is the diversity of thought and creative energy that converges to solve interesting, hard problems
 like these. 
