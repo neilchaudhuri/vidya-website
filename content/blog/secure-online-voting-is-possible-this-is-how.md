@@ -59,7 +59,7 @@ Because of these systemic problems, the high stakes involved in electing officia
 the breathtaking incompetence and embarrassing failure of "modern" voting apps
 like the [IowaReporterApp](https://www.vox.com/recode/2020/2/7/21125078/iowa-caucus-2016-mobile-app-2020), and the fear of relentless
 attacks from around the nation and the world, we are in a place now where the consensus is that the only secure way to vote 
-is with paper ballots. To say nothing of the vulnerabilities associated with paper ballots. Or the matter of voter access 
+is with paper ballots. To say nothing of the issues associated with paper ballots. Or the matter of voter access 
 to those paper ballots, which itself is fraught with bad faith arguments and [racism](/blog/vidya/technology/black-lives-matter/).
 
 It's easy, if profoundly disappointing, to see how we got here, but it really doesn't have to be this way.
@@ -266,12 +266,12 @@ benefit from paid Splunk support.
 ### Authentication and Authorization: A blend of open-source and proprietary solutions
 
 It goes without saying that the most important piece of online voting is security. In order to honor Zero Trust,
-every interface demands authentication:
+every interface demands verification:
 
-* A voter casting a ballot and initiating an HTTP request
-* An HTTP request hitting the API
-* The API inserting a record into the database
-* Any request for monitoring data
+* An authenticated voter casting a ballot by initiating a protected HTTP request
+* An HTTP request over TLS hitting the API
+* The API inserting a record over TLS into the database
+* An authenticated user requesting monitoring data
 * The entire continuous delivery pipeline integrating version control, CI, containerization, and deployment
 
 This will require a blend of solutions, and I think it makes sense to leverage proprietary implementations that have mastered
