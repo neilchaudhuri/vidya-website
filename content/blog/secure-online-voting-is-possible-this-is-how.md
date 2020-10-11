@@ -143,9 +143,9 @@ several ways. User interfaces need to reflect modern UX principles so that voter
 demographics find the software intuitive. This implies they be accessible as well to support users with disabilities. 
 
 I also believe that giving voters the opportunity to cast their ballots from wherever they wish is a form of usability.
-It's not just about comfort either. Everyone tends to focus on candidates, but what about referendums, state constitutional
-amendments, and bond issues? These can be complex. I know from experience that it's helpful to research these comfortably rather than within the
-space and time constraints of a traditional voting booth. 
+It's not just about comfort either. Because of the relentless media obsession with conflict, everyone tends to focus on candidates, 
+but what about referendums, state constitutional amendments, and bond issues? These can be complex. I know from experience 
+that it's helpful to research these comfortably rather than within the space and time constraints of a traditional voting booth. 
 
 Part and parcel with usability is performance. Monitoring will help uncover issues with performance, but a modern online
 voting system needs to be architected for performance. Performance issues will not only be annoying, but they could 
