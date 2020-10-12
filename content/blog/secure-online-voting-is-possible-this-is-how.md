@@ -38,14 +38,16 @@ categories:
 The right to vote is sacred. It's essential to live in a free society and to pick a winner on [The Voice](https://www.nbc.com/the-voice).
 Unfortunately, the right to vote is under attack worldwide, and bad actors 
 have used tech to do it. Russia interfered with the Brexit referendum in the UK and with elections there, Ukraine, France, 
-and famously here in the United States, even as I write this, by hacking voting machines and voter registration databases and manipulating social media. Also
-here in America, the state legislature in North Carolina used data science with 
+and famously here in the United States, even as I write this, by hacking voting machines and voter registration databases and manipulating social media. 
+Other foreign actors are interfering in elections in similar if not quite as aggressive ways. 
+
+Also, here in America, the state legislature in North Carolina used data science with 
 "[surgical precision](https://www.nbcnews.com/politics/politics-news/north-carolina-judges-toss-maps-slam-gerrymandering-stinging-ruling-n1049411)"
 to rig state elections at the expense of voters' constitutional rights. North Carolina did it best, but it's a tactic exploited
 throughout the country by politicians who fear accountability for their records. If accountability bothers them so much, they should
 work in meteorology or sports talk radio.
 
-It's shameful, and systemic flaws make it possible: 
+Regardless of the origin of the attacks on the right to vote, they're shameful, and systemic flaws make it all possible: 
 
 * Lack of transparency as manufacturers with troubling conflicts of interest produce closed, proprietary voting machines 
 * Lack of knowledge about or interest in modern software architecture patterns, engineering best practices, UX strategies, modern technologies, accessibility, and good security hygiene
