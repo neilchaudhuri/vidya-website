@@ -45,7 +45,9 @@ Meanwhile, here in America, the state legislature in North Carolina used data sc
 "[surgical precision](https://www.nbcnews.com/politics/politics-news/north-carolina-judges-toss-maps-slam-gerrymandering-stinging-ruling-n1049411)"
 to rig state elections at the expense of voters' constitutional rights. North Carolina did it best, but it's a tactic exploited
 throughout the country by politicians who fear accountability for their records. If accountability bothers them so much, they should
-work in meteorology or sports talk radio.
+work in meteorology or sports talk radio. Even worse, the courts, 
+including [the Fifth Circuit Court of Appeals just this week in Texas](https://dfw.cbslocal.com/2020/10/13/reinstates-texas-order-limiti-mail-in-ballot-drop-off-locations-1-county/),
+have refused to remain above politics as the judiciary should and have chosen instead to legitimize these voter suppression efforts.
 
 You also have criminal mercenaries as we saw just this week when 
 [Microsoft took down Trickbot](https://blogs.microsoft.com/on-the-issues/2020/10/12/trickbot-ransomware-cyberthreat-us-elections/),
