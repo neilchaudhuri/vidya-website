@@ -326,7 +326,7 @@ technology but also law, finance, and even philosophy. Here are some of them:
 * Every state has its own election laws, technology infrastructure, and budget. What kinds of legal, privacy, and technical challenges
 are there to migrating voter registration data to a new system? Is there even a need if the application can
 represent registered voters some other way? 
-* Corrupt officials do not want anything that will make voting easier, but would even officials acting in *good* faith consider it? 
+* Corrupt officials do not want anything that will make voting easier, but would even *honest* officials consider it? 
 * What's to stop government officials who are authorized users acting in bad faith from compromising the platform in some way?
 * While the platform would be built for resilience, what kinds of contingency plans would be in place just in case the platform 
 went down for an extended period?
