@@ -43,13 +43,17 @@ Other foreign state actors are interfering in elections in similar if not quite 
 
 Meanwhile, here in America, the state legislature in North Carolina used data science with 
 "[surgical precision](https://www.nbcnews.com/politics/politics-news/north-carolina-judges-toss-maps-slam-gerrymandering-stinging-ruling-n1049411)"
-to rig state elections at the expense of voters' constitutional rights. North Carolina did it best, but it's a tactic exploited
-throughout the country by politicians who fear accountability for their records. If accountability bothers them so much, they should
-work in meteorology or sports talk radio. Even worse, the courts, 
+to rig state elections at the expense of voters' constitutional rights. North Carolina is hardly alone. In 2018 in Georgia, the Secretary of State 
+running for governor had the authority to oversee his own election, and he orchestrated a complex web of corruption that actually 
+[encouraged security vulnerabilities and culminated with his own breathtaking wipe of election servers and backups](https://www.engadget.com/2018-11-09-how-brian-kemp-hacked-georgias-election.html).
+
+If accountability bothers these politicians so much, they should work in meteorology or sports talk radio. 
+
+Even worse, the courts, 
 including [the Fifth Circuit Court of Appeals just this week in Texas](https://dfw.cbslocal.com/2020/10/13/reinstates-texas-order-limiti-mail-in-ballot-drop-off-locations-1-county/),
 have refused to remain above politics as the judiciary should and have chosen instead to legitimize corrupt voter suppression efforts.
 
-You even have criminal mercenaries as we also saw this week when 
+We can't forget the criminal mercenaries as we also saw this week when 
 [Microsoft took down Trickbot](https://blogs.microsoft.com/on-the-issues/2020/10/12/trickbot-ransomware-cyberthreat-us-elections/),
 at least for now, in their attempt to infect voting infrastructure with ransomware.
 
