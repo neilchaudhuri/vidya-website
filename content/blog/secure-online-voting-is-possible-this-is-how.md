@@ -41,7 +41,7 @@ have used tech to do it. Russia interfered with the Brexit referendum in the UK 
 and famously here in the United States, even still as I write this, by hacking voting machines and voter registration databases and manipulating social media. 
 Other foreign state actors are interfering in elections in similar if not quite as aggressive ways.
 
-Meanwhile, here in America, the state legislature in North Carolina used data science with 
+Meanwhile, within our own borders here at home, the state legislature in North Carolina used data science with 
 "[surgical precision](https://www.nbcnews.com/politics/politics-news/north-carolina-judges-toss-maps-slam-gerrymandering-stinging-ruling-n1049411)"
 to rig state elections at the expense of voters' constitutional rights. North Carolina is hardly alone. In 2018 in Georgia, the Secretary of State 
 running for governor had the authority to oversee his own election, and he orchestrated a complex web of corruption that actually 
