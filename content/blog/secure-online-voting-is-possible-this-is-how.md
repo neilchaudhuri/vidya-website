@@ -2,7 +2,7 @@
 author: "Neil Chaudhuri"
 title: "Secure Online Voting is Possible. This is How"
 date: 2020-10-12
-description: "If we overcome past mistakes and bad faith, we can absolutely achieve secure online voting."
+description: "If we overcome past mistakes, corruption, and bad faith, we can absolutely achieve secure online voting."
 banner: "img/banners/vote.png"
 tags: 
 - JAMStack
@@ -47,9 +47,9 @@ to rig state elections at the expense of voters' constitutional rights. North Ca
 throughout the country by politicians who fear accountability for their records. If accountability bothers them so much, they should
 work in meteorology or sports talk radio. Even worse, the courts, 
 including [the Fifth Circuit Court of Appeals just this week in Texas](https://dfw.cbslocal.com/2020/10/13/reinstates-texas-order-limiti-mail-in-ballot-drop-off-locations-1-county/),
-have refused to remain above politics as the judiciary should and have chosen instead to legitimize these voter suppression efforts.
+have refused to remain above politics as the judiciary should and have chosen instead to legitimize corrupt voter suppression efforts.
 
-You also have criminal mercenaries as we saw just this week when 
+You also have criminal mercenaries as we also saw this week when 
 [Microsoft took down Trickbot](https://blogs.microsoft.com/on-the-issues/2020/10/12/trickbot-ransomware-cyberthreat-us-elections/),
 at least for now, in their attempt to infect voting infrastructure with ransomware.
 
@@ -326,8 +326,8 @@ technology but also law, finance, and even philosophy. Here are some of them:
 * Every state has its own election laws, technology infrastructure, and budget. What kinds of legal, privacy, and technical challenges
 are there to migrating voter registration data to a new system? Is there even a need if the application can
 represent registered voters some other way? 
-* Officials acting in bad faith do not want anything that will make voting easier, but would even officials acting in *good* faith consider it? 
-* What's to stop corrupt government officials who are authorized users from compromising the platform in some way?
+* Corrupt officials do not want anything that will make voting easier, but would even officials acting in *good* faith consider it? 
+* What's to stop government officials who are authorized users acting in bad faith from compromising the platform in some way?
 * While the platform would be built for resilience, what kinds of contingency plans would be in place just in case the platform 
 went down for an extended period?
 * If we use PostgreSQL as an immutable, append-only store to provide a replayable log of all data mutations, we will eventually
