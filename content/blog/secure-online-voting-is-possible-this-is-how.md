@@ -51,7 +51,7 @@ You also have criminal mercenaries as we saw just this week when
 [Microsoft took down Trickbot](https://blogs.microsoft.com/on-the-issues/2020/10/12/trickbot-ransomware-cyberthreat-us-elections/),
 at least for now, in their attempt to infect voting infrastructure with ransomware.
 
-The goals vary. To sow chaos. To sow mistrust of the electoral process. To change American policy objectives. To make money.
+The goals vary. To sow chaos. To sow mistrust of the electoral process. To change American policy objectives. To maintain a certain status quo. To make money.
 
 Regardless of the purpose of these attacks on the right to vote, they're shameful, and systemic flaws make it all possible: 
 
