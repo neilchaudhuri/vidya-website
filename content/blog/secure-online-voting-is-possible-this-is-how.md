@@ -196,18 +196,21 @@ I'm not exactly sure, but I do have some ideas I would like to run by you.
 
 A [JAMStack](https://jamstack.org/) front end provides several advantages:
 
-* No need to deploy or scale web servers
+* No need to deploy or scale web servers for rendering content derived from a database, which makes things much easier and dramatically reduces the surface area for an attack
 * The unbeatable performance of pre-built assets cached on a CDN and in the browser
 * Device agnostic
 
 Certainly a front end in Rails or another robust monolithic framework would be effective, but I think using something 
 like [Gatsby](https://www.gatsbyjs.com/), [Next.js](https://nextjs.org/), or [Sapper](https://sapper.svelte.dev/) would 
-be so much simpler and more lightweight. It would basically take a few days to build the forms and push them to a CDN like 
+be so much simpler and more lightweight. It would be straightforward to build the forms and push them to a CDN like 
 Cloudflare or Fastly.
 
 In addition, I think it is important that the front end is deployed as a [Progressive Web App](/blog/vidya/technology/vidya-reloaded/).
 This offers a lot of benefits, but primarily for this purpose, it is critical that the front end is always available 
-and as functional as possible regardless of connectivity, which absurdly remains a problem in the United States.
+and as functional as possible regardless of connectivity, which absurdly remains a problem in the richest country in the world. 
+
+This is orthogonal to the JAMStack and PWA, but the user interface needs to have a strong 
+[Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) as well.
 
 By the way, it might be interesting down the road to think of voice interfaces allowing people to vote with Google Assistant,
 Alexa, or Siri if privacy concerns can be addressed. One challenge at a time though. 
