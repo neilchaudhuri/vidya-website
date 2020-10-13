@@ -1,7 +1,7 @@
 ---
 author: "Neil Chaudhuri"
 title: "Secure Online Voting is Possible. This is How"
-date: 2020-10-12
+date: 2020-10-13
 description: "If we overcome past mistakes, corruption, and bad faith, we can absolutely achieve secure online voting."
 banner: "img/banners/vote.png"
 tags: 
