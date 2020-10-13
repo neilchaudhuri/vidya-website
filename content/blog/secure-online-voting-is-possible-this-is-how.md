@@ -38,7 +38,7 @@ categories:
 The right to vote is sacred. It's essential to live in a free society and to pick a winner on [The Voice](https://www.nbc.com/the-voice).
 Unfortunately, the right to vote is under attack worldwide, and bad actors 
 have used tech to do it. Russia interfered with the Brexit referendum in the UK and with elections there, Ukraine, France, 
-and famously here in the United States, even as I write this, by hacking voting machines and voter registration databases and manipulating social media. 
+and famously here in the United States, even still as I write this, by hacking voting machines and voter registration databases and manipulating social media. 
 Other foreign state actors are interfering in elections in similar if not quite as aggressive ways.
 
 Meanwhile, here in America, the state legislature in North Carolina used data science with 
