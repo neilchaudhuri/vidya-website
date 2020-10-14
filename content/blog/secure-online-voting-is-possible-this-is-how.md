@@ -137,7 +137,7 @@ anomaly detection through analytics. This level of auditability is necessary for
 
 I have [written](/blog/vidya/technology/business-case-for-functional-programming/) and [spoken](/blog/vidya/technology/talking-trends-at-tech-talk-dc/)
 a great deal about the value of immutable data, and I think it is essential to secure online voting. The software
-should not permit updates or deletes. Rather, any change to the data--a new candidate, a newly registered voter, a new address for an existing voter,
+should not permit updates or deletes. Rather, any change to the data--a newly registered voter, a new address for an existing voter,
 and certainly every vote--should be represented in immutable, append-only fashion. As part of the 
 auditability of the software, we should be able to replay every event that's occurred to recreate state at any point
 in the process.
@@ -192,7 +192,7 @@ California is the largest state by population, and a statewide election there wi
 As software scale goes, 30 million over the course of several weeks 
 (as the concept of "Election Day" thankfully grows more and more quaint) really isn't that much.
 Now maybe, hopefully even, great voting software will raise those numbers, but as it stands now, this makes things a lot easier. We can 
-focus on the user experience, integrity of the data, and security of the system and worry a bit less about performance at scale.
+focus on user experience, data integrity, and platform security and worry a bit less about performance at scale.
 
 Another bit of good news? The UI is simple. It's just boring forms!
 
@@ -217,7 +217,7 @@ In addition, I think it is important that the front end is deployed as a [Progre
 This offers a lot of benefits, but primarily for this purpose, it is critical that the front end is always available 
 and as functional as possible regardless of connectivity, which absurdly remains a problem in the richest country in the world. 
 
-This is orthogonal to the JAMStack and PWA, but the user interface needs to have a strong 
+This is orthogonal to JAMStack and PWA, but the user interface needs to have a strong 
 [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) as well.
 
 By the way, it might be interesting down the road to think of voice interfaces allowing people to vote with Google Assistant,
@@ -225,8 +225,8 @@ Alexa, or Siri if privacy concerns can be addressed. One challenge at a time tho
 
 ### API: Spring Boot
 
-The purpose of the API is to authenticate requests from the JAMStack UI--in most cases, votes--and publish asynchronous
-messages to the immutable, append-only data store while responding with, in the happy path scenario, a confirmation
+The purpose of the API is to authenticate requests from the JAMStack UI--in most cases, votes--and persist
+data to the immutable, append-only data store while responding with, in the happy path scenario, a confirmation
 and a way for voters to track their votes through the process so they can have every confidence their votes count.
 
 There are a *lot* of great API solutions like [FastAPI](https://fastapi.tiangolo.com/), [Go kit](https://gokit.io/), and
@@ -237,7 +237,7 @@ advantages:
 * Straightforward primitives for writing [reactive](https://spring.io/reactive) APIs
 * [Good enough for Netflix](https://spring.io/blog/2020/02/24/netflix-built-a-spring-application-generator-to-boost-dev-productivity-here-s-how-you-can-too)
 
-All of these options would be great though.
+Any of these options would be great though.
 
 ### Database: PostgreSQL. With a twist
 
@@ -299,12 +299,12 @@ every interface demands verification:
 * The entire continuous delivery pipeline integrating version control, CI, containerization, and deployment
 
 This will require a blend of solutions, and I think it makes sense to leverage proprietary implementations that have mastered
-these challenges. For example, an identity provider like Auth0 or Okta could provide multifactor authentication and OpenID Connect, particularly
+these challenges. For example, an identity provider like Auth0 or Okta could provide multifactor authentication and [OpenID Connect](https://openid.net/connect/), particularly
 the [PKCE flow](https://dzone.com/articles/what-is-pkce) with [JWT](https://jwt.io/), to authenticate the user to the API. For mobile users, we could also look 
 into novel forms of authentication like UnifyID, which replaces passwords with machine learning to analyze unique 
 user behavior like gait and keypress habits to verify identity.
 
-The API server can authenticate to the database server, where data are encrypted, via mutual TLS, where certificates are rotated periodically, with 
+The API server can authenticate to the database server, where data are encrypted, via mutual TLS. Certificates are rotated periodically with 
 credentials configured as Kubernetes [Secrets](https://kubernetes.io/docs/concepts/configuration/secret/) mapped to
 credentials in the identity provider. 
   
@@ -343,6 +343,7 @@ after the retention period, where would that be? How would that work?
 Or should a modern voting platform recognize the very concept of a secret ballot as an 
 [anachronism that is pointless at best and harmful at worst](https://www.washingtonpost.com/posteverything/wp/2017/01/06/want-to-improve-democracy-abolish-the-secret-ballot/) 
 and function accordingly?
+* Would machine learning serve a purpose here? If so, what's the simplest and most effective way to implement it?
 
 The beauty of open source is the diversity of thought and creative energy that converges to solve interesting, hard problems
 like these. 
@@ -351,5 +352,5 @@ like these.
 
 It will take a historical effort to build a secure online voting platform that allows all registered voters to make their voices
 heard and gives them the confidence that their votes count. If you find improving access to voting, guaranteeing the integrity
-of elections, and solving interesting problems as important and as compelling as I do, please 
+of elections, promoting social justice, and solving interesting problems as important and as compelling as I do, please 
 [get in touch](/contact) so we can collaborate on something that could transform society for the better.
