@@ -36,10 +36,12 @@ categories:
 ---
 
 The right to vote is sacred. It's essential to live in a free society and to pick a winner on [The Voice](https://www.nbc.com/the-voice).
-Unfortunately, the right to vote is under attack worldwide, and bad actors 
-have used tech to do it. Russia interfered with the Brexit referendum in the UK and with elections there, Ukraine, France, 
-and famously here in the United States, even still as I write this, by hacking voting machines and voter registration databases and manipulating social media. 
-Other foreign state actors are interfering in elections in similar if not quite as aggressive ways.
+Unfortunately, the right to vote is under attack worldwide, and bad actors have used tech to do it. 
+Russia [interfered with the Brexit referendum in the UK](https://www.nytimes.com/2017/11/15/world/europe/russia-brexit-twitter-facebook.html) 
+and with elections there, Ukraine, France, and famously here in the United States, even still as I write this, by 
+hacking voting machines and voter registration databases and manipulating social media. 
+[Other foreign state actors are interfering in elections](https://www.theverge.com/2020/9/11/21431990/russian-chinese-iranian-hackers-target-us-2020-elections-trump-biden-campaigns) 
+in similar if not quite as aggressive ways.
 
 Meanwhile, within our own borders here at home, the state legislature in North Carolina used data science with 
 "[surgical precision](https://www.nbcnews.com/politics/politics-news/north-carolina-judges-toss-maps-slam-gerrymandering-stinging-ruling-n1049411)"
@@ -51,7 +53,7 @@ If accountability bothers these politicians so much, they should work in meteoro
 
 Even worse, the courts, 
 including [the Fifth Circuit Court of Appeals just this week in Texas](https://dfw.cbslocal.com/2020/10/13/reinstates-texas-order-limiti-mail-in-ballot-drop-off-locations-1-county/),
-have refused to remain above politics as the judiciary should and have chosen instead to legitimize corrupt voter suppression efforts.
+have refused to remain above politics as the judiciary should and have chosen instead to legitimize these bad actors.
 
 We can't forget the criminal mercenaries as we also saw this week when 
 [Microsoft took down Trickbot](https://blogs.microsoft.com/on-the-issues/2020/10/12/trickbot-ransomware-cyberthreat-us-elections/),
