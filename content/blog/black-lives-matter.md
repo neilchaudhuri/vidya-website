@@ -146,7 +146,7 @@ few doing amazing work:
 
 [Black Girls Code](https://www.blackgirlscode.com/)
 
-[Anti Racism Fund](Anti-Racism Fund)
+[Anti Racism Fund](https://antiracismfund.org/)
 
 [Trans Justice Funding Project](https://www.transjusticefundingproject.org/)
 
